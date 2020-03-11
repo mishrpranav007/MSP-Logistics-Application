@@ -57,11 +57,6 @@ exports[`<ExampleScreen /> Container tests should render and match the snapshot 
         >
           <Image
             resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../app/assets/images/logo.png",
-              }
-            }
             style={
               Array [
                 Object {
