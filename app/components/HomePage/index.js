@@ -12,7 +12,11 @@ import logo from 'app/assets/images/imgMspLogo.png';
 import scanimage from 'app/assets/images/illoScanBag.png';
 import bitmapimage from 'app/assets/images/bitmap.png';
 const HomePage = () => (
-  <ImageBackground source={homepage} style={styles.backgroundContainer}>
+  <ImageBackground
+    testID="home-page"
+    source={homepage}
+    style={styles.backgroundContainer}
+  >
     <View>
       <Image source={logo} style={styles.logoContainer}></Image>
     </View>
@@ -22,14 +26,14 @@ const HomePage = () => (
 
     <View>
       <TouchableOpacity style={styles.deliverybtnLogin}>
-        <View style={styles.bitimagecontainer}>
+        <View testID="home-page-view" style={styles.bitimagecontainer}>
           <Image source={bitmapimage} style={styles.bitmapimageIcon}></Image>
           <Text style={styles.text}>Scan for delivery</Text>
         </View>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.pickupbtnLogin}>
-        <View style={styles.bitimagecontainer}>
+        <View testID="home-page-view" style={styles.bitimagecontainer}>
           <Image source={bitmapimage} style={styles.bitmapimageIcon}></Image>
           <Text style={styles.text}>Scan for pickup</Text>
         </View>
