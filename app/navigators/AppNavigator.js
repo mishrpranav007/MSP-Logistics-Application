@@ -15,6 +15,7 @@ const StackNavigator = createStackNavigator(
     // The main application screen is our "ExampleScreen". Feel free to replace it with your
     // own screen and remove the example.
     // LoginScreen,
+    // HomePage,
     MainScreen: HomePage
   },
   {

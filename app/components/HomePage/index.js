@@ -49,23 +49,25 @@ const styles = StyleSheet.create({
   logoContainer: {
     width: 173,
     height: 51,
-    marginTop: 48,
+    marginTop: 0,
     marginLeft: 92,
     marginRight: 88,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginBottom: 98
+    marginBottom: 88
   },
   scanimagecontainer: {
     width: 309,
-    height: 255
+    height: 255,
+    marginBottom: 8,
+    marginTop: 8
   },
   deliverybtnLogin: {
     width: 310,
     height: 52,
+    marginTop: 30,
     justifyContent: 'center',
     backgroundColor: 'rgb(36,106,116)',
-    marginTop: 29,
     borderRadius: 11
   },
   pickupbtnLogin: {
@@ -73,7 +75,7 @@ const styles = StyleSheet.create({
     height: 52,
     justifyContent: 'center',
     backgroundColor: 'rgb(36,106,116)',
-    marginTop: 55,
+    marginTop: 20,
     borderRadius: 11,
     marginBottom: 12,
     borderTopColor: '1px solid rgba(19,43,46,0.83)',
@@ -92,7 +94,8 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     marginRight: 10,
-    marginBottom: 2
+    marginBottom: 2,
+    opacity: 1
   }
 });
 export default HomePage;
