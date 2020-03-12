@@ -13,7 +13,7 @@ import {
 import Icon from 'react-native-vector-icons/Ionicons';
 import logo from 'app/assets/images/imgMspLogo.png';
 import deliveryboyimage from 'app/assets/images/illoDeliveryBoy.png';
-import homepage from 'app/assets/images/background.png';
+import background from 'app/assets/images/background.png';
 
 export default class LoginScreen extends Component {
   constructor(props) {
@@ -67,7 +67,7 @@ export default class LoginScreen extends Component {
 
   render() {
     return (
-      <ImageBackground source={homepage} style={styles.backgroundContainer}>
+      <ImageBackground source={background} style={styles.backgroundContainer}>
         <View>
           <Image source={logo} style={styles.logoContainer}></Image>
         </View>

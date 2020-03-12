@@ -87,37 +87,181 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                 }
               >
                 <View
+                  accessibilityIgnoresInvertColors={true}
                   style={
-                    Array [
-                      Object {
-                        "display": "flex",
-                        "flexBasis": 0,
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                      },
-                      Object {
-                        "alignItems": "center",
-                        "backgroundColor": "#fcedda",
-                        "display": "flex",
-                        "justifyContent": "center",
-                      },
-                    ]
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                      "flexDirection": "column",
+                      "height": null,
+                      "justifyContent": "center",
+                      "width": null,
+                    }
                   }
-                  testID="splash-screen"
                 >
                   <Image
-                    resizeMode="contain"
+                    source={
+                      Object {
+                        "testUri": "../../../app/assets/images/homepage.png",
+                      }
+                    }
                     style={
                       Array [
                         Object {
-                          "alignItems": "center",
-                          "display": "flex",
-                          "justifyContent": "center",
-                          "width": 200,
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
                         },
+                        Object {
+                          "height": null,
+                          "width": null,
+                        },
+                        undefined,
                       ]
                     }
                   />
+                  <View>
+                    <Image
+                      source={
+                        Object {
+                          "testUri": "../../../app/assets/images/imgMspLogo.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "height": 51,
+                          "justifyContent": "flex-start",
+                          "marginBottom": 98,
+                          "marginLeft": 92,
+                          "marginRight": 88,
+                          "marginTop": 48,
+                          "width": 173,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "height": 255,
+                        "width": 309,
+                      }
+                    }
+                  >
+                    <Image
+                      source={
+                        Object {
+                          "testUri": "../../../app/assets/images/illoScanBag.png",
+                        }
+                      }
+                    />
+                  </View>
+                  <View>
+                    <TouchableOpacity
+                      activeOpacity={0.2}
+                      style={
+                        Object {
+                          "backgroundColor": "rgb(36,106,116)",
+                          "borderRadius": 11,
+                          "height": 52,
+                          "justifyContent": "center",
+                          "marginTop": 29,
+                          "width": 310,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <Image
+                          source={
+                            Object {
+                              "testUri": "../../../app/assets/images/bitmap.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 25,
+                              "marginBottom": 2,
+                              "marginRight": 10,
+                              "width": 25,
+                            }
+                          }
+                        />
+                        <Text
+                          style={
+                            Object {
+                              "color": "rgb(255,255,255)",
+                              "fontSize": 18,
+                              "textAlign": "center",
+                            }
+                          }
+                        >
+                          Scan for delivery
+                        </Text>
+                      </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      activeOpacity={0.2}
+                      style={
+                        Object {
+                          "backgroundColor": "rgb(36,106,116)",
+                          "borderRadius": 11,
+                          "borderTopColor": "1px solid rgba(19,43,46,0.83)",
+                          "height": 52,
+                          "justifyContent": "center",
+                          "marginBottom": 12,
+                          "marginTop": 55,
+                          "width": 310,
+                          "zIndex": 100,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <Image
+                          source={
+                            Object {
+                              "testUri": "../../../app/assets/images/bitmap.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 25,
+                              "marginBottom": 2,
+                              "marginRight": 10,
+                              "width": 25,
+                            }
+                          }
+                        />
+                        <Text
+                          style={
+                            Object {
+                              "color": "rgb(255,255,255)",
+                              "fontSize": 18,
+                              "textAlign": "center",
+                            }
+                          }
+                        >
+                          Scan for pickup
+                        </Text>
+                      </View>
+                    </TouchableOpacity>
+                  </View>
                 </View>
               </View>
             </View>
