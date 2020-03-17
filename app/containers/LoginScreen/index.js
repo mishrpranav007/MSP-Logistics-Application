@@ -62,8 +62,6 @@ export default class LoginScreen extends Component {
 
   handleSubmit = () => {
     if (this.validateField()) {
-      // this.props.navigation.navigate('Home Page');
-      console.log(this.props);
       alert('Successfully login');
     }
   };
