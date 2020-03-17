@@ -87,42 +87,241 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                 }
               >
                 <View
+                  accessibilityIgnoresInvertColors={true}
                   style={
-                    Array [
-                      Object {
-                        "display": "flex",
-                        "flexBasis": 0,
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                      },
-                      Object {
-                        "alignItems": "center",
-                        "backgroundColor": "#fcedda",
-                        "display": "flex",
-                        "justifyContent": "center",
-                      },
-                    ]
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                      "flexDirection": "column",
+                      "height": null,
+                      "justifyContent": "center",
+                      "width": null,
+                    }
                   }
-                  testID="splash-screen"
                 >
                   <Image
-                    resizeMode="contain"
                     source={
                       Object {
-                        "testUri": "../../../app/assets/images/wednesday-logo.png",
+                        "testUri": "../../../app/assets/images/loginbg.jpg",
                       }
                     }
                     style={
                       Array [
                         Object {
-                          "alignItems": "center",
-                          "display": "flex",
-                          "justifyContent": "center",
-                          "width": 200,
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
                         },
+                        Object {
+                          "height": null,
+                          "width": null,
+                        },
+                        undefined,
                       ]
                     }
                   />
+                  <TouchableWithoutFeedback>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flex": 1,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "bottom": 0,
+                          }
+                        }
+                      >
+                        <View>
+                          <Image
+                            source={
+                              Object {
+                                "testUri": "../../../app/assets/images/imgMspLogo.png",
+                              }
+                            }
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "height": 51,
+                                "justifyContent": "flex-start",
+                                "marginBottom": 16,
+                                "marginLeft": 92,
+                                "marginRight": 88,
+                                "marginTop": 45,
+                                "width": 192,
+                              }
+                            }
+                          />
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "alignItems": "flex-end",
+                              "height": 256,
+                              "justifyContent": "center",
+                              "marginBottom": 38,
+                              "marginLeft": 93,
+                              "marginRight": 0,
+                              "marginTop": 13,
+                              "width": 249,
+                            }
+                          }
+                        >
+                          <Image
+                            source={
+                              Object {
+                                "testUri": "../../../app/assets/images/illoDeliveryBoy.png",
+                              }
+                            }
+                          />
+                        </View>
+                        <View>
+                          <Text
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "rgba(255,255,255,0.7)",
+                                  "fontSize": 22,
+                                },
+                                Object {
+                                  "bottom": 0,
+                                  "justifyContent": "space-between",
+                                  "left": 0,
+                                  "marginBottom": 0,
+                                  "marginLeft": 35,
+                                  "opacity": 0.94,
+                                  "position": "absolute",
+                                },
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                Object {},
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                          <TextInput
+                            allowFontScaling={true}
+                            placeholder="Enter your email address"
+                            placeholderTextColor="rgb(255,255,255)"
+                            rejectResponderTermination={true}
+                            returnKeyType="next"
+                            style={
+                              Object {
+                                "backgroundColor": "transparent",
+                                "borderBottomColor": "white",
+                                "borderBottomWidth": 1,
+                                "fontSize": 16,
+                                "marginLeft": 39,
+                                "marginTop": 29,
+                                "opacity": 0.94,
+                                "paddingLeft": 26,
+                                "position": "relative",
+                                "width": 270,
+                                "zIndex": 30,
+                              }
+                            }
+                            underlineColorAndroid="transparent"
+                          />
+                        </View>
+                        <View
+                          behavior="position"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "rgba(255,255,255,0.7)",
+                                  "fontSize": 22,
+                                },
+                                Object {
+                                  "bottom": 0,
+                                  "justifyContent": "space-between",
+                                  "left": 0,
+                                  "marginBottom": 0,
+                                  "marginLeft": 35,
+                                  "opacity": 0.94,
+                                  "position": "absolute",
+                                },
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                Object {},
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                          <TextInput
+                            allowFontScaling={true}
+                            placeholder="Enter password"
+                            placeholderTextColor="rgb(255,255,255)"
+                            rejectResponderTermination={true}
+                            returnKeyType="go"
+                            style={
+                              Object {
+                                "backgroundColor": "transparent",
+                                "borderBottomColor": "white",
+                                "borderBottomWidth": 1,
+                                "fontSize": 16,
+                                "marginLeft": 39,
+                                "marginTop": 29,
+                                "opacity": 0.94,
+                                "paddingLeft": 26,
+                                "position": "relative",
+                                "width": 270,
+                                "zIndex": 30,
+                              }
+                            }
+                            underlineColorAndroid="transparent"
+                          />
+                        </View>
+                        <TouchableOpacity
+                          activeOpacity={0.2}
+                          style={
+                            Object {
+                              "backgroundColor": "rgb(36,106,116)",
+                              "borderRadius": 11,
+                              "borderTopColor": "1px solid rgba(19,43,46,0.83)",
+                              "height": 48,
+                              "justifyContent": "center",
+                              "marginBottom": 52,
+                              "marginLeft": 30,
+                              "marginTop": 65,
+                              "width": 310,
+                              "zIndex": 100,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "rgb(255,255,255)",
+                                "fontSize": 16,
+                                "textAlign": "center",
+                              }
+                            }
+                          >
+                            Login
+                          </Text>
+                        </TouchableOpacity>
+                      </View>
+                    </View>
+                  </TouchableWithoutFeedback>
                 </View>
               </View>
             </View>
