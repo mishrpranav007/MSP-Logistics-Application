@@ -10,7 +10,6 @@ import {
   Text,
   Platform
 } from 'react-native';
-
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import logo from 'app/assets/images/imgMspLogo.png';
 import deliveryboyimage from 'app/assets/images/illoDeliveryBoy.png';
@@ -94,6 +93,9 @@ export default class LoginScreen extends Component {
                 style={styles.input}
                 placeholder="Enter your email address"
                 returnKeyType="next"
+                onSubmitEditing={() => {
+                  this.secondTextInput.focus();
+                }}
                 placeholderTextColor="rgb(255,255,255)"
                 onChangeText={value => this.setState({ email: value })}
               />
@@ -106,6 +108,9 @@ export default class LoginScreen extends Component {
                 style={styles.inputIcon}
               />
               <TextInput
+                ref={input => {
+                  this.secondTextInput = input;
+                }}
                 style={styles.input}
                 placeholder="Enter password"
                 returnKeyType="go"
@@ -140,9 +145,9 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    width: 192,
-    height: 51,
-    marginTop: 45,
+    width: 198,
+    height: 53,
+    marginTop: 50,
     marginLeft: 92,
     marginRight: 88,
     justifyContent: 'flex-start',
@@ -152,7 +157,7 @@ const styles = StyleSheet.create({
   deliveryboyimagecontainer: {
     width: 249,
     height: 256,
-    marginLeft: 93,
+    marginLeft: 123,
     marginTop: 13,
     marginBottom: 38,
     marginRight: 0,
@@ -167,11 +172,13 @@ const styles = StyleSheet.create({
     borderBottomColor: 'white',
     marginTop: 29,
     position: 'relative',
-    marginLeft: 39,
+    marginLeft: 60,
     paddingLeft: 26,
-    fontSize: 16,
+
     zIndex: 30,
-    opacity: 0.94
+    opacity: 0.94,
+    color: 'rgb(255,255,255)',
+    fontSize: 14
   },
   btnLogin: {
     width: 310,
@@ -179,7 +186,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'rgb(36,106,116)',
     marginTop: 65,
-    marginLeft: 30,
+    marginLeft: 37,
     borderRadius: 11,
     marginBottom: 52,
     borderTopColor: '1px solid rgba(19,43,46,0.83)',
@@ -187,14 +194,14 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'rgb(255,255,255)',
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'center'
   },
   inputIcon: {
     position: 'absolute',
     left: 0,
     bottom: 0,
-    marginLeft: 35,
+    marginLeft: 55,
     marginBottom: 0,
     justifyContent: 'space-between',
     opacity: 0.94

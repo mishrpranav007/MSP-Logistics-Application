@@ -149,13 +149,13 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                             style={
                               Object {
                                 "alignItems": "center",
-                                "height": 51,
+                                "height": 53,
                                 "justifyContent": "flex-start",
                                 "marginBottom": 16,
                                 "marginLeft": 92,
                                 "marginRight": 88,
-                                "marginTop": 45,
-                                "width": 192,
+                                "marginTop": 50,
+                                "width": 198,
                               }
                             }
                           />
@@ -167,7 +167,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                               "height": 256,
                               "justifyContent": "center",
                               "marginBottom": 38,
-                              "marginLeft": 93,
+                              "marginLeft": 123,
                               "marginRight": 0,
                               "marginTop": 13,
                               "width": 249,
@@ -196,7 +196,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                                   "justifyContent": "space-between",
                                   "left": 0,
                                   "marginBottom": 0,
-                                  "marginLeft": 35,
+                                  "marginLeft": 55,
                                   "opacity": 0.94,
                                   "position": "absolute",
                                 },
@@ -222,8 +222,9 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                                 "backgroundColor": "transparent",
                                 "borderBottomColor": "white",
                                 "borderBottomWidth": 1,
-                                "fontSize": 16,
-                                "marginLeft": 39,
+                                "color": "rgb(255,255,255)",
+                                "fontSize": 14,
+                                "marginLeft": 60,
                                 "marginTop": 29,
                                 "opacity": 0.94,
                                 "paddingLeft": 26,
@@ -251,7 +252,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                                   "justifyContent": "space-between",
                                   "left": 0,
                                   "marginBottom": 0,
-                                  "marginLeft": 35,
+                                  "marginLeft": 55,
                                   "opacity": 0.94,
                                   "position": "absolute",
                                 },
@@ -277,8 +278,9 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                                 "backgroundColor": "transparent",
                                 "borderBottomColor": "white",
                                 "borderBottomWidth": 1,
-                                "fontSize": 16,
-                                "marginLeft": 39,
+                                "color": "rgb(255,255,255)",
+                                "fontSize": 14,
+                                "marginLeft": 60,
                                 "marginTop": 29,
                                 "opacity": 0.94,
                                 "paddingLeft": 26,
@@ -300,7 +302,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                               "height": 48,
                               "justifyContent": "center",
                               "marginBottom": 52,
-                              "marginLeft": 30,
+                              "marginLeft": 37,
                               "marginTop": 65,
                               "width": 310,
                               "zIndex": 100,
@@ -311,7 +313,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                             style={
                               Object {
                                 "color": "rgb(255,255,255)",
-                                "fontSize": 16,
+                                "fontSize": 18,
                                 "textAlign": "center",
                               }
                             }

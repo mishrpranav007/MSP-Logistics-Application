@@ -42,6 +42,7 @@
     "axios-mock-adapter": "^1.17.0",
     "babel-plugin-react-intl": "3.0.1",
     "babel-preset-react-native": "^4.0.1",
+    "formik": "^2.1.4",
     "global": "^4.4.0",
     "immer": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
@@ -58,6 +59,8 @@
     "react-native": "0.60.6",
     "react-native-camera": "^3.19.2",
     "react-native-cli": "^2.0.1",
+    "react-native-elements": "^1.2.7",
+    "react-native-formik": "^1.7.8",
     "react-native-gesture-handler": "^1.6.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.1",
     "react-native-reanimated": "^1.7.0",
@@ -73,7 +76,8 @@
     "reduxsauce": "^1.0.1",
     "reselect": "^4.0.0",
     "styled-components": "^4.4.0",
-    "yarn": "^1.22.4"
+    "yarn": "^1.22.4",
+    "yup": "^0.28.3"
   },
   "devDependencies": {
     "@babel/cli": "7.4.3",

@@ -64,8 +64,6 @@ PODS:
     - React
   - react-native-camera/RN (3.19.2):
     - React
-  - react-native-safe-area-context (0.7.3):
-    - React
   - React-RCTActionSheet (0.60.6):
     - React-Core (= 0.60.6)
   - React-RCTAnimation (0.60.6):
@@ -91,11 +89,7 @@ PODS:
     - React-Core (= 0.60.6)
   - RNCAsyncStorage (1.8.1):
     - React
-  - RNCMaskedView (0.1.7):
-    - React
   - RNGestureHandler (1.6.0):
-    - React
-  - RNPermissions (2.0.10):
     - React
   - RNReanimated (1.7.0):
     - React
@@ -117,7 +111,6 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-camera (from `../node_modules/react-native-camera`)
-  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -129,9 +122,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
-  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -164,8 +155,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-camera:
     :path: "../node_modules/react-native-camera"
-  react-native-safe-area-context:
-    :path: "../node_modules/react-native-safe-area-context"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -188,12 +177,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
-  RNCMaskedView:
-    :path: "../node_modules/@react-native-community/masked-view"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
-  RNPermissions:
-    :path: "../node_modules/react-native-permissions"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -216,7 +201,6 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 2279e559b921d02dfc6253ebef3dcb3a9dc6c07e
   React-jsinspector: a58b86545a0185f69768e78ac96ca9fe43fa3694
   react-native-camera: 7c6cf8ddc64405e1aff0a26d1b487378597f9fed
-  react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
   React-RCTActionSheet: 49f6a67a7efa6688f637296383d453b97ef13645
   React-RCTAnimation: e8047438b2927ebbe630bbf600c7309374075df3
   React-RCTBlob: 2c4b28daca5b3e6e356706d8e0c7436a0e8ef492
@@ -228,9 +212,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 7655d72dfb919dd6d8e135ca108a5a2bd9fcd7b4
   React-RCTWebSocket: 7cd2c8d0f8ddd680dc76404defba7ab1f56b83af
   RNCAsyncStorage: e0dd7c8a36543b4ef84969acd9f8aceba3a92dc2
-  RNCMaskedView: 76c40a1d41c3e2535df09246a2b5487f04de0814
   RNGestureHandler: dde546180bf24af0b5f737c8ad04b6f3fa51609a
-  RNPermissions: 1008d3511fee0e25739cf81c4af0d1b2248f1053
   RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
   RNScreens: 03bf608b92ac0acf323f47d8f5b63a8f829340c8
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
