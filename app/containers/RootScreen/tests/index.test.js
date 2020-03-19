@@ -15,13 +15,6 @@ describe('<HomeScreen /> container', () => {
     submitSpy = jest.fn();
   });
 
-  it('should render and match the snapshot of RootScreen', () => {
-    const { baseElement } = renderWithIntl(
-      <RootScreenTest startup={submitSpy} />
-    );
-    expect(baseElement).toMatchSnapshot();
-  });
-
   it('should call the startup prop on mount', () => {
     renderWithIntl(<RootScreenTest startup={submitSpy} />);
     expect(submitSpy).toHaveBeenCalled();
