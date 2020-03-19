@@ -15,7 +15,7 @@ describe('<HomeScreen /> container', () => {
     submitSpy = jest.fn();
   });
 
-  it('should render and match the snapshot', () => {
+  it('should render and match the snapshot of RootScreen', () => {
     const { baseElement } = renderWithIntl(
       <RootScreenTest startup={submitSpy} />
     );
