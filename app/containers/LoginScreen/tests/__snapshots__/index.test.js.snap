@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginScreen /> should render and match the snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityIgnoresInvertColors={true}
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/loginbg.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+      />
+      <TouchableWithoutFeedback>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "bottom": 0,
+              }
+            }
+          >
+            <View>
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../app/assets/images/imgMspLogo.png",
+                  }
+                }
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "height": 83.29828571428571,
+                    "justifyContent": "flex-start",
+                    "marginBottom": 25.142857142857142,
+                    "marginLeft": 144.57142857142856,
+                    "marginRight": 138.28571428571428,
+                    "marginTop": 78.57142857142857,
+                    "width": 311.1428571428571,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-end",
+                  "height": 402.2857142857143,
+                  "justifyContent": "center",
+                  "marginBottom": 59.714285714285715,
+                  "marginLeft": 193.09714285714284,
+                  "marginTop": 20.441142857142857,
+                  "width": 391.2982857142857,
+                }
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../app/assets/images/illoDeliveryBoy.png",
+                  }
+                }
+              />
+            </View>
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "rgba(255,255,255,0.7)",
+                      "fontSize": 34.57142857142857,
+                    },
+                    Object {
+                      "bottom": 0,
+                      "justifyContent": "space-between",
+                      "left": 0,
+                      "marginLeft": 86.44114285714286,
+                      "opacity": 0.94,
+                      "position": "absolute",
+                    },
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+              <TextInput
+                allowFontScaling={true}
+                placeholder="Enter your email address"
+                placeholderTextColor="rgb(255,255,255)"
+                rejectResponderTermination={true}
+                returnKeyType="next"
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderBottomColor": "white",
+                    "borderBottomWidth": 1,
+                    "color": "rgb(255,255,255)",
+                    "fontSize": 22,
+                    "marginLeft": 94.28571428571428,
+                    "marginTop": 45.584,
+                    "opacity": 0.94,
+                    "paddingLeft": 40.85714285714286,
+                    "position": "relative",
+                    "width": 424.2857142857143,
+                    "zIndex": 30,
+                  }
+                }
+                testID="log-in-screen-text-input"
+                underlineColorAndroid="transparent"
+              />
+            </View>
+            <View
+              behavior="position"
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "rgba(255,255,255,0.7)",
+                      "fontSize": 34.57142857142857,
+                    },
+                    Object {
+                      "bottom": 0,
+                      "justifyContent": "space-between",
+                      "left": 0,
+                      "marginLeft": 86.44114285714286,
+                      "opacity": 0.94,
+                      "position": "absolute",
+                    },
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+              <TextInput
+                allowFontScaling={true}
+                placeholder="Enter password"
+                placeholderTextColor="rgb(255,255,255)"
+                rejectResponderTermination={true}
+                returnKeyType="go"
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderBottomColor": "white",
+                    "borderBottomWidth": 1,
+                    "color": "rgb(255,255,255)",
+                    "fontSize": 22,
+                    "marginLeft": 94.28571428571428,
+                    "marginTop": 45.584,
+                    "opacity": 0.94,
+                    "paddingLeft": 40.85714285714286,
+                    "position": "relative",
+                    "width": 424.2857142857143,
+                    "zIndex": 30,
+                  }
+                }
+                testID="log-in-screen-text-input"
+                underlineColorAndroid="transparent"
+              />
+            </View>
+            <TouchableOpacity
+              activeOpacity={0.2}
+              style={
+                Object {
+                  "backgroundColor": "rgb(36,106,116)",
+                  "borderRadius": 17.29828571428571,
+                  "borderTopColor": "1px solid rgba(19,43,46,0.83)",
+                  "height": 75.42857142857143,
+                  "justifyContent": "center",
+                  "marginBottom": 81.71428571428572,
+                  "marginLeft": 58.15542857142857,
+                  "marginTop": 102.15542857142856,
+                  "width": 487.1428571428571,
+                  "zIndex": 100,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "rgb(255,255,255)",
+                    "fontSize": 28.285714285714285,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Login
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  </View>
+</View>
+`;

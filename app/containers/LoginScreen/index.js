@@ -10,16 +10,21 @@ import {
   Text,
   Platform
 } from 'react-native';
+import { injectIntl } from 'react-intl';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import logo from 'app/assets/images/imgMspLogo.png';
 import deliveryboyimage from 'app/assets/images/illoDeliveryBoy.png';
 import homepage from 'app/assets/images/loginbg.jpg';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
-export default class LoginScreen extends Component {
+
+import PropTypes from 'prop-types';
+import Style from '../../style/index';
+
+class LoginScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: ' ',
+      email: '',
       password: ''
     };
   }
@@ -78,43 +83,49 @@ export default class LoginScreen extends Component {
               <Image source={logo} style={styles.logoContainer}></Image>
             </View>
 
-            <View style={styles.deliveryboyimagecontainer}>
+            <View style={styles.deliveryboyImageContainer}>
               <Image source={deliveryboyimage}></Image>
             </View>
 
             <View>
               <Icon
                 name="person-outline"
-                size={22}
-                color="rgba(255,255,255,0.7)"
+                size={Style.em(1.375)}
+                color={Style.ICON_COLOR}
                 style={styles.inputIcon}
               />
               <TextInput
+                testID="log-in-screen-text-input"
                 style={styles.input}
-                placeholder="Enter your email address"
+                placeholder={this.props.intl.formatMessage({
+                  id: 'placeholder_email'
+                })}
                 returnKeyType="next"
                 onSubmitEditing={() => {
                   this.secondTextInput.focus();
                 }}
-                placeholderTextColor="rgb(255,255,255)"
+                placeholderTextColor={Style.WHITE_COLOR}
                 onChangeText={value => this.setState({ email: value })}
               />
             </View>
             <View behavior="position">
               <Icon
                 name="lock-outline"
-                size={22}
-                color="rgba(255,255,255,0.7)"
+                size={Style.em(1.375)}
+                color={Style.ICON_COLOR}
                 style={styles.inputIcon}
               />
               <TextInput
+                testID="log-in-screen-text-input"
                 ref={input => {
                   this.secondTextInput = input;
                 }}
                 style={styles.input}
-                placeholder="Enter password"
+                placeholder={this.props.intl.formatMessage({
+                  id: 'placeholder_password'
+                })}
                 returnKeyType="go"
-                placeholderTextColor="rgb(255,255,255)"
+                placeholderTextColor={Style.WHITE_COLOR}
                 onChangeText={value => this.setState({ password: value })}
               />
             </View>
@@ -134,8 +145,6 @@ const styles = StyleSheet.create({
   backgroundContainer: {
     flex: 1,
     justifyContent: 'center',
-    width: null,
-    height: null,
     alignItems: 'center',
     flexDirection: 'column'
   },
@@ -145,65 +154,67 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    width: 198,
-    height: 53,
-    marginTop: 50,
-    marginLeft: 92,
-    marginRight: 88,
+    width: Style.em(12.375),
+    height: Style.em(3.313),
+    marginTop: Style.em(3.125),
+    marginLeft: Style.em(5.75),
+    marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginBottom: 16
+    marginBottom: Style.em(1)
   },
-  deliveryboyimagecontainer: {
-    width: 249,
-    height: 256,
-    marginLeft: 123,
-    marginTop: 13,
-    marginBottom: 38,
-    marginRight: 0,
+  deliveryboyImageContainer: {
+    width: Style.em(15.563),
+    height: Style.em(16),
+    marginLeft: Style.em(7.68),
+    marginTop: Style.em(0.813),
+    marginBottom: Style.em(2.375),
     justifyContent: 'center',
     alignItems: 'flex-end'
   },
 
   input: {
-    width: 270,
+    width: Style.em(16.875),
     backgroundColor: 'transparent',
     borderBottomWidth: 1,
     borderBottomColor: 'white',
-    marginTop: 29,
+    marginTop: Style.em(1.813),
     position: 'relative',
-    marginLeft: 60,
-    paddingLeft: 26,
-
+    marginLeft: Style.em(3.75),
+    paddingLeft: Style.em(1.625),
     zIndex: 30,
     opacity: 0.94,
-    color: 'rgb(255,255,255)',
-    fontSize: 14
+    color: Style.WHITE_COLOR,
+    fontSize: Style.em(0.875)
   },
   btnLogin: {
-    width: 310,
-    height: 48,
+    width: Style.em(19.375),
+    height: Style.em(3),
     justifyContent: 'center',
-    backgroundColor: 'rgb(36,106,116)',
-    marginTop: 65,
-    marginLeft: 37,
-    borderRadius: 11,
-    marginBottom: 52,
+    backgroundColor: Style.PRIMARY_COLOR,
+    marginTop: Style.em(4.063),
+    marginLeft: Style.em(2.313),
+    borderRadius: Style.em(0.688),
+    marginBottom: Style.em(3.25),
     borderTopColor: '1px solid rgba(19,43,46,0.83)',
     zIndex: 100
   },
   text: {
-    color: 'rgb(255,255,255)',
-    fontSize: 18,
+    color: Style.WHITE_COLOR,
+    fontSize: Style.em(1.125),
     textAlign: 'center'
   },
   inputIcon: {
     position: 'absolute',
     left: 0,
     bottom: 0,
-    marginLeft: 55,
-    marginBottom: 0,
+    marginLeft: Style.em(3.438),
     justifyContent: 'space-between',
     opacity: 0.94
   }
 });
+
+LoginScreen.propTypes = {
+  intl: PropTypes.object
+};
+export default injectIntl(LoginScreen);
