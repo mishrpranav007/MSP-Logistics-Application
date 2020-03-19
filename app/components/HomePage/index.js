@@ -11,30 +11,31 @@ import homepage from 'app/assets/images/homepage.png';
 import logo from 'app/assets/images/imgMspLogo.png';
 import scanimage from 'app/assets/images/illoScanBag.png';
 import bitmapimage from 'app/assets/images/bitmap.png';
+import Style from '../../style/index';
 const HomePage = () => (
   <ImageBackground
     testID="home-page"
     source={homepage}
     style={styles.backgroundContainer}
   >
-    <View>
+    <View style={styles.logoView}>
       <Image source={logo} style={styles.logoContainer}></Image>
     </View>
-    <View style={styles.scanimagecontainer}>
+    <View style={styles.scanimageContainer}>
       <Image source={scanimage}></Image>
     </View>
 
     <View>
-      <TouchableOpacity style={styles.deliverybtnLogin}>
-        <View testID="home-page-view" style={styles.bitimagecontainer}>
-          <Image source={bitmapimage} style={styles.bitmapimageIcon}></Image>
+      <TouchableOpacity style={styles.deliveryButtonLogin}>
+        <View testID="home-page-view" style={styles.bitImageContainer}>
+          <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for delivery</Text>
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.pickupbtnLogin}>
-        <View testID="home-page-view" style={styles.bitimagecontainer}>
-          <Image source={bitmapimage} style={styles.bitmapimageIcon}></Image>
+      <TouchableOpacity style={styles.pickupButtonLogin}>
+        <View testID="home-page-view" style={styles.bitImageContainer}>
+          <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for pickup</Text>
         </View>
       </TouchableOpacity>
@@ -45,60 +46,59 @@ const styles = StyleSheet.create({
   backgroundContainer: {
     flex: 1,
     justifyContent: 'center',
-    width: null,
-    height: null,
     alignItems: 'center',
     flexDirection: 'column'
   },
+
   logoContainer: {
-    width: 173,
-    height: 51,
-    marginTop: 0,
-    marginLeft: 92,
-    marginRight: 88,
+    width: Style.em(12),
+    height: Style.em(3),
+    marginTop: Style.em(0.5),
+    marginLeft: Style.em(5.75),
+    marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginBottom: 88
+    marginBottom: Style.em(5.5)
   },
-  scanimagecontainer: {
-    width: 309,
-    height: 255,
-    marginBottom: 8,
-    marginTop: 8
+  scanimageContainer: {
+    width: Style.em(19.313),
+    height: Style.em(15.938),
+    marginBottom: Style.em(0.5),
+    marginTop: Style.em(0.5)
   },
-  deliverybtnLogin: {
-    width: 310,
-    height: 52,
-    marginTop: 30,
+  deliveryButtonLogin: {
+    width: Style.em(18.5),
+    height: Style.em(3.25),
+    marginTop: Style.em(1.875),
     justifyContent: 'center',
-    backgroundColor: 'rgb(36,106,116)',
+    backgroundColor: Style.PRIMARY_COLOR,
     borderRadius: 11
   },
-  pickupbtnLogin: {
-    width: 310,
-    height: 52,
+  pickupButtonLogin: {
+    width: Style.em(18.5),
+    height: Style.em(3.25),
     justifyContent: 'center',
-    backgroundColor: 'rgb(36,106,116)',
-    marginTop: 20,
-    borderRadius: 11,
-    marginBottom: 12,
+    backgroundColor: Style.PRIMARY_COLOR,
+    marginTop: Style.em(1.25),
+    borderRadius: Style.em(0.69),
+    marginBottom: Style.em(0.75),
     borderTopColor: '1px solid rgba(19,43,46,0.83)',
     zIndex: 100
   },
   text: {
-    color: 'rgb(255,255,255)',
-    fontSize: 18,
+    color: Style.WHITE_COLOR,
+    fontSize: Style.em(1),
     textAlign: 'center'
   },
-  bitimagecontainer: {
+  bitImageContainer: {
     flexDirection: 'row',
     justifyContent: 'center'
   },
-  bitmapimageIcon: {
-    width: 25,
-    height: 25,
-    marginRight: 10,
-    marginBottom: 2,
+  bitmapImageIcon: {
+    width: Style.em(1.234),
+    height: Style.em(1.114),
+    marginRight: Style.em(0.625),
+    marginBottom: Style.em(0.125),
     opacity: 1
   }
 });

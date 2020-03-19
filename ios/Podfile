@@ -27,6 +27,8 @@ target 'ReactNativeTemplate' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
   target 'ReactNativeTemplateTests' do
     inherit! :search_paths
     # Pods for testing
