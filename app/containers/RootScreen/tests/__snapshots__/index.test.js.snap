@@ -180,144 +180,152 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                           />
                         </View>
                         <View>
-                          <Text
-                            allowFontScaling={false}
-                            style={
-                              Array [
+                          <View>
+                            <Text
+                              allowFontScaling={false}
+                              style={
+                                Array [
+                                  Object {
+                                    "color": "rgba(255,255,255,0.7)",
+                                    "fontSize": 34.57142857142857,
+                                  },
+                                  Object {
+                                    "bottom": 0,
+                                    "justifyContent": "space-between",
+                                    "left": 0,
+                                    "marginLeft": 86.44114285714286,
+                                    "opacity": 0.94,
+                                    "position": "absolute",
+                                  },
+                                  Object {
+                                    "fontFamily": "Material Icons",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                  Object {},
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                            <TextInput
+                              allowFontScaling={true}
+                              placeholder="Enter your email address"
+                              placeholderTextColor="rgb(255,255,255)"
+                              rejectResponderTermination={true}
+                              returnKeyType="next"
+                              style={
                                 Object {
-                                  "color": "rgba(255,255,255,0.7)",
-                                  "fontSize": 34.57142857142857,
-                                },
-                                Object {
-                                  "bottom": 0,
-                                  "justifyContent": "space-between",
-                                  "left": 0,
-                                  "marginLeft": 86.44114285714286,
+                                  "backgroundColor": "transparent",
+                                  "borderBottomColor": "white",
+                                  "borderBottomWidth": 1,
+                                  "color": "rgb(255,255,255)",
+                                  "fontSize": 22,
+                                  "marginLeft": 94.28571428571428,
+                                  "marginTop": 45.584,
                                   "opacity": 0.94,
-                                  "position": "absolute",
-                                },
-                                Object {
-                                  "fontFamily": "Material Icons",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                                Object {},
-                              ]
-                            }
-                          >
-                            
-                          </Text>
-                          <TextInput
-                            allowFontScaling={true}
-                            placeholder="Enter your email address"
-                            placeholderTextColor="rgb(255,255,255)"
-                            rejectResponderTermination={true}
-                            returnKeyType="next"
-                            style={
-                              Object {
-                                "backgroundColor": "transparent",
-                                "borderBottomColor": "white",
-                                "borderBottomWidth": 1,
-                                "color": "rgb(255,255,255)",
-                                "fontSize": 22,
-                                "marginLeft": 94.28571428571428,
-                                "marginTop": 45.584,
-                                "opacity": 0.94,
-                                "paddingLeft": 40.85714285714286,
-                                "position": "relative",
-                                "width": 424.2857142857143,
-                                "zIndex": 30,
+                                  "paddingBottom": null,
+                                  "paddingLeft": 40.85714285714286,
+                                  "position": "relative",
+                                  "width": 424.2857142857143,
+                                  "zIndex": 30,
+                                }
                               }
-                            }
-                            testID="log-in-screen-text-input"
-                            underlineColorAndroid="transparent"
-                          />
-                        </View>
-                        <View
-                          behavior="position"
-                        >
-                          <Text
-                            allowFontScaling={false}
-                            style={
-                              Array [
+                              testID="log-in-screen-text-input"
+                              underlineColorAndroid="transparent"
+                              value=""
+                            />
+                          </View>
+                          <View />
+                          <View
+                            behavior="position"
+                          >
+                            <Text
+                              allowFontScaling={false}
+                              style={
+                                Array [
+                                  Object {
+                                    "color": "rgba(255,255,255,0.7)",
+                                    "fontSize": 34.57142857142857,
+                                  },
+                                  Object {
+                                    "bottom": 0,
+                                    "justifyContent": "space-between",
+                                    "left": 0,
+                                    "marginLeft": 86.44114285714286,
+                                    "opacity": 0.94,
+                                    "position": "absolute",
+                                  },
+                                  Object {
+                                    "fontFamily": "Material Icons",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                  Object {},
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                            <TextInput
+                              allowFontScaling={true}
+                              placeholder="Enter password"
+                              placeholderTextColor="rgb(255,255,255)"
+                              rejectResponderTermination={true}
+                              returnKeyType="go"
+                              style={
                                 Object {
-                                  "color": "rgba(255,255,255,0.7)",
-                                  "fontSize": 34.57142857142857,
-                                },
-                                Object {
-                                  "bottom": 0,
-                                  "justifyContent": "space-between",
-                                  "left": 0,
-                                  "marginLeft": 86.44114285714286,
+                                  "backgroundColor": "transparent",
+                                  "borderBottomColor": "white",
+                                  "borderBottomWidth": 1,
+                                  "color": "rgb(255,255,255)",
+                                  "fontSize": 22,
+                                  "marginLeft": 94.28571428571428,
+                                  "marginTop": 45.584,
                                   "opacity": 0.94,
-                                  "position": "absolute",
-                                },
+                                  "paddingBottom": null,
+                                  "paddingLeft": 40.85714285714286,
+                                  "position": "relative",
+                                  "width": 424.2857142857143,
+                                  "zIndex": 30,
+                                }
+                              }
+                              testID="log-in-screen-text-input"
+                              underlineColorAndroid="transparent"
+                              value=""
+                            />
+                          </View>
+                          <View />
+                          <TouchableOpacity
+                            activeOpacity={0.2}
+                            style={
+                              Object {
+                                "backgroundColor": "rgb(36,106,116)",
+                                "borderRadius": 17.29828571428571,
+                                "borderTopColor": "1px solid rgba(19,43,46,0.83)",
+                                "height": 75.42857142857143,
+                                "justifyContent": "center",
+                                "marginBottom": 81.71428571428572,
+                                "marginLeft": 58.15542857142857,
+                                "marginTop": 77.01257142857143,
+                                "width": 487.1428571428571,
+                                "zIndex": 100,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
                                 Object {
-                                  "fontFamily": "Material Icons",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                                Object {},
-                              ]
-                            }
-                          >
-                            
-                          </Text>
-                          <TextInput
-                            allowFontScaling={true}
-                            placeholder="Enter password"
-                            placeholderTextColor="rgb(255,255,255)"
-                            rejectResponderTermination={true}
-                            returnKeyType="go"
-                            style={
-                              Object {
-                                "backgroundColor": "transparent",
-                                "borderBottomColor": "white",
-                                "borderBottomWidth": 1,
-                                "color": "rgb(255,255,255)",
-                                "fontSize": 22,
-                                "marginLeft": 94.28571428571428,
-                                "marginTop": 45.584,
-                                "opacity": 0.94,
-                                "paddingLeft": 40.85714285714286,
-                                "position": "relative",
-                                "width": 424.2857142857143,
-                                "zIndex": 30,
+                                  "color": "rgb(255,255,255)",
+                                  "fontSize": 28.285714285714285,
+                                  "textAlign": "center",
+                                }
                               }
-                            }
-                            testID="log-in-screen-text-input"
-                            underlineColorAndroid="transparent"
-                          />
+                            >
+                              Login
+                            </Text>
+                          </TouchableOpacity>
                         </View>
-                        <TouchableOpacity
-                          activeOpacity={0.2}
-                          style={
-                            Object {
-                              "backgroundColor": "rgb(36,106,116)",
-                              "borderRadius": 17.29828571428571,
-                              "borderTopColor": "1px solid rgba(19,43,46,0.83)",
-                              "height": 75.42857142857143,
-                              "justifyContent": "center",
-                              "marginBottom": 81.71428571428572,
-                              "marginLeft": 58.15542857142857,
-                              "marginTop": 102.15542857142856,
-                              "width": 487.1428571428571,
-                              "zIndex": 100,
-                            }
-                          }
-                        >
-                          <Text
-                            style={
-                              Object {
-                                "color": "rgb(255,255,255)",
-                                "fontSize": 28.285714285714285,
-                                "textAlign": "center",
-                              }
-                            }
-                          >
-                            Login
-                          </Text>
-                        </TouchableOpacity>
                       </View>
                     </View>
                   </TouchableWithoutFeedback>
