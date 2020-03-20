@@ -36,7 +36,4 @@ const mapDispatchToProps = dispatch => ({
   startup: () => dispatch(rootScreenActions.startup())
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(RootScreen);
+export default connect(null, mapDispatchToProps)(RootScreen);
