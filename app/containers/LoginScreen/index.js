@@ -10,66 +10,18 @@ import {
   Text,
   Platform
 } from 'react-native';
+import { Formik } from 'formik';
+import * as yup from 'yup';
 import { injectIntl } from 'react-intl';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import logo from 'app/assets/images/imgMspLogo.png';
 import deliveryboyimage from 'app/assets/images/illoDeliveryBoy.png';
 import homepage from 'app/assets/images/loginbg.jpg';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
-
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
 
 class LoginScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: ''
-    };
-  }
-
-  validateField = () => {
-    const { email, password } = this.state;
-    if (email === '' && password === '') {
-      alert('Please input both fields');
-      return false;
-    }
-    if (email === '' && password !== '') {
-      alert('Please fill email');
-      return false;
-    }
-    if (email !== '' && password === '') {
-      alert('Please fill password');
-      return false;
-    }
-    if (email.length < 5) {
-      alert('Email should be at least 5 characters long');
-      return false;
-    }
-    if (email.split('').filter(x => x === '@').length !== 1) {
-      alert('Email should contain a @');
-      return false;
-    }
-    if (email.indexOf('.') === -1) {
-      alert('Email should contain at least one dot');
-      return false;
-    }
-
-    if (password.length < 6) {
-      alert('Password should be at least 6 characters long');
-      return false;
-    }
-
-    return true;
-  };
-
-  handleSubmit = () => {
-    if (this.validateField()) {
-      alert('Successfully login');
-    }
-  };
-
   render() {
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
@@ -86,55 +38,112 @@ class LoginScreen extends Component {
             <View style={styles.deliveryboyImageContainer}>
               <Image source={deliveryboyimage}></Image>
             </View>
+            <Formik
+              initialValues={{ email: '', password: '' }}
+              // eslint-disable-next-line no-alert
+              onSubmit={values => alert(JSON.stringify(values))}
+              validationSchema={yup.object().shape({
+                email: yup
+                  .string()
+                  .email()
+                  .required(),
 
-            <View>
-              <Icon
-                name="person-outline"
-                size={Style.em(1.375)}
-                color={Style.ICON_COLOR}
-                style={styles.inputIcon}
-              />
-              <TextInput
-                testID="log-in-screen-text-input"
-                style={styles.input}
-                placeholder={this.props.intl.formatMessage({
-                  id: 'placeholder_email'
-                })}
-                returnKeyType="next"
-                onSubmitEditing={() => {
-                  this.secondTextInput.focus();
-                }}
-                placeholderTextColor={Style.WHITE_COLOR}
-                onChangeText={value => this.setState({ email: value })}
-              />
-            </View>
-            <View behavior="position">
-              <Icon
-                name="lock-outline"
-                size={Style.em(1.375)}
-                color={Style.ICON_COLOR}
-                style={styles.inputIcon}
-              />
-              <TextInput
-                testID="log-in-screen-text-input"
-                ref={input => {
-                  this.secondTextInput = input;
-                }}
-                style={styles.input}
-                placeholder={this.props.intl.formatMessage({
-                  id: 'placeholder_password'
-                })}
-                returnKeyType="go"
-                placeholderTextColor={Style.WHITE_COLOR}
-                onChangeText={value => this.setState({ password: value })}
-              />
-            </View>
-            <TouchableOpacity
-              style={styles.btnLogin}
-              onPress={() => this.handleSubmit()}
+                password: yup
+                  .string()
+                  .min(6)
+                  .required()
+              })}
             >
-              <Text style={styles.text}>Login</Text>
-            </TouchableOpacity>
+              {({
+                values,
+                handleChange,
+                errors,
+                setFieldTouched,
+                touched,
+                handleSubmit
+              }) => (
+                <View>
+                  <View>
+                    <Icon
+                      name="person-outline"
+                      size={Style.em(1.375)}
+                      color={Style.ICON_COLOR}
+                      style={styles.inputIcon}
+                    />
+                    <TextInput
+                      testID="log-in-screen-text-input"
+                      value={values.email}
+                      style={styles.input}
+                      placeholder={this.props.intl.formatMessage({
+                        id: 'placeholder_email'
+                      })}
+                      onBlur={() => setFieldTouched('email')}
+                      returnKeyType="next"
+                      onSubmitEditing={() => {
+                        this.secondTextInput.focus();
+                      }}
+                      placeholderTextColor={Style.WHITE_COLOR}
+                      onChangeText={handleChange('email')}
+                    />
+                  </View>
+                  <View>
+                    {touched.email && errors.email && (
+                      <Text
+                        style={{
+                          position: 'relative',
+                          marginLeft: Style.em(4.09),
+                          color: 'red'
+                        }}
+                      >
+                        {errors.email}
+                      </Text>
+                    )}
+                  </View>
+                  <View behavior="position">
+                    <Icon
+                      name="lock-outline"
+                      size={Style.em(1.375)}
+                      color={Style.ICON_COLOR}
+                      style={styles.inputIcon}
+                    />
+                    <TextInput
+                      testID="log-in-screen-text-input"
+                      value={values.password}
+                      ref={input => {
+                        this.secondTextInput = input;
+                      }}
+                      style={styles.input}
+                      placeholder={this.props.intl.formatMessage({
+                        id: 'placeholder_password'
+                      })}
+                      returnKeyType="go"
+                      placeholderTextColor={Style.WHITE_COLOR}
+                      onChangeText={handleChange('password')}
+                      onBlur={() => setFieldTouched('password')}
+                    />
+                  </View>
+                  <View>
+                    {touched.password && errors.password && (
+                      <Text
+                        style={{
+                          color: 'red',
+                          position: 'relative',
+                          marginLeft: Style.em(4.09)
+                        }}
+                      >
+                        {errors.password}
+                      </Text>
+                    )}
+                  </View>
+                  <TouchableOpacity
+                    style={styles.btnLogin}
+                    onPress={handleSubmit}
+                  >
+                    <Text style={styles.text}>Login</Text>
+                  </TouchableOpacity>
+                </View>
+              )}
+            </Formik>
           </KeyboardAvoidingView>
         </DismissableKeyboard>
       </ImageBackground>
@@ -156,7 +165,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     width: Style.em(12.375),
     height: Style.em(3.313),
-    marginTop: Style.em(3.125),
+    marginTop: Platform.OS === 'ios' ? Style.em(3.125) : Style.em(5.15),
     marginLeft: Style.em(5.75),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
@@ -168,7 +177,7 @@ const styles = StyleSheet.create({
     height: Style.em(16),
     marginLeft: Style.em(7.68),
     marginTop: Style.em(0.813),
-    marginBottom: Style.em(2.375),
+    marginBottom: Platform.OS === 'ios' ? Style.em(2.375) : Style.em(1.5),
     justifyContent: 'center',
     alignItems: 'flex-end'
   },
@@ -178,24 +187,25 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     borderBottomWidth: 1,
     borderBottomColor: 'white',
-    marginTop: Style.em(1.813),
+    marginTop: Platform.OS === 'ios' ? Style.em(1.813) : Style.em(0.92),
     position: 'relative',
     marginLeft: Style.em(3.75),
     paddingLeft: Style.em(1.625),
+    paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
     zIndex: 30,
     opacity: 0.94,
     color: Style.WHITE_COLOR,
-    fontSize: Style.em(0.875)
+    fontSize: Platform.OS === 'ios' ? Style.em(0.875) : Style.em(1)
   },
   btnLogin: {
     width: Style.em(19.375),
     height: Style.em(3),
     justifyContent: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    marginTop: Style.em(4.063),
+    marginTop: Platform.OS === 'ios' ? Style.em(3.063) : Style.em(2),
     marginLeft: Style.em(2.313),
     borderRadius: Style.em(0.688),
-    marginBottom: Style.em(3.25),
+    marginBottom: Platform.OS === 'ios' ? Style.em(3.25) : Style.em(5),
     borderTopColor: '1px solid rgba(19,43,46,0.83)',
     zIndex: 100
   },
