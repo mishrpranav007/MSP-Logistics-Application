@@ -93,7 +93,7 @@ class LoginScreen extends Component {
                       <Text
                         style={{
                           position: 'relative',
-                          marginLeft: Style.em(4.09),
+                          marginLeft: Style.em(4),
                           color: 'red'
                         }}
                       >
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
     marginLeft: Style.em(2.313),
     borderRadius: Style.em(0.688),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.25) : Style.em(5),
-    borderTopColor: '1px solid rgba(19,43,46,0.83)',
+    borderTopColor: Style.SECONDARY_COLOR,
     zIndex: 100
   },
   text: {

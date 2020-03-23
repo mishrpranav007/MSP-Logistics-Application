@@ -150,7 +150,7 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
             Object {
               "backgroundColor": "rgb(36,106,116)",
               "borderRadius": 17.348571428571425,
-              "borderTopColor": undefined,
+              "borderTopColor": "rgba(19,43,46,0.83)",
               "height": 81.71428571428572,
               "justifyContent": "center",
               "marginBottom": 18.857142857142858,

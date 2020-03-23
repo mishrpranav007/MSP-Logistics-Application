@@ -59,6 +59,7 @@ export default {
   ICON_COLOR: 'rgba(255,255,255,0.7)',
   WHITE_COLOR: 'rgb(255,255,255)',
   PRIMARY_COLOR: 'rgb(36,106,116)',
+  SECONDARY_COLOR: 'rgba(19,43,46,0.83)',
 
   GRID_ITEM_WIDTH: gridItemWidth
 };
