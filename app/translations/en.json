@@ -6,5 +6,6 @@
   "wednesday_lover": "{username} loves Wednesday",
 
   "placeholder_email": "Enter your email address",
-  "placeholder_password": "Enter password"
+  "placeholder_password": "Enter password",
+  "login": "Login"
 }

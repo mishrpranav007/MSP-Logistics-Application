@@ -128,7 +128,7 @@ class LoginScreen extends Component {
                         style={{
                           color: 'red',
                           position: 'relative',
-                          marginLeft: Style.em(4.09)
+                          marginLeft: Style.em(4)
                         }}
                       >
                         {errors.password}
@@ -139,7 +139,9 @@ class LoginScreen extends Component {
                     style={styles.btnLogin}
                     onPress={handleSubmit}
                   >
-                    <Text style={styles.text}>Login</Text>
+                    <Text style={styles.text}>
+                      {this.props.intl.formatMessage({ id: 'login' })}
+                    </Text>
                   </TouchableOpacity>
                 </View>
               )}
