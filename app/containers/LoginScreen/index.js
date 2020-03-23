@@ -23,6 +23,9 @@ import Style from '../../style/index';
 
 class LoginScreen extends Component {
   render() {
+    const onhandleLogin = () => {
+      this.props.navigation.navigate('HomeScreen');
+    };
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
@@ -40,8 +43,7 @@ class LoginScreen extends Component {
             </View>
             <Formik
               initialValues={{ email: '', password: '' }}
-              // eslint-disable-next-line no-alert
-              onSubmit={values => alert(JSON.stringify(values))}
+              onSubmit={values => onhandleLogin(values)}
               validationSchema={yup.object().shape({
                 email: yup
                   .string()
@@ -227,6 +229,7 @@ const styles = StyleSheet.create({
 });
 
 LoginScreen.propTypes = {
-  intl: PropTypes.object
+  intl: PropTypes.object,
+  navigation: PropTypes.object
 };
 export default injectIntl(LoginScreen);
