@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: Style.em(16.875),
+    width: Style.em(17),
     backgroundColor: 'transparent',
     borderBottomWidth: 1,
     borderBottomColor: 'white',
