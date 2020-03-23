@@ -29,6 +29,10 @@ target 'ReactNativeTemplate' do
 
   pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
 
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
   target 'ReactNativeTemplateTests' do
     inherit! :search_paths
     # Pods for testing

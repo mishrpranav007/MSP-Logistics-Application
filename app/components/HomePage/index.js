@@ -21,7 +21,7 @@ const HomePage = () => (
     <View style={styles.logoView}>
       <Image source={logo} style={styles.logoContainer}></Image>
     </View>
-    <View style={styles.scanimageContainer}>
+    <View style={styles.scanImageContainer}>
       <Image source={scanimage}></Image>
     </View>
 
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: Style.em(5.5)
   },
-  scanimageContainer: {
+  scanImageContainer: {
     width: Style.em(19.313),
     height: Style.em(15.938),
     marginBottom: Style.em(0.5),
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     marginTop: Style.em(1.25),
     borderRadius: Style.em(0.69),
     marginBottom: Style.em(0.75),
-    borderTopColor: '1px solid rgba(19,43,46,0.83)',
+    borderTopColor: Style.SECONDARY_COLOR,
     zIndex: 100
   },
   text: {
