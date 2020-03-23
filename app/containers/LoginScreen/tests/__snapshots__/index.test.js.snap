@@ -234,7 +234,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   Object {
                     "backgroundColor": "rgb(36,106,116)",
                     "borderRadius": 17.29828571428571,
-                    "borderTopColor": "1px solid rgba(19,43,46,0.83)",
+                    "borderTopColor": "rgba(19,43,46,0.83)",
                     "height": 75.42857142857143,
                     "justifyContent": "center",
                     "marginBottom": 81.71428571428572,
