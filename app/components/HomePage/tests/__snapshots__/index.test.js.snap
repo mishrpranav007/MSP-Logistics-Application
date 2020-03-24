@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> should render and match the snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityIgnoresInvertColors={true}
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/homepage.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+        testID="home-page"
+      />
+      <View>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../app/assets/images/imgMspLogo.png",
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "height": 75.42857142857143,
+              "justifyContent": "flex-start",
+              "marginBottom": 138.28571428571428,
+              "marginLeft": 144.57142857142856,
+              "marginRight": 138.28571428571428,
+              "marginTop": 12.571428571428571,
+              "width": 301.7142857142857,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 400.77714285714285,
+            "marginBottom": 12.571428571428571,
+            "marginTop": 12.571428571428571,
+            "width": 485.5085714285714,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../app/assets/images/illoScanBag.png",
+            }
+          }
+        />
+      </View>
+      <View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          style={
+            Object {
+              "backgroundColor": "rgb(36,106,116)",
+              "borderRadius": 11,
+              "height": 81.71428571428572,
+              "justifyContent": "center",
+              "marginTop": 47.01714285714286,
+              "width": 465.1428571428571,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+            testID="home-page-view"
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../app/assets/images/bitmap.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 27.908571428571427,
+                  "marginBottom": 3.2685714285714287,
+                  "marginRight": 15.588571428571427,
+                  "opacity": 1,
+                  "width": 30.925714285714285,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "color": "rgb(255,255,255)",
+                  "fontSize": 25.142857142857142,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Scan for delivery
+            </Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          style={
+            Object {
+              "backgroundColor": "rgb(36,106,116)",
+              "borderRadius": 17.348571428571425,
+              "borderTopColor": "rgba(19,43,46,0.83)",
+              "height": 81.71428571428572,
+              "justifyContent": "center",
+              "marginBottom": 18.857142857142858,
+              "marginTop": 31.428571428571427,
+              "width": 465.1428571428571,
+              "zIndex": 100,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+            testID="home-page-view"
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../app/assets/images/bitmap.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 27.908571428571427,
+                  "marginBottom": 3.2685714285714287,
+                  "marginRight": 15.588571428571427,
+                  "opacity": 1,
+                  "width": 30.925714285714285,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "color": "rgb(255,255,255)",
+                  "fontSize": 25.142857142857142,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Scan for pickup
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</View>
+`;

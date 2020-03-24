@@ -3,5 +3,9 @@
   "live_in_europe": "I live in europe",
   "dont_live_in_europe": "I don't live in europe",
   "because": "because",
-  "wednesday_lover": "{username} loves Wednesday"
+  "wednesday_lover": "{username} loves Wednesday",
+
+  "placeholder_email": "Enter your email address",
+  "placeholder_password": "Enter password",
+  "login": "Login"
 }

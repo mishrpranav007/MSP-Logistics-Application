@@ -39,11 +39,6 @@ exports[`<SplashScreen /> should render and match the snapshot 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={
-          Object {
-            "testUri": "../../../app/assets/images/wednesday-logo.png",
-          }
-        }
         style={
           Array [
             Object {
