@@ -93,6 +93,7 @@ class LoginScreen extends Component {
                         style={{
                           position: 'relative',
                           marginLeft: Style.em(4.1),
+                          marginTop: Style.em(0.4),
                           color: 'red'
                         }}
                       >
@@ -127,7 +128,8 @@ class LoginScreen extends Component {
                         style={{
                           color: 'red',
                           position: 'relative',
-                          marginLeft: Style.em(4.1)
+                          marginLeft: Style.em(4.1),
+                          marginTop: Style.em(0.4)
                         }}
                       >
                         {errors.password}
@@ -156,7 +158,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    opacity: 0.94
   },
   container: {
     flex: 1,
@@ -190,7 +193,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Style.WHITE_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
     position: 'relative',
-    marginLeft: Style.em(3.75),
+    marginLeft: Style.em(3.85),
     paddingLeft: Style.em(1.62),
     paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
     zIndex: 30,
@@ -218,8 +221,9 @@ const styles = StyleSheet.create({
   inputImageContainer: {
     position: 'absolute',
     left: 0,
-    bottom: 0,
-    marginLeft: Style.em(3.44),
+    bottom: Style.em(0.31),
+    right: Style.em(0.63),
+    marginLeft: Style.em(3.9),
     height: Style.em(1.08),
     width: Style.em(0.91),
     justifyContent: 'center',
