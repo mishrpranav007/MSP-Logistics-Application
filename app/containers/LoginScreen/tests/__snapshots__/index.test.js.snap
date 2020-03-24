@@ -113,33 +113,25 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
             </View>
             <View>
               <View>
-                <Text
-                  allowFontScaling={false}
-                  style={
-                    Array [
-                      Object {
-                        "color": "rgba(255,255,255,0.7)",
-                        "fontSize": 34.57142857142857,
-                      },
-                      Object {
-                        "bottom": 0,
-                        "justifyContent": "space-between",
-                        "left": 0,
-                        "marginLeft": 86.49142857142857,
-                        "opacity": 0.94,
-                        "position": "absolute",
-                      },
-                      Object {
-                        "fontFamily": "Material Icons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      Object {},
-                    ]
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/username.png",
+                    }
                   }
-                >
-                  
-                </Text>
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": 27.154285714285717,
+                      "justifyContent": "center",
+                      "left": 0,
+                      "marginLeft": 86.49142857142857,
+                      "opacity": 0.94,
+                      "position": "absolute",
+                      "width": 22.880000000000003,
+                    }
+                  }
+                />
                 <TextInput
                   allowFontScaling={true}
                   placeholder="Enter your email address"
@@ -172,33 +164,25 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
               <View
                 behavior="position"
               >
-                <Text
-                  allowFontScaling={false}
-                  style={
-                    Array [
-                      Object {
-                        "color": "rgba(255,255,255,0.7)",
-                        "fontSize": 34.69714285714285,
-                      },
-                      Object {
-                        "bottom": 0,
-                        "justifyContent": "space-between",
-                        "left": 0,
-                        "marginLeft": 86.49142857142857,
-                        "opacity": 0.94,
-                        "position": "absolute",
-                      },
-                      Object {
-                        "fontFamily": "Material Icons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      Object {},
-                    ]
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/password.png",
+                    }
                   }
-                >
-                  
-                </Text>
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": 27.154285714285717,
+                      "justifyContent": "center",
+                      "left": 0,
+                      "marginLeft": 86.49142857142857,
+                      "opacity": 0.94,
+                      "position": "absolute",
+                      "width": 22.880000000000003,
+                    }
+                  }
+                />
                 <TextInput
                   allowFontScaling={true}
                   placeholder="Enter password"

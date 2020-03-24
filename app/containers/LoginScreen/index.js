@@ -13,10 +13,11 @@ import {
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import { injectIntl } from 'react-intl';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import logo from 'app/assets/images/imgMspLogo.png';
 import deliveryboyimage from 'app/assets/images/illoDeliveryBoy.png';
 import homepage from 'app/assets/images/loginbg.jpg';
+import username from 'app/assets/images/username.png';
+import password from 'app/assets/images/password.png';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
@@ -66,12 +67,10 @@ class LoginScreen extends Component {
               }) => (
                 <View>
                   <View>
-                    <Icon
-                      name="person-outline"
-                      size={Style.em(1.375)}
-                      color={Style.ICON_COLOR}
-                      style={styles.inputIcon}
-                    />
+                    <Image
+                      source={username}
+                      style={styles.inputImageContainer}
+                    ></Image>
                     <TextInput
                       testID="log-in-screen-text-input"
                       value={values.email}
@@ -102,12 +101,10 @@ class LoginScreen extends Component {
                     )}
                   </View>
                   <View behavior="position">
-                    <Icon
-                      name="lock-outline"
-                      size={Style.em(1.38)}
-                      color={Style.ICON_COLOR}
-                      style={styles.inputIcon}
-                    />
+                    <Image
+                      source={password}
+                      style={styles.inputImageContainer}
+                    ></Image>
                     <TextInput
                       testID="log-in-screen-text-input"
                       value={values.password}
@@ -218,12 +215,14 @@ const styles = StyleSheet.create({
     fontSize: Style.em(1.12),
     textAlign: 'center'
   },
-  inputIcon: {
+  inputImageContainer: {
     position: 'absolute',
     left: 0,
     bottom: 0,
     marginLeft: Style.em(3.44),
-    justifyContent: 'space-between',
+    height: Style.em(1.08),
+    width: Style.em(0.91),
+    justifyContent: 'center',
     opacity: 0.94
   }
 });
