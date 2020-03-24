@@ -26,6 +26,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
           "flex": 1,
           "flexDirection": "column",
           "justifyContent": "center",
+          "opacity": 0.94,
         }
       }
     >
@@ -113,33 +114,26 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
             </View>
             <View>
               <View>
-                <Text
-                  allowFontScaling={false}
-                  style={
-                    Array [
-                      Object {
-                        "color": "rgba(255,255,255,0.7)",
-                        "fontSize": 34.57142857142857,
-                      },
-                      Object {
-                        "bottom": 0,
-                        "justifyContent": "space-between",
-                        "left": 0,
-                        "marginLeft": 86.49142857142857,
-                        "opacity": 0.94,
-                        "position": "absolute",
-                      },
-                      Object {
-                        "fontFamily": "Material Icons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      Object {},
-                    ]
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/username.png",
+                    }
                   }
-                >
-                  
-                </Text>
+                  style={
+                    Object {
+                      "bottom": 7.794285714285714,
+                      "height": 27.154285714285717,
+                      "justifyContent": "center",
+                      "left": 0,
+                      "marginLeft": 98.05714285714285,
+                      "opacity": 0.94,
+                      "position": "absolute",
+                      "right": 15.84,
+                      "width": 22.880000000000003,
+                    }
+                  }
+                />
                 <TextInput
                   allowFontScaling={true}
                   placeholder="Enter your email address"
@@ -153,7 +147,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                       "borderBottomWidth": 1,
                       "color": "rgb(255,255,255)",
                       "fontSize": 21.874285714285715,
-                      "marginLeft": 94.28571428571428,
+                      "marginLeft": 96.80000000000001,
                       "marginTop": 45.50857142857143,
                       "opacity": 0.94,
                       "paddingBottom": null,
@@ -172,33 +166,26 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
               <View
                 behavior="position"
               >
-                <Text
-                  allowFontScaling={false}
-                  style={
-                    Array [
-                      Object {
-                        "color": "rgba(255,255,255,0.7)",
-                        "fontSize": 34.69714285714285,
-                      },
-                      Object {
-                        "bottom": 0,
-                        "justifyContent": "space-between",
-                        "left": 0,
-                        "marginLeft": 86.49142857142857,
-                        "opacity": 0.94,
-                        "position": "absolute",
-                      },
-                      Object {
-                        "fontFamily": "Material Icons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      Object {},
-                    ]
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/password.png",
+                    }
                   }
-                >
-                  
-                </Text>
+                  style={
+                    Object {
+                      "bottom": 7.794285714285714,
+                      "height": 27.154285714285717,
+                      "justifyContent": "center",
+                      "left": 0,
+                      "marginLeft": 98.05714285714285,
+                      "opacity": 0.94,
+                      "position": "absolute",
+                      "right": 15.84,
+                      "width": 22.880000000000003,
+                    }
+                  }
+                />
                 <TextInput
                   allowFontScaling={true}
                   placeholder="Enter password"
@@ -212,7 +199,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                       "borderBottomWidth": 1,
                       "color": "rgb(255,255,255)",
                       "fontSize": 21.874285714285715,
-                      "marginLeft": 94.28571428571428,
+                      "marginLeft": 96.80000000000001,
                       "marginTop": 45.50857142857143,
                       "opacity": 0.94,
                       "paddingBottom": null,
