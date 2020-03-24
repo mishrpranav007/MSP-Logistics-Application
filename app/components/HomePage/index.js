@@ -61,15 +61,15 @@ const styles = StyleSheet.create({
     marginBottom: Style.em(5.5)
   },
   scanImageContainer: {
-    width: Style.em(19.313),
-    height: Style.em(15.938),
+    width: Style.em(19.31),
+    height: Style.em(15.94),
     marginBottom: Style.em(0.5),
     marginTop: Style.em(0.5)
   },
   deliveryButtonLogin: {
     width: Style.em(18.5),
     height: Style.em(3.25),
-    marginTop: Style.em(1.875),
+    marginTop: Style.em(1.87),
     justifyContent: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
     borderRadius: 11
@@ -95,10 +95,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   bitmapImageIcon: {
-    width: Style.em(1.234),
-    height: Style.em(1.114),
-    marginRight: Style.em(0.625),
-    marginBottom: Style.em(0.125),
+    width: Style.em(1.23),
+    height: Style.em(1.11),
+    marginRight: Style.em(0.62),
+    marginBottom: Style.em(0.13),
     opacity: 1
   }
 });

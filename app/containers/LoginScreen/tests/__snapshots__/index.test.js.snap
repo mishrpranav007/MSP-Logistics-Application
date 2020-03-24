@@ -79,13 +79,13 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "height": 83.29828571428571,
+                    "height": 83.22285714285714,
                     "justifyContent": "flex-start",
                     "marginBottom": 25.142857142857142,
-                    "marginLeft": 144.57142857142856,
+                    "marginLeft": 143.31428571428572,
                     "marginRight": 138.28571428571428,
-                    "marginTop": 78.57142857142857,
-                    "width": 311.1428571428571,
+                    "marginTop": 78.69714285714285,
+                    "width": 311.2685714285714,
                   }
                 }
               />
@@ -96,10 +96,10 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   "alignItems": "flex-end",
                   "height": 402.2857142857143,
                   "justifyContent": "center",
-                  "marginBottom": 59.714285714285715,
+                  "marginBottom": 59.839999999999996,
                   "marginLeft": 193.09714285714284,
-                  "marginTop": 20.441142857142857,
-                  "width": 391.2982857142857,
+                  "marginTop": 20.365714285714287,
+                  "width": 391.22285714285715,
                 }
               }
             >
@@ -125,7 +125,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                         "bottom": 0,
                         "justifyContent": "space-between",
                         "left": 0,
-                        "marginLeft": 86.44114285714286,
+                        "marginLeft": 86.49142857142857,
                         "opacity": 0.94,
                         "position": "absolute",
                       },
@@ -149,15 +149,15 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   style={
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "white",
+                      "borderBottomColor": "rgb(255,255,255)",
                       "borderBottomWidth": 1,
                       "color": "rgb(255,255,255)",
-                      "fontSize": 22,
+                      "fontSize": 21.874285714285715,
                       "marginLeft": 94.28571428571428,
-                      "marginTop": 45.584,
+                      "marginTop": 45.50857142857143,
                       "opacity": 0.94,
                       "paddingBottom": null,
-                      "paddingLeft": 40.85714285714286,
+                      "paddingLeft": 40.73142857142857,
                       "position": "relative",
                       "width": 427.42857142857144,
                       "zIndex": 30,
@@ -178,13 +178,13 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                     Array [
                       Object {
                         "color": "rgba(255,255,255,0.7)",
-                        "fontSize": 34.57142857142857,
+                        "fontSize": 34.69714285714285,
                       },
                       Object {
                         "bottom": 0,
                         "justifyContent": "space-between",
                         "left": 0,
-                        "marginLeft": 86.44114285714286,
+                        "marginLeft": 86.49142857142857,
                         "opacity": 0.94,
                         "position": "absolute",
                       },
@@ -208,15 +208,15 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   style={
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "white",
+                      "borderBottomColor": "rgb(255,255,255)",
                       "borderBottomWidth": 1,
                       "color": "rgb(255,255,255)",
-                      "fontSize": 22,
+                      "fontSize": 21.874285714285715,
                       "marginLeft": 94.28571428571428,
-                      "marginTop": 45.584,
+                      "marginTop": 45.50857142857143,
                       "opacity": 0.94,
                       "paddingBottom": null,
-                      "paddingLeft": 40.85714285714286,
+                      "paddingLeft": 40.73142857142857,
                       "position": "relative",
                       "width": 427.42857142857144,
                       "zIndex": 30,
@@ -233,14 +233,14 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                 style={
                   Object {
                     "backgroundColor": "rgb(36,106,116)",
-                    "borderRadius": 17.29828571428571,
+                    "borderRadius": 17.348571428571425,
                     "borderTopColor": "rgba(19,43,46,0.83)",
                     "height": 75.42857142857143,
                     "justifyContent": "center",
                     "marginBottom": 81.71428571428572,
-                    "marginLeft": 58.15542857142857,
-                    "marginTop": 77.01257142857143,
-                    "width": 487.1428571428571,
+                    "marginLeft": 58.08,
+                    "marginTop": 76.93714285714286,
+                    "width": 487.77142857142854,
                     "zIndex": 100,
                   }
                 }
@@ -249,7 +249,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   style={
                     Object {
                       "color": "rgb(255,255,255)",
-                      "fontSize": 28.285714285714285,
+                      "fontSize": 28.160000000000004,
                       "textAlign": "center",
                     }
                   }

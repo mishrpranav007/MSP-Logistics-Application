@@ -93,7 +93,7 @@ class LoginScreen extends Component {
                       <Text
                         style={{
                           position: 'relative',
-                          marginLeft: Style.em(4.09),
+                          marginLeft: Style.em(4.1),
                           color: 'red'
                         }}
                       >
@@ -104,7 +104,7 @@ class LoginScreen extends Component {
                   <View behavior="position">
                     <Icon
                       name="lock-outline"
-                      size={Style.em(1.375)}
+                      size={Style.em(1.38)}
                       color={Style.ICON_COLOR}
                       style={styles.inputIcon}
                     />
@@ -130,7 +130,7 @@ class LoginScreen extends Component {
                         style={{
                           color: 'red',
                           position: 'relative',
-                          marginLeft: Style.em(4.09)
+                          marginLeft: Style.em(4.1)
                         }}
                       >
                         {errors.password}
@@ -167,21 +167,21 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    width: Style.em(12.375),
-    height: Style.em(3.313),
-    marginTop: Platform.OS === 'ios' ? Style.em(3.125) : Style.em(5.15),
-    marginLeft: Style.em(5.75),
+    width: Style.em(12.38),
+    height: Style.em(3.31),
+    marginTop: Platform.OS === 'ios' ? Style.em(3.13) : Style.em(5.1),
+    marginLeft: Style.em(5.7),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
     alignItems: 'center',
     marginBottom: Style.em(1)
   },
   deliveryboyImageContainer: {
-    width: Style.em(15.563),
+    width: Style.em(15.56),
     height: Style.em(16),
     marginLeft: Style.em(7.68),
-    marginTop: Style.em(0.813),
-    marginBottom: Platform.OS === 'ios' ? Style.em(2.375) : Style.em(1.5),
+    marginTop: Style.em(0.81),
+    marginBottom: Platform.OS === 'ios' ? Style.em(2.38) : Style.em(1.5),
     justifyContent: 'center',
     alignItems: 'flex-end'
   },
@@ -190,39 +190,39 @@ const styles = StyleSheet.create({
     width: Style.em(17),
     backgroundColor: 'transparent',
     borderBottomWidth: 1,
-    borderBottomColor: 'white',
-    marginTop: Platform.OS === 'ios' ? Style.em(1.813) : Style.em(0.92),
+    borderBottomColor: Style.WHITE_COLOR,
+    marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
     position: 'relative',
     marginLeft: Style.em(3.75),
-    paddingLeft: Style.em(1.625),
+    paddingLeft: Style.em(1.62),
     paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
     zIndex: 30,
     opacity: 0.94,
     color: Style.WHITE_COLOR,
-    fontSize: Platform.OS === 'ios' ? Style.em(0.875) : Style.em(1)
+    fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
   },
   btnLogin: {
-    width: Style.em(19.375),
+    width: Style.em(19.4),
     height: Style.em(3),
     justifyContent: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    marginTop: Platform.OS === 'ios' ? Style.em(3.063) : Style.em(2),
-    marginLeft: Style.em(2.313),
-    borderRadius: Style.em(0.688),
+    marginTop: Platform.OS === 'ios' ? Style.em(3.06) : Style.em(2),
+    marginLeft: Style.em(2.31),
+    borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.25) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
     zIndex: 100
   },
   text: {
     color: Style.WHITE_COLOR,
-    fontSize: Style.em(1.125),
+    fontSize: Style.em(1.12),
     textAlign: 'center'
   },
   inputIcon: {
     position: 'absolute',
     left: 0,
     bottom: 0,
-    marginLeft: Style.em(3.438),
+    marginLeft: Style.em(3.44),
     justifyContent: 'space-between',
     opacity: 0.94
   }
