@@ -77,10 +77,10 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
       <View
         style={
           Object {
-            "height": 400.72685714285717,
+            "height": 400.77714285714285,
             "marginBottom": 12.571428571428571,
             "marginTop": 12.571428571428571,
-            "width": 485.58399999999995,
+            "width": 485.5085714285714,
           }
         }
       >
@@ -101,7 +101,7 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
               "borderRadius": 11,
               "height": 81.71428571428572,
               "justifyContent": "center",
-              "marginTop": 47.14285714285714,
+              "marginTop": 47.01714285714286,
               "width": 465.1428571428571,
             }
           }
@@ -123,11 +123,11 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
               }
               style={
                 Object {
-                  "height": 28.009142857142862,
-                  "marginBottom": 3.142857142857143,
-                  "marginRight": 15.714285714285714,
+                  "height": 27.908571428571427,
+                  "marginBottom": 3.2685714285714287,
+                  "marginRight": 15.588571428571427,
                   "opacity": 1,
-                  "width": 31.026285714285713,
+                  "width": 30.925714285714285,
                 }
               }
             />
@@ -177,11 +177,11 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
               }
               style={
                 Object {
-                  "height": 28.009142857142862,
-                  "marginBottom": 3.142857142857143,
-                  "marginRight": 15.714285714285714,
+                  "height": 27.908571428571427,
+                  "marginBottom": 3.2685714285714287,
+                  "marginRight": 15.588571428571427,
                   "opacity": 1,
-                  "width": 31.026285714285713,
+                  "width": 30.925714285714285,
                 }
               }
             />
