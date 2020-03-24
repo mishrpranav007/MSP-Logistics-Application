@@ -21,7 +21,6 @@ import password from 'app/assets/images/password.png';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
-
 class LoginScreen extends Component {
   render() {
     const onhandleLogin = () => {
@@ -49,12 +48,12 @@ class LoginScreen extends Component {
                 email: yup
                   .string()
                   .email('Email must be a valid email')
-                  .required('Email field is required'),
+                  .required('Email is required'),
 
                 password: yup
                   .string()
-                  .min(6, 'Password must be at least 6 characters')
-                  .required('Password field is required')
+                  .min(6, 'Password must be of at least 6 characters')
+                  .required('Password is required')
               })}
             >
               {({
@@ -168,7 +167,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    marginTop: Platform.OS === 'ios' ? Style.em(3.19) : Style.em(5.1),
+    marginTop: Platform.OS === 'ios' ? Style.em(3.13) : Style.em(5.1),
     marginLeft: Style.em(5.7),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
