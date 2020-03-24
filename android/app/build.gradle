@@ -186,6 +186,12 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
+    implementation project(':react-native-permissions')
+    implementation project(':react-native-camera')
+    implementation project(':react-native-safe-area-context')
+=======
+>>>>>>> b8a16f6553479ba2e82ddbef5ae32756e8d75ada
     implementation project(':react-native-vector-icons')
     implementation project(':@react-native-community_async-storage')
     implementation fileTree(dir: "libs", include: ["*.jar"])

@@ -55,7 +55,6 @@ export default {
 
   FONT_SIZE: em(1), // 16
   // colors
-
   ICON_COLOR: 'rgba(255,255,255,0.7)',
   WHITE_COLOR: 'rgb(255,255,255)',
   PRIMARY_COLOR: 'rgb(36,106,116)',

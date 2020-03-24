@@ -21,7 +21,6 @@ import password from 'app/assets/images/password.png';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
-
 class LoginScreen extends Component {
   render() {
     const onhandleLogin = () => {
