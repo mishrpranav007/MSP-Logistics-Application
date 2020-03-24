@@ -244,13 +244,11 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                                       style={
                                         Object {
                                           "alignItems": "center",
-                                          "height": 83.22285714285714,
                                           "justifyContent": "flex-start",
                                           "marginBottom": 25.142857142857142,
                                           "marginLeft": 143.31428571428572,
                                           "marginRight": 138.28571428571428,
-                                          "marginTop": 78.69714285714285,
-                                          "width": 311.2685714285714,
+                                          "marginTop": 80.20571428571428,
                                         }
                                       }
                                     />
@@ -356,6 +354,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                                         placeholderTextColor="rgb(255,255,255)"
                                         rejectResponderTermination={true}
                                         returnKeyType="go"
+                                        secureTextEntry={true}
                                         style={
                                           Object {
                                             "backgroundColor": "transparent",

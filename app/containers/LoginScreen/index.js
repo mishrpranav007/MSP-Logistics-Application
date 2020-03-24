@@ -48,13 +48,13 @@ class LoginScreen extends Component {
               validationSchema={yup.object().shape({
                 email: yup
                   .string()
-                  .email()
-                  .required(),
+                  .email('Email must be a valid email')
+                  .required('Email field is required'),
 
                 password: yup
                   .string()
-                  .min(6)
-                  .required()
+                  .min(6, 'Password must be at least 6 characters')
+                  .required('Password field is required')
               })}
             >
               {({
@@ -117,6 +117,7 @@ class LoginScreen extends Component {
                         id: 'placeholder_password'
                       })}
                       returnKeyType="go"
+                      secureTextEntry
                       placeholderTextColor={Style.WHITE_COLOR}
                       onChangeText={handleChange('password')}
                       onBlur={() => setFieldTouched('password')}
@@ -167,9 +168,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    width: Style.em(12.38),
-    height: Style.em(3.31),
-    marginTop: Platform.OS === 'ios' ? Style.em(3.13) : Style.em(5.1),
+    marginTop: Platform.OS === 'ios' ? Style.em(3.19) : Style.em(5.1),
     marginLeft: Style.em(5.7),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',

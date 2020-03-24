@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
+// import PropTypes from 'prop-types';
 import homepage from 'app/assets/images/homepage.png';
 import logo from 'app/assets/images/imgMspLogo.png';
 import scanimage from 'app/assets/images/illoScanBag.png';
@@ -51,8 +52,6 @@ const styles = StyleSheet.create({
   },
 
   logoContainer: {
-    width: Style.em(12),
-    height: Style.em(3),
     marginTop: Style.em(0.5),
     marginLeft: Style.em(5.75),
     marginRight: Style.em(5.5),
@@ -102,4 +101,7 @@ const styles = StyleSheet.create({
     opacity: 1
   }
 });
+// HomePage.propTypes = {
+//   navigation: PropTypes.object
+// };
 export default HomePage;
