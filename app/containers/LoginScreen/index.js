@@ -28,7 +28,8 @@ class LoginScreen extends Component {
       this.props.navigation.navigate('HomeScreen');
     };
 
-    const keyboardVerticalOffset = Platform.OS === 'ios' ? Style.em(-14) : 0;
+    const keyboardVerticalOffset =
+      Platform.OS === 'ios' ? Style.em(-14) : Style.em(-8);
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
