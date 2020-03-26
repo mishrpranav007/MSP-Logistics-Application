@@ -20,6 +20,7 @@ import username from 'app/assets/images/username.png';
 import password from 'app/assets/images/password.png';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
 import PropTypes from 'prop-types';
+import { HideWithKeyboard } from 'react-native-hide-with-keyboard';
 import Style from '../../style/index';
 class LoginScreen extends Component {
   render() {
@@ -27,8 +28,7 @@ class LoginScreen extends Component {
       this.props.navigation.navigate('HomeScreen');
     };
 
-    const keyboardVerticalOffset = Platform.OS === 'ios' ? Style.em(9.5) : 0;
-
+    const keyboardVerticalOffset = Platform.OS === 'ios' ? Style.em(-14) : 0;
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
@@ -38,13 +38,15 @@ class LoginScreen extends Component {
             keyboardVerticalOffset={keyboardVerticalOffset}
             enabled
           >
-            <View>
-              <Image source={logo} style={styles.logoContainer}></Image>
-            </View>
+            <HideWithKeyboard>
+              <View>
+                <Image source={logo} style={styles.logoContainer}></Image>
+              </View>
 
-            <View style={styles.deliveryboyImageContainer}>
-              <Image source={deliveryboyimage}></Image>
-            </View>
+              <View style={styles.deliveryboyImageContainer}>
+                <Image source={deliveryboyimage}></Image>
+              </View>
+            </HideWithKeyboard>
             <Formik
               initialValues={{ email: '', password: '' }}
               onSubmit={values => onhandleLogin(values)}
@@ -102,8 +104,8 @@ class LoginScreen extends Component {
                       <Text
                         style={{
                           position: 'relative',
-                          marginLeft: Style.em(4.1),
-                          marginTop: Style.em(0.4),
+                          marginLeft: Style.em(3),
+                          marginTop: Style.em(0.3),
                           color: 'red'
                         }}
                       >
@@ -139,7 +141,7 @@ class LoginScreen extends Component {
                         style={{
                           color: 'red',
                           position: 'relative',
-                          marginLeft: Style.em(4.1),
+                          marginLeft: Style.em(3),
                           marginTop: Style.em(0.4)
                         }}
                       >
@@ -147,14 +149,16 @@ class LoginScreen extends Component {
                       </Text>
                     )}
                   </View>
-                  <TouchableOpacity
-                    style={styles.btnLogin}
-                    onPress={handleSubmit}
-                  >
-                    <Text style={styles.text}>
-                      {this.props.intl.formatMessage({ id: 'login' })}
-                    </Text>
-                  </TouchableOpacity>
+                  <View style={styles.btnLogin}>
+                    <TouchableOpacity
+                      // style={styles.btnLogin}
+                      onPress={handleSubmit}
+                    >
+                      <Text style={styles.text}>
+                        {this.props.intl.formatMessage({ id: 'login' })}
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
                 </View>
               )}
             </Formik>
@@ -188,7 +192,7 @@ const styles = StyleSheet.create({
   deliveryboyImageContainer: {
     width: Style.em(15.56),
     height: Style.em(16),
-    marginLeft: Style.em(7.68),
+    marginLeft: Style.em(7),
     marginTop: Style.em(0.81),
     marginBottom: Platform.OS === 'ios' ? Style.em(2.38) : Style.em(1.5),
     justifyContent: 'center',
@@ -202,7 +206,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Style.WHITE_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
     position: 'relative',
-    marginLeft: Style.em(3.85),
+    marginLeft: Style.em(3),
     paddingLeft: Style.em(1.62),
     paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
     zIndex: 30,
@@ -211,12 +215,14 @@ const styles = StyleSheet.create({
     fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
   },
   btnLogin: {
+    // flex: 1,
     width: Style.em(19.4),
     height: Style.em(3),
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(3.06) : Style.em(2),
-    marginLeft: Style.em(2.31),
+    marginLeft: Style.em(1.8),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.25) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
@@ -230,9 +236,10 @@ const styles = StyleSheet.create({
   inputImageContainer: {
     position: 'absolute',
     left: 0,
+    borderColor: Style.WHITE_COLOR,
     bottom: Style.em(0.31),
     right: Style.em(0.63),
-    marginLeft: Style.em(3.9),
+    marginLeft: Style.em(3),
     height: Style.em(1.08),
     width: Style.em(0.91),
     justifyContent: 'center',
