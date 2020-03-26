@@ -26,12 +26,16 @@ class LoginScreen extends Component {
     const onhandleLogin = () => {
       this.props.navigation.navigate('HomeScreen');
     };
+
+    const keyboardVerticalOffset = Platform.OS === 'ios' ? Style.em(9.5) : 0;
+
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
           <KeyboardAvoidingView
             style={styles.container}
             behavior={Platform.Os === 'ios' ? 'padding' : 'position'}
+            keyboardVerticalOffset={keyboardVerticalOffset}
             enabled
           >
             <View>
@@ -47,13 +51,20 @@ class LoginScreen extends Component {
               validationSchema={yup.object().shape({
                 email: yup
                   .string()
-                  .email('Email must be a valid email')
-                  .required('Email is required'),
+                  .email(this.props.intl.formatMessage({ id: 'email_valid' }))
+                  .required(
+                    this.props.intl.formatMessage({ id: 'email_required' })
+                  ),
 
                 password: yup
                   .string()
-                  .min(6, 'Password must be of at least 6 characters')
-                  .required('Password is required')
+                  .min(
+                    6,
+                    this.props.intl.formatMessage({ id: 'password_minlength' })
+                  )
+                  .required(
+                    this.props.intl.formatMessage({ id: 'password_required' })
+                  )
               })}
             >
               {({
