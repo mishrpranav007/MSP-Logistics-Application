@@ -11,5 +11,6 @@
   "email_valid": "Email must be a valid email",
   "email_required": "Email is required",
   "password_required": "Password is required",
-  "password_minlength": "Password must be of at least 6 characters"
+  "password_minlength": "Password must be of at least 6 characters",
+  "mark_delivered": "Mark as delivered"
 }

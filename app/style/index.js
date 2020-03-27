@@ -59,6 +59,7 @@ export default {
   WHITE_COLOR: 'rgb(255,255,255)',
   PRIMARY_COLOR: 'rgb(36,106,116)',
   SECONDARY_COLOR: 'rgba(19,43,46,0.83)',
+  GRAY_COLOR: 'rgb(109,109,109)',
 
   GRID_ITEM_WIDTH: gridItemWidth
 };
