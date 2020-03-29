@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import { injectIntl } from 'react-intl';
 import deliverydetailsimage from 'app/assets/images/Deliverydetails.png';
-import delivery from 'app/assets/images/delivery.png';
+import pickup from 'app/assets/images/pickup.png';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
 
-const DeliveryDetails = ({ intl }) => (
+const PickupDetails = ({ intl }) => (
   <ImageBackground
     resizeMode="cover"
     source={deliverydetailsimage}
@@ -23,21 +23,25 @@ const DeliveryDetails = ({ intl }) => (
     <View style={styles.textContainer}>
       <Text style={styles.textView}>Jhon Smith</Text>
       <View style={styles.textUnderlineView}></View>
-      <Text style={styles.deliveryDetailsText}>Delivery Details</Text>
+      <Text style={styles.deliveryDetailsText}>Pickup Details</Text>
       <View style={styles.borderLine}></View>
       <View style={styles.RectangleShapeView}>
-        <Text style={styles.customerText}>Customer Name</Text>
-        <Text style={styles.customernameText}>Sarah Jane</Text>
+        <Text style={styles.customerText}>Sarah Jane</Text>
+        <Text style={styles.customernameText}>Bag no. MSP14523</Text>
       </View>
 
       <View>
-        <Image style={styles.shapeSize} source={delivery} />
+        <Image style={styles.shapeSize} source={pickup} />
+      </View>
+
+      <View style={styles.checkboxRetangleView}>
+        <Text style={styles.selectText}>Select state of bag</Text>
       </View>
 
       <View>
-        <TouchableOpacity style={styles.markdeliveredButton}>
+        <TouchableOpacity style={styles.markpickupButton}>
           <Text style={styles.text}>
-            {intl.formatMessage({ id: 'mark_delivered' })}
+            {intl.formatMessage({ id: 'mark_picked' })}
           </Text>
         </TouchableOpacity>
       </View>
@@ -56,13 +60,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'flex-end',
-    marginTop: Style.em(3)
+    marginTop: Style.em(5),
+    marginLeft: Style.em(1)
   },
   textView: {
     color: Style.WHITE_COLOR,
     height: Style.em(0.813),
-    marginRight: Style.em(2.4),
-    textDecorationLine: 'underline'
+    marginRight: Style.em(2.4)
   },
   textUnderlineView: {
     height: Style.em(0),
@@ -75,9 +79,9 @@ const styles = StyleSheet.create({
   deliveryDetailsText: {
     color: Style.WHITE_COLOR,
     fontSize: Style.em(1.125),
-    marginTop: Style.em(1.8),
-    marginLeft: Style.em(1.31),
-    marginRight: Style.em(13)
+    marginTop: Style.em(0.3),
+    marginLeft: Style.em(1),
+    marginRight: Style.em(13.9)
   },
   container: {
     flex: 1,
@@ -87,7 +91,7 @@ const styles = StyleSheet.create({
   RectangleShapeView: {
     width: Style.em(19.5),
     height: Style.em(4.5),
-    marginTop: Style.em(2),
+    marginTop: Style.em(1.3),
     marginRight: Style.em(1.5),
     borderRadius: 8,
     backgroundColor: Style.WHITE_COLOR
@@ -101,7 +105,8 @@ const styles = StyleSheet.create({
   customernameText: {
     fontSize: Style.em(1.5),
     marginLeft: Style.em(1),
-    marginTop: Style.em(0.8)
+    marginTop: Style.em(0.8),
+    textDecorationColor: Style.GRAY_COLOR
   },
   borderLine: {
     borderBottomColor: Style.WHITE_COLOR,
@@ -111,17 +116,29 @@ const styles = StyleSheet.create({
     height: Style.em(19.5),
     width: Style.em(19),
     borderRadius: Style.em(0.8),
-    marginTop: Style.em(2),
+    marginTop: Style.em(1.5),
     marginRight: Style.em(1.89)
   },
-  markdeliveredButton: {
-    width: Style.em(19.4),
-    height: Style.em(3.4),
+  checkboxRetangleView: {
+    width: Style.em(17),
+    height: Style.em(2.1),
+    marginTop: Style.em(1.3),
+    marginRight: Style.em(3),
+    backgroundColor: Style.WHITE_COLOR
+  },
+  selectText: {
+    marginTop: Style.em(0.5),
+    marginLeft: Style.em(0.7),
+    textDecorationColor: Style.SELECT_COLOR
+  },
+  markpickupButton: {
+    width: Style.em(20),
+    height: Style.em(3.6),
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    marginTop: Platform.OS === 'ios' ? Style.em(2.3) : Style.em(2),
-    marginRight: Style.em(1.8),
+    marginTop: Platform.OS === 'ios' ? Style.em(1.5) : Style.em(2),
+    marginRight: Style.em(1.3),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.2) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
@@ -133,7 +150,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 });
-DeliveryDetails.propTypes = {
+PickupDetails.propTypes = {
   intl: PropTypes.object
 };
-export default injectIntl(DeliveryDetails);
+export default injectIntl(PickupDetails);

@@ -3,14 +3,16 @@ import { createStackNavigator } from 'react-navigation-stack';
 import LoginScreen from 'app/containers/LoginScreen/';
 import HomePage from 'app/components/HomePage/';
 import DeliveryDetails from 'app/components/DeliveryDetails/';
+import PickupDetails from 'app/components/PickupDetails/';
 const StackNavigator = createStackNavigator(
   {
     MainScreen: LoginScreen,
     HomeScreen: HomePage,
-    DeliveryScreen: DeliveryDetails
+    DeliveryScreen: DeliveryDetails,
+    PickupScreen: PickupDetails
   },
   {
-    initialRouteName: 'DeliveryScreen',
+    initialRouteName: 'PickupScreen',
     headerMode: 'none'
   }
 );

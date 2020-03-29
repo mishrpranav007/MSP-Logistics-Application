@@ -39,7 +39,7 @@ const HomePage = ({ navigation }) => (
 
       <TouchableOpacity
         style={styles.pickupButtonLogin}
-        onPress={() => navigation.navigate('DeliveryScreen')}
+        onPress={() => navigation.navigate('PickupScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
