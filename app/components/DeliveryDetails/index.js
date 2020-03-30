@@ -12,6 +12,7 @@ import { injectIntl } from 'react-intl';
 import deliverydetailsimage from 'app/assets/images/Deliverydetails.png';
 import PropTypes from 'prop-types';
 import Mask from 'react-native-mask';
+import addimage from 'app/assets/images/addimage.png';
 import Style from '../../style/index';
 
 const DeliveryDetails = ({ intl, navigation }) => (
@@ -32,7 +33,7 @@ const DeliveryDetails = ({ intl, navigation }) => (
 
       <View style={styles.shapeSize}>
         <Mask shape="rounded">
-          <Image></Image>
+          <Image source={addimage} style={styles.addimageview}></Image>
           <Text style={styles.maskedText}>Add Bag photo</Text>
         </Mask>
       </View>
@@ -67,8 +68,7 @@ const styles = StyleSheet.create({
   textView: {
     color: Style.WHITE_COLOR,
     height: Style.em(0.813),
-    marginRight: Style.em(2.4),
-    textDecorationLine: 'underline'
+    marginRight: Style.em(1)
   },
   textUnderlineView: {
     height: Style.em(0),
@@ -76,14 +76,14 @@ const styles = StyleSheet.create({
     borderTopColor: Style.WHITE_COLOR,
     borderTopWidth: 1,
     marginTop: Style.em(0.3),
-    marginRight: Style.em(2.4)
+    marginRight: Style.em(1)
   },
   deliveryDetailsText: {
     color: Style.WHITE_COLOR,
     fontSize: Style.em(1.125),
     marginTop: Style.em(1.8),
-    marginLeft: Style.em(1.31),
-    marginRight: Style.em(13)
+    marginLeft: Style.em(1),
+    marginRight: Style.em(12.5)
   },
   container: {
     flex: 1,
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     width: Style.em(19.5),
     height: Style.em(4.5),
     marginTop: Style.em(2),
-    marginRight: Style.em(1.5),
+    marginRight: Style.em(0.9),
     borderRadius: 8,
     backgroundColor: Style.WHITE_COLOR
   },
@@ -120,13 +120,17 @@ const styles = StyleSheet.create({
     width: Style.em(19),
     borderRadius: Style.em(0.8),
     marginTop: Style.em(2),
-    marginRight: Style.em(1.89),
+    marginRight: Style.em(1.3),
     backgroundColor: Style.POWDER_COLOR
   },
+  addimageview: {
+    marginLeft: Style.em(1.2)
+  },
   maskedText: {
-    marginBottom: Style.em(2),
+    marginBottom: Style.em(1.2),
     fontSize: Style.em(1.2),
-    textDecorationColor: Style.PRIMARY_COLOR
+    textDecorationColor: Style.PRIMARY_COLOR,
+    marginTop: Style.em(5.2)
   },
   markdeliveredButton: {
     width: Style.em(20),
@@ -134,8 +138,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    marginTop: Platform.OS === 'ios' ? Style.em(1.5) : Style.em(2),
-    marginRight: Style.em(1.3),
+    marginTop: Platform.OS === 'ios' ? Style.em(2) : Style.em(2),
+    marginRight: Style.em(0.8),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.2) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
