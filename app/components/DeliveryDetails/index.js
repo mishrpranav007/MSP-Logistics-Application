@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import { injectIntl } from 'react-intl';
 import deliverydetailsimage from 'app/assets/images/Deliverydetails.png';
-import delivery from 'app/assets/images/delivery.png';
 import PropTypes from 'prop-types';
+import Mask from 'react-native-mask';
 import Style from '../../style/index';
 
-const DeliveryDetails = ({ intl }) => (
+const DeliveryDetails = ({ intl, navigation }) => (
   <ImageBackground
     resizeMode="cover"
     source={deliverydetailsimage}
@@ -30,12 +30,18 @@ const DeliveryDetails = ({ intl }) => (
         <Text style={styles.customernameText}>Sarah Jane</Text>
       </View>
 
-      <View>
-        <Image style={styles.shapeSize} source={delivery} />
+      <View style={styles.shapeSize}>
+        <Mask shape="rounded">
+          <Image></Image>
+          <Text style={styles.maskedText}>Add Bag photo</Text>
+        </Mask>
       </View>
 
       <View>
-        <TouchableOpacity style={styles.markdeliveredButton}>
+        <TouchableOpacity
+          style={styles.markdeliveredButton}
+          onPress={() => navigation.navigate('DeliveryScreen')}
+        >
           <Text style={styles.text}>
             {intl.formatMessage({ id: 'mark_delivered' })}
           </Text>
@@ -108,20 +114,28 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   shapeSize: {
+    justifyContent: 'flex-end',
+    alignItems: 'center',
     height: Style.em(19.5),
     width: Style.em(19),
     borderRadius: Style.em(0.8),
     marginTop: Style.em(2),
-    marginRight: Style.em(1.89)
+    marginRight: Style.em(1.89),
+    backgroundColor: Style.POWDER_COLOR
+  },
+  maskedText: {
+    marginBottom: Style.em(2),
+    fontSize: Style.em(1.2),
+    textDecorationColor: Style.PRIMARY_COLOR
   },
   markdeliveredButton: {
-    width: Style.em(19.4),
-    height: Style.em(3.4),
+    width: Style.em(20),
+    height: Style.em(3.6),
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    marginTop: Platform.OS === 'ios' ? Style.em(2.3) : Style.em(2),
-    marginRight: Style.em(1.8),
+    marginTop: Platform.OS === 'ios' ? Style.em(1.5) : Style.em(2),
+    marginRight: Style.em(1.3),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.2) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
@@ -134,6 +148,7 @@ const styles = StyleSheet.create({
   }
 });
 DeliveryDetails.propTypes = {
-  intl: PropTypes.object
+  intl: PropTypes.object,
+  navigation: PropTypes.object
 };
 export default injectIntl(DeliveryDetails);

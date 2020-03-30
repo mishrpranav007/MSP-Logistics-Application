@@ -61,6 +61,7 @@ export default {
   SECONDARY_COLOR: 'rgba(19,43,46,0.83)',
   GRAY_COLOR: 'rgb(109,109,109)',
   SELECT_COLOR: 'rgba(0,0,0,0.65)',
+  POWDER_COLOR: 'rgb(200,247,254)',
 
   GRID_ITEM_WIDTH: gridItemWidth
 };

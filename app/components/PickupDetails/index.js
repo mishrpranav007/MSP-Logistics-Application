@@ -4,50 +4,68 @@ import {
   ImageBackground,
   View,
   Text,
-  Image,
   TouchableOpacity,
   Platform
 } from 'react-native';
 import { injectIntl } from 'react-intl';
 import deliverydetailsimage from 'app/assets/images/Deliverydetails.png';
-import pickup from 'app/assets/images/pickup.png';
 import PropTypes from 'prop-types';
+import Mask from 'react-native-mask';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import ImagePicker from 'react-native-image-picker';
 import Style from '../../style/index';
+const PickupDetails = ({ intl }) => {
+  const handleChoosePhoto = () => {
+    const options = {
+      noData: true
+    };
+    ImagePicker.launchImageLibrary(options, response => {
+      console.log('response', response);
+    });
+  };
+  return (
+    <ImageBackground
+      resizeMode="cover"
+      source={deliverydetailsimage}
+      style={styles.backgroundContainer}
+    >
+      <View style={styles.textContainer}>
+        <Text style={styles.textView}>Jhon Smith</Text>
+        <View style={styles.textUnderlineView}></View>
+        <Text style={styles.deliveryDetailsText}>Pickup Details</Text>
+        <View style={styles.borderLine}></View>
+        <View style={styles.RectangleShapeView}>
+          <Text style={styles.customerText}>Sarah Jane</Text>
+          <Text style={styles.customernameText}>Bag no. MSP14523</Text>
+        </View>
 
-const PickupDetails = ({ intl }) => (
-  <ImageBackground
-    resizeMode="cover"
-    source={deliverydetailsimage}
-    style={styles.backgroundContainer}
-  >
-    <View style={styles.textContainer}>
-      <Text style={styles.textView}>Jhon Smith</Text>
-      <View style={styles.textUnderlineView}></View>
-      <Text style={styles.deliveryDetailsText}>Pickup Details</Text>
-      <View style={styles.borderLine}></View>
-      <View style={styles.RectangleShapeView}>
-        <Text style={styles.customerText}>Sarah Jane</Text>
-        <Text style={styles.customernameText}>Bag no. MSP14523</Text>
-      </View>
+        <View style={styles.shapeSize}>
+          <Mask shape="rounded">
+            <Icon
+              name="camera"
+              size={Style.em(5)}
+              style={styles.iconView}
+              onPress={handleChoosePhoto}
+            />
+            <Text style={styles.maskedText}>Add Bag photo</Text>
+          </Mask>
+        </View>
 
-      <View>
-        <Image style={styles.shapeSize} source={pickup} />
-      </View>
+        <View style={styles.checkboxRectangleView}>
+          <Text style={styles.selectText}>Select state of bag</Text>
+        </View>
 
-      <View style={styles.checkboxRetangleView}>
-        <Text style={styles.selectText}>Select state of bag</Text>
+        <View>
+          <TouchableOpacity style={styles.markpickupButton}>
+            <Text style={styles.text}>
+              {intl.formatMessage({ id: 'mark_picked' })}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
-
-      <View>
-        <TouchableOpacity style={styles.markpickupButton}>
-          <Text style={styles.text}>
-            {intl.formatMessage({ id: 'mark_picked' })}
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  </ImageBackground>
-);
+    </ImageBackground>
+  );
+};
 const styles = StyleSheet.create({
   backgroundContainer: {
     display: 'flex',
@@ -113,13 +131,28 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   shapeSize: {
+    justifyContent: 'flex-end',
+    alignItems: 'center',
     height: Style.em(19.5),
     width: Style.em(19),
     borderRadius: Style.em(0.8),
     marginTop: Style.em(1.5),
-    marginRight: Style.em(1.89)
+    marginRight: Style.em(1.89),
+    backgroundColor: Style.POWDER_COLOR
   },
-  checkboxRetangleView: {
+  maskedText: {
+    marginBottom: Style.em(2),
+    fontSize: Style.em(1.2),
+    textDecorationColor: Style.PRIMARY_COLOR
+  },
+  iconView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    marginTop: Style.em(7),
+    marginLeft: Style.em(1)
+  },
+  checkboxRectangleView: {
     width: Style.em(17),
     height: Style.em(2.1),
     marginTop: Style.em(1.3),

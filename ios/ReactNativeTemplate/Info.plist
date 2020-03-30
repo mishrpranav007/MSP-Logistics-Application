@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>MSP Logistics Application</string>
 	<key>NSCameraUsageDescription</key>
-    <string>Our app need your permission to use your camera phone</string>
+	<string>Our app need your permission to use your camera phone</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
