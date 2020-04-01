@@ -8,7 +8,8 @@ import {
   TextInput,
   TouchableOpacity,
   Text,
-  Platform
+  Platform,
+  Keyboard
 } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup';
@@ -20,10 +21,46 @@ import username from 'app/assets/images/username.png';
 import password from 'app/assets/images/password.png';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
 import PropTypes from 'prop-types';
-import { HideWithKeyboard } from 'react-native-hide-with-keyboard';
 import Style from '../../style/index';
+
 class LoginScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      keyboardUp: false
+    };
+  }
+
+  componentDidMount() {
+    this.keyboardDidShowListener = Keyboard.addListener(
+      Platform.OS === 'android' ? 'keyboardDidShow' : 'keyboardWillShow',
+      this.keyboardDidShow.bind(this)
+    );
+    this.keyboardDidHideListener = Keyboard.addListener(
+      Platform.OS === 'android' ? 'keyboardDidHide' : 'keyboardWillHide',
+      this.keyboardDidHide.bind(this)
+    );
+  }
+
+  componentWillUnmount() {
+    this.keyboardDidShowListener.remove();
+    this.keyboardDidHideListener.remove();
+  }
+
+  keyboardDidShow() {
+    this.setState({
+      keyboardUp: true
+    });
+  }
+
+  keyboardDidHide() {
+    this.setState({
+      keyboardUp: false
+    });
+  }
+
   render() {
+    const { keyboardUp } = this.state;
     const onhandleLogin = () => {
       this.props.navigation.navigate('HomeScreen');
     };
@@ -39,15 +76,18 @@ class LoginScreen extends Component {
             keyboardVerticalOffset={keyboardVerticalOffset}
             enabled
           >
-            <HideWithKeyboard>
+            {!keyboardUp && (
               <View>
-                <Image source={logo} style={styles.logoContainer}></Image>
-              </View>
+                <View>
+                  <Image source={logo} style={styles.logoContainer}></Image>
+                </View>
 
-              <View style={styles.deliveryboyImageContainer}>
-                <Image source={deliveryboyimage}></Image>
+                <View style={styles.deliveryboyImageContainer}>
+                  <Image source={deliveryboyimage}></Image>
+                </View>
               </View>
-            </HideWithKeyboard>
+            )}
+
             <Formik
               initialValues={{ email: '', password: '' }}
               onSubmit={values => onhandleLogin(values)}
@@ -105,7 +145,7 @@ class LoginScreen extends Component {
                       <Text
                         style={{
                           position: 'relative',
-                          marginLeft: Style.em(3),
+                          marginLeft: Style.em(2.7),
                           marginTop: Style.em(0.3),
                           color: 'red'
                         }}
@@ -142,7 +182,7 @@ class LoginScreen extends Component {
                         style={{
                           color: 'red',
                           position: 'relative',
-                          marginLeft: Style.em(3),
+                          marginLeft: Style.em(2.7),
                           marginTop: Style.em(0.4)
                         }}
                       >
@@ -150,9 +190,9 @@ class LoginScreen extends Component {
                       </Text>
                     )}
                   </View>
-                  <View style={styles.btnLogin}>
+                  <View>
                     <TouchableOpacity
-                      // style={styles.btnLogin}
+                      style={styles.btnLogin}
                       onPress={handleSubmit}
                     >
                       <Text style={styles.text}>
@@ -207,7 +247,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Style.WHITE_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
     position: 'relative',
-    marginLeft: Style.em(3),
+    marginLeft: Style.em(2.7),
     paddingLeft: Style.em(1.62),
     paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
     zIndex: 30,
@@ -215,19 +255,34 @@ const styles = StyleSheet.create({
     color: Style.WHITE_COLOR,
     fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
   },
+  buttonView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   btnLogin: {
     // flex: 1,
-    width: Style.em(19.4),
+    width: Style.em(19.8),
     height: Style.em(3),
+
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(3.06) : Style.em(2),
-    marginLeft: Style.em(1.8),
+    marginLeft: Style.em(1.3),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.25) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
-    zIndex: 100
+    zIndex: 100,
+    shadowColor: Style.WHITE_COLOR,
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 0.35,
+    shadowRadius: 13.16,
+
+    elevation: 20
   },
   text: {
     color: Style.WHITE_COLOR,
@@ -240,7 +295,7 @@ const styles = StyleSheet.create({
     borderColor: Style.WHITE_COLOR,
     bottom: Style.em(0.31),
     right: Style.em(0.63),
-    marginLeft: Style.em(3),
+    marginLeft: Style.em(2.7),
     height: Style.em(1.08),
     width: Style.em(0.91),
     justifyContent: 'center',

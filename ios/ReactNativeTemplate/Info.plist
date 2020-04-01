@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>MSP Logistics Application</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Our app need your permission to use your camera phone</string>
+	<string>Your message to user when the camera is accessed for the first time</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -41,6 +41,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo Library Access Warning</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -3,7 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import LoginScreen from 'app/containers/LoginScreen/';
 import HomePage from 'app/components/HomePage/';
 import DeliveryDetails from 'app/containers/DeliveryDetails/';
-import PickupDetails from 'app/components/PickupDetails/';
+import PickupDetails from 'app/containers/PickupDetails/';
 const StackNavigator = createStackNavigator(
   {
     MainScreen: LoginScreen,
@@ -12,7 +12,7 @@ const StackNavigator = createStackNavigator(
     PickupScreen: PickupDetails
   },
   {
-    initialRouteName: 'DeliveryScreen',
+    initialRouteName: 'PickupScreen',
     headerMode: 'none'
   }
 );

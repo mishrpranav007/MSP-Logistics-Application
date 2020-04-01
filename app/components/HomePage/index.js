@@ -78,7 +78,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
     borderRadius: Style.em(0.69),
-    borderTopColor: Style.SECONDARY_COLOR
+    borderTopColor: Style.SECONDARY_COLOR,
+    shadowColor: Style.WHITE_COLOR,
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 0.35,
+    shadowRadius: 13.16,
+
+    elevation: 20
   },
   pickupButtonLogin: {
     width: Style.em(18.5),
@@ -89,7 +98,16 @@ const styles = StyleSheet.create({
     borderRadius: Style.em(0.69),
     marginBottom: Style.em(0.75),
     borderTopColor: Style.SECONDARY_COLOR,
-    zIndex: 100
+    zIndex: 100,
+    shadowColor: Style.WHITE_COLOR,
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 0.35,
+    shadowRadius: 13.16,
+
+    elevation: 20
   },
   text: {
     color: Style.WHITE_COLOR,
