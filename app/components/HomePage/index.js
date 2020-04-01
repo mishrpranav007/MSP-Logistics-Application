@@ -29,7 +29,7 @@ const HomePage = ({ navigation }) => (
     <View>
       <TouchableOpacity
         style={styles.deliveryButtonLogin}
-        onPress={() => navigation.navigate('DeliveryScreen')}
+        onPress={() => navigation.navigate('ScanScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
@@ -39,7 +39,7 @@ const HomePage = ({ navigation }) => (
 
       <TouchableOpacity
         style={styles.pickupButtonLogin}
-        onPress={() => navigation.navigate('PickupScreen')}
+        onPress={() => navigation.navigate('ScanScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
