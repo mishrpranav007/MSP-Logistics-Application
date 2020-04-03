@@ -2,7 +2,7 @@ import mockAsyncStorage from '@react-native-community/async-storage/jest/async-s
 
 jest.mock('react-native-permissions', () => ({
   check: () => {},
-  requests: () => {},
+  request: async () => jest.fn(),
   PERMISSIONS: {
     IOS: {}
   },
