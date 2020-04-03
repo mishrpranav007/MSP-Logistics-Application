@@ -127,7 +127,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                       "height": 27.154285714285717,
                       "justifyContent": "center",
                       "left": 0,
-                      "marginLeft": 75.42857142857143,
+                      "marginLeft": 67.88571428571429,
                       "opacity": 0.94,
                       "position": "absolute",
                       "right": 15.84,
@@ -148,7 +148,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                       "borderBottomWidth": 1,
                       "color": "rgb(255,255,255)",
                       "fontSize": 21.874285714285715,
-                      "marginLeft": 75.42857142857143,
+                      "marginLeft": 67.88571428571429,
                       "marginTop": 45.50857142857143,
                       "opacity": 0.94,
                       "paddingBottom": null,
@@ -180,7 +180,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                       "height": 27.154285714285717,
                       "justifyContent": "center",
                       "left": 0,
-                      "marginLeft": 75.42857142857143,
+                      "marginLeft": 67.88571428571429,
                       "opacity": 0.94,
                       "position": "absolute",
                       "right": 15.84,
@@ -202,7 +202,7 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                       "borderBottomWidth": 1,
                       "color": "rgb(255,255,255)",
                       "fontSize": 21.874285714285715,
-                      "marginLeft": 75.42857142857143,
+                      "marginLeft": 67.88571428571429,
                       "marginTop": 45.50857142857143,
                       "opacity": 0.94,
                       "paddingBottom": null,
@@ -219,24 +219,33 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
               </View>
               <View />
               <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "rgb(36,106,116)",
-                    "borderRadius": 17.348571428571425,
-                    "borderTopColor": "rgba(19,43,46,0.83)",
-                    "height": 75.42857142857143,
-                    "justifyContent": "center",
-                    "marginBottom": 81.71428571428572,
-                    "marginLeft": 45.25714285714285,
-                    "marginTop": 76.93714285714286,
-                    "width": 487.77142857142854,
-                    "zIndex": 100,
-                  }
-                }
+                testID="log-in-screen-button"
               >
                 <TouchableOpacity
                   activeOpacity={0.2}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "rgb(36,106,116)",
+                      "borderRadius": 17.348571428571425,
+                      "borderTopColor": "rgba(19,43,46,0.83)",
+                      "elevation": 20,
+                      "height": 75.42857142857143,
+                      "justifyContent": "center",
+                      "marginBottom": 81.71428571428572,
+                      "marginLeft": 32.68571428571428,
+                      "marginTop": 76.93714285714286,
+                      "shadowColor": "rgb(255,255,255)",
+                      "shadowOffset": Object {
+                        "height": 10,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.35,
+                      "shadowRadius": 13.16,
+                      "width": 497.8285714285714,
+                      "zIndex": 100,
+                    }
+                  }
                 >
                   <Text
                     style={
