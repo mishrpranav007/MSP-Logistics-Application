@@ -66,7 +66,7 @@ class LoginScreen extends Component {
     };
 
     const keyboardVerticalOffset =
-      Platform.OS === 'ios' ? Style.em(-14) : Style.em(-8);
+      Platform.OS === 'ios' ? Style.em(-14) : Style.em(-22);
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>

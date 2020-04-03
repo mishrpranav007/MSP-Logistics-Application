@@ -35,6 +35,9 @@ target 'ReactNativeTemplate' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+
   target 'ReactNativeTemplateTests' do
     inherit! :search_paths
     # Pods for testing

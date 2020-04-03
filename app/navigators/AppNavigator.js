@@ -7,14 +7,14 @@ import PickupDetails from 'app/containers/PickupDetails/';
 import ScanCode from 'app/components/ScanCode/';
 const StackNavigator = createStackNavigator(
   {
+    ScanScreen: ScanCode,
     MainScreen: LoginScreen,
     HomeScreen: HomePage,
     DeliveryScreen: DeliveryDetails,
-    PickupScreen: PickupDetails,
-    ScanScreen: ScanCode
+    PickupScreen: PickupDetails
   },
   {
-    initialRouteName: 'PickupScreen',
+    initialRouteName: 'ScanScreen',
     headerMode: 'none'
   }
 );
