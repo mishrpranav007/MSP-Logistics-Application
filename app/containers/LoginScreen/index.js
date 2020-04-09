@@ -3,13 +3,11 @@ import {
   StyleSheet,
   View,
   ImageBackground,
-  // KeyboardAvoidingView,
   Image,
   TextInput,
   TouchableOpacity,
   Text,
   Platform,
-  // ScrollView
   Keyboard
 } from 'react-native';
 import { Formik } from 'formik';
@@ -65,16 +63,12 @@ class LoginScreen extends Component {
     const onhandleLogin = () => {
       this.props.navigation.navigate('HomeScreen');
     };
-
-    // const keyboardVerticalOffset =
-    //   Platform.OS === 'ios' ? Style.em(-14) : Style.em(-22);
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
           <View
             style={styles.container}
             behavior={Platform.Os === 'ios' ? 'padding' : 'position'}
-            // keyboardVerticalOffset={keyboardVerticalOffset}
             enabled
           >
             <View>
@@ -254,7 +248,7 @@ const styles = StyleSheet.create({
     marginBottom: Style.em(1)
   },
   logoContainerWithKeyboard: {
-    marginTop: Platform.OS === 'ios' ? Style.em(0) : Style.em(5.1),
+    marginTop: Platform.OS === 'ios' ? Style.em(-2.5) : Style.em(-3),
     marginLeft: Style.em(5.7),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
@@ -264,7 +258,7 @@ const styles = StyleSheet.create({
   deliveryboyImageContainer: {
     width: Style.em(15.56),
     height: Style.em(16),
-    marginLeft: Style.em(4),
+    marginLeft: Style.em(4.5),
     marginTop: Style.em(0.81),
     marginBottom: Platform.OS === 'ios' ? Style.em(2.38) : Style.em(1.5),
     justifyContent: 'center',
@@ -272,11 +266,11 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   stretch: {
-    width: 200,
-    height: 200,
-    marginLeft: Style.em(7),
+    width: Style.em(12.5),
+    height: Style.em(12.5),
+    marginLeft: Style.em(5.8),
     paddingTop: Style.em(1),
-    marginBottom: Style.em(0),
+    marginBottom: Style.em(2),
     resizeMode: 'stretch'
   },
 
@@ -317,10 +311,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   btnLogin: {
-    // flex: 1,
     width: Style.em(19.8),
     height: Style.em(3),
-
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
@@ -337,7 +329,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.35,
     shadowRadius: 13.16,
-
     elevation: 20
   },
   text: {
