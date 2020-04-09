@@ -3,12 +3,13 @@ import {
   StyleSheet,
   View,
   ImageBackground,
-  KeyboardAvoidingView,
+  // KeyboardAvoidingView,
   Image,
   TextInput,
   TouchableOpacity,
   Text,
   Platform,
+  // ScrollView
   Keyboard
 } from 'react-native';
 import { Formik } from 'formik';
@@ -65,28 +66,42 @@ class LoginScreen extends Component {
       this.props.navigation.navigate('HomeScreen');
     };
 
-    const keyboardVerticalOffset =
-      Platform.OS === 'ios' ? Style.em(-14) : Style.em(-22);
+    // const keyboardVerticalOffset =
+    //   Platform.OS === 'ios' ? Style.em(-14) : Style.em(-22);
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
-          <KeyboardAvoidingView
+          <View
             style={styles.container}
             behavior={Platform.Os === 'ios' ? 'padding' : 'position'}
-            keyboardVerticalOffset={keyboardVerticalOffset}
+            // keyboardVerticalOffset={keyboardVerticalOffset}
             enabled
           >
-            {!keyboardUp && (
+            <View>
               <View>
-                <View>
-                  <Image source={logo} style={styles.logoContainer}></Image>
-                </View>
-
-                <View style={styles.deliveryboyImageContainer}>
-                  <Image source={deliveryboyimage}></Image>
-                </View>
+                <Image
+                  source={logo}
+                  style={[
+                    styles.logoContainer,
+                    keyboardUp
+                      ? styles.logoContainerWithKeyboard
+                      : styles.logoContainer
+                  ]}
+                ></Image>
               </View>
-            )}
+
+              <View>
+                <Image
+                  style={[
+                    styles.deliveryboyImageContainer,
+                    keyboardUp
+                      ? styles.stretch
+                      : styles.deliveryboyImageContainer
+                  ]}
+                  source={deliveryboyimage}
+                ></Image>
+              </View>
+            </View>
 
             <Formik
               initialValues={{ email: '', password: '' }}
@@ -103,7 +118,9 @@ class LoginScreen extends Component {
                   .string()
                   .min(
                     6,
-                    this.props.intl.formatMessage({ id: 'password_minlength' })
+                    this.props.intl.formatMessage({
+                      id: 'password_minlength'
+                    })
                   )
                   .required(
                     this.props.intl.formatMessage({ id: 'password_required' })
@@ -127,7 +144,10 @@ class LoginScreen extends Component {
                     <TextInput
                       testID="log-in-screen-text-input"
                       value={values.email}
-                      style={styles.input}
+                      style={[
+                        styles.input,
+                        keyboardUp ? styles.inputWithKeyboard : styles.input
+                      ]}
                       placeholder={this.props.intl.formatMessage({
                         id: 'placeholder_email'
                       })}
@@ -165,7 +185,10 @@ class LoginScreen extends Component {
                       ref={input => {
                         this.secondTextInput = input;
                       }}
-                      style={styles.input}
+                      style={[
+                        styles.input,
+                        keyboardUp ? styles.inputWithKeyboard : styles.input
+                      ]}
                       placeholder={this.props.intl.formatMessage({
                         id: 'placeholder_password'
                       })}
@@ -203,7 +226,7 @@ class LoginScreen extends Component {
                 </View>
               )}
             </Formik>
-          </KeyboardAvoidingView>
+          </View>
         </DismissableKeyboard>
       </ImageBackground>
     );
@@ -223,7 +246,15 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    marginTop: Platform.OS === 'ios' ? Style.em(3.13) : Style.em(5.1),
+    marginTop: Platform.OS === 'ios' ? Style.em(2.1) : Style.em(5.1),
+    marginLeft: Style.em(5.7),
+    marginRight: Style.em(5.5),
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginBottom: Style.em(1)
+  },
+  logoContainerWithKeyboard: {
+    marginTop: Platform.OS === 'ios' ? Style.em(0) : Style.em(5.1),
     marginLeft: Style.em(5.7),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
@@ -233,11 +264,20 @@ const styles = StyleSheet.create({
   deliveryboyImageContainer: {
     width: Style.em(15.56),
     height: Style.em(16),
-    marginLeft: Style.em(7),
+    marginLeft: Style.em(4),
     marginTop: Style.em(0.81),
     marginBottom: Platform.OS === 'ios' ? Style.em(2.38) : Style.em(1.5),
     justifyContent: 'center',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
+    resizeMode: 'contain'
+  },
+  stretch: {
+    width: 200,
+    height: 200,
+    marginLeft: Style.em(7),
+    paddingTop: Style.em(1),
+    marginBottom: Style.em(0),
+    resizeMode: 'stretch'
   },
 
   input: {
@@ -255,6 +295,22 @@ const styles = StyleSheet.create({
     color: Style.WHITE_COLOR,
     fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
   },
+  inputWithKeyboard: {
+    width: Style.em(17),
+    backgroundColor: 'transparent',
+    borderBottomWidth: 1,
+    borderBottomColor: Style.WHITE_COLOR,
+    marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
+    position: 'relative',
+    marginLeft: Style.em(2.7),
+    paddingLeft: Style.em(1.62),
+    paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
+    zIndex: 30,
+    opacity: 0.94,
+    color: Style.WHITE_COLOR,
+    fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
+  },
+
   buttonView: {
     flex: 1,
     justifyContent: 'center',
