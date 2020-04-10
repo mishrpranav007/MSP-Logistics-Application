@@ -269,8 +269,7 @@ const styles = StyleSheet.create({
     width: Style.em(12.5),
     height: Style.em(12.5),
     marginLeft: Style.em(5.8),
-    paddingTop: Style.em(1),
-    marginBottom: Style.em(2),
+
     resizeMode: 'stretch'
   },
 

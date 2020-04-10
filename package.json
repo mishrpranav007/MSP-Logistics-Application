@@ -62,7 +62,7 @@
     "react-i18next": "^11.3.4",
     "react-intl": "2.8.0",
     "react-native": "0.60.6",
-    "react-native-camera": "^3.21.0",
+    "react-native-camera": "^3.22.1",
     "react-native-cli": "^2.0.1",
     "react-native-elements": "^1.2.7",
     "react-native-formik": "^1.7.8",
