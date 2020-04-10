@@ -22,19 +22,29 @@ const DeliveryDetails = ({ intl, navigation }) => (
     style={styles.backgroundContainer}
   >
     <View style={styles.textContainer}>
-      <Text style={styles.textView}>Jhon Smith</Text>
+      <Text style={styles.textView}>
+        {intl.formatMessage({ id: 'john_smith' })}
+      </Text>
       <View style={styles.textUnderlineView}></View>
-      <Text style={styles.deliveryDetailsText}>Delivery Details</Text>
+      <Text style={styles.deliveryDetailsText}>
+        {intl.formatMessage({ id: 'delivery_details' })}
+      </Text>
       <View style={styles.borderLine}></View>
       <View style={styles.RectangleShapeView}>
-        <Text style={styles.customerText}>Customer Name</Text>
-        <Text style={styles.customernameText}>Sarah Jane</Text>
+        <Text style={styles.customerText}>
+          {intl.formatMessage({ id: 'customer_name' })}
+        </Text>
+        <Text style={styles.customernameText}>
+          {intl.formatMessage({ id: 'sarah_jane' })}
+        </Text>
       </View>
 
       <View style={styles.shapeSize}>
         <Mask shape="rounded">
           <Image source={addimage} style={styles.addimageview}></Image>
-          <Text style={styles.maskedText}>Add Bag photo</Text>
+          <Text style={styles.maskedText}>
+            {intl.formatMessage({ id: 'add_bag' })}
+          </Text>
         </Mask>
       </View>
 
