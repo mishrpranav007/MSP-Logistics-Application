@@ -24,7 +24,7 @@ class DeliveryDetails extends Component {
     };
   }
 
-  handleChoosePhoto = () => {
+  selectImageMethod = () => {
     const options = {
       noData: true
     };
@@ -44,13 +44,21 @@ class DeliveryDetails extends Component {
         style={styles.backgroundContainer}
       >
         <View style={styles.textContainer}>
-          <Text style={styles.textView}>Jhon Smith</Text>
+          <Text style={styles.textView}>
+            {this.props.intl.formatMessage({ id: 'john_smith' })}
+          </Text>
           <View style={styles.textUnderlineView}></View>
-          <Text style={styles.deliveryDetailsText}>Delivery Details</Text>
+          <Text style={styles.deliveryDetailsText}>
+            {this.props.intl.formatMessage({ id: 'delivery_details' })}
+          </Text>
           <View style={styles.borderLine}></View>
-          <View style={styles.RectangleShapeView}>
-            <Text style={styles.customerText}>Customer Name</Text>
-            <Text style={styles.customernameText}>Sarah Jane</Text>
+          <View style={styles.rectangleShapeView}>
+            <Text style={styles.customerText}>
+              {this.props.intl.formatMessage({ id: 'customer_name' })}
+            </Text>
+            <Text style={styles.customernameText}>
+              {this.props.intl.formatMessage({ id: 'sarah_jane' })}
+            </Text>
           </View>
 
           <View style={styles.shapeSize}>
@@ -64,14 +72,16 @@ class DeliveryDetails extends Component {
 
               {!photo && (
                 <View>
-                  <TouchableOpacity onPress={this.handleChoosePhoto}>
+                  <TouchableOpacity onPress={this.selectImageMethod}>
                     <Image
                       source={addimage}
                       style={styles.addimageview}
                     ></Image>
                   </TouchableOpacity>
 
-                  <Text style={styles.maskedText}>Add Bag photo</Text>
+                  <Text style={styles.maskedText}>
+                    {this.props.intl.formatMessage({ id: 'add_bag' })}
+                  </Text>
                 </View>
               )}
             </Mask>
@@ -131,7 +141,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  RectangleShapeView: {
+  rectangleShapeView: {
     width: Style.em(19.5),
     height: Style.em(5),
     marginTop: Style.em(2),

@@ -13,5 +13,10 @@
   "password_required": "Password is required",
   "password_minlength": "Password must be of at least 6 characters",
   "mark_delivered": "Mark as delivered",
-  "mark_picked": "Mark as picked"
+  "mark_picked": "Mark as picked",
+  "john_smith": "Jhon Smith",
+  "delivery_details": "Delivery Details",
+  "customer_name": "Customer Name",
+  "sarah_jane": "Sarah Jane",
+  "add_bag": "Add Bag photo"
 }

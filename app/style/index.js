@@ -63,7 +63,8 @@ export default {
   SELECT_COLOR: 'rgba(0,0,0,0.65)',
   POWDER_COLOR: 'rgb(200,247,254)',
   SHADOW_COLOR: 'rgba(19,43,46,0.83)',
-  BLACK_COLOR: 'rgb(0.0.0)',
+  BLACK_COLOR: 'rgb(0,0,0)',
+  GREEN_COLOR: 'rgb(0,128,0)',
 
   GRID_ITEM_WIDTH: gridItemWidth
 };

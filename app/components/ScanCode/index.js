@@ -24,7 +24,7 @@ export default class ScanCode extends Component {
     Linking.openURL(e.data);
   };
 
-  torchEnableMethod = () => {
+  onTorchToggled = () => {
     if (this.state.torchEnable === false) {
       this.setState({ torchEnable: true });
     } else {
@@ -32,19 +32,19 @@ export default class ScanCode extends Component {
     }
   };
 
-  handleCancelMethod = () => {
+  onCancelSelected = () => {
     this.props.navigation.goBack();
   };
 
   render() {
     const { torchEnable } = this.state;
     return (
-      <View style={styles.Container}>
+      <View style={styles.container} testID="scan-code">
         <View style={styles.headerIcons}>
-          <TouchableOpacity onPress={this.torchEnableMethod}>
+          <TouchableOpacity onPress={this.onTorchToggled}>
             <Image source={flashimage} style={styles.imageContainer}></Image>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.handleCancelMethod}>
+          <TouchableOpacity onPress={this.onCancelSelected}>
             <Image
               source={cancelimage}
               style={styles.cancelimageContainer}
@@ -52,6 +52,7 @@ export default class ScanCode extends Component {
           </TouchableOpacity>
         </View>
         <QRCodeScanner
+          testID="scan-code-qrcode-scanner"
           containerStyle={styles.cameraContainer}
           onRead={this.onSuccess}
           showMarker
@@ -76,16 +77,16 @@ export default class ScanCode extends Component {
 }
 
 const styles = StyleSheet.create({
-  Container: {
+  container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: Style.BLACK_COLOR,
     opacity: 0.99
   },
   cameraContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
+    backgroundColor: Style.BLACK_COLOR,
 
     marginTop: Style.em(11)
   },
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     height: Style.em(17.5),
     width: Style.em(17.5),
     borderWidth: 2,
-    borderColor: 'green',
+    borderColor: Style.GREEN_COLOR,
     borderRadius: 12,
     backgroundColor: 'transparent'
   },
