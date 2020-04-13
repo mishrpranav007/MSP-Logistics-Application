@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { RNCamera } from 'react-native-camera';
-import flashimage from 'app/assets/images/flash.png';
-import cancelimage from 'app/assets/images/Cancel_illo.png';
+import flashImage from 'app/assets/images/flash.png';
+import cancelImage from 'app/assets/images/Cancel_illo.png';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
 export default class ScanCode extends Component {
@@ -39,12 +39,12 @@ export default class ScanCode extends Component {
       <View style={styles.container} testID="scan-code">
         <View style={styles.headerIcons}>
           <TouchableOpacity onPress={this.onTorchToggled}>
-            <Image source={flashimage} style={styles.imageContainer}></Image>
+            <Image source={flashImage} style={styles.imageContainer}></Image>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.onCancelSelected}>
             <Image
-              source={cancelimage}
-              style={styles.cancelimageContainer}
+              source={cancelImage}
+              style={styles.cancelImageContainer}
             ></Image>
           </TouchableOpacity>
         </View>
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
-  cancelimageContainer: {
+  cancelImageContainer: {
     marginRight: Style.em(1),
     marginTop: Style.em(1.2)
   }
