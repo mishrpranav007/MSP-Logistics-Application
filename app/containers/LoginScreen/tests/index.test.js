@@ -23,7 +23,7 @@ describe('<LoginScreen />', () => {
     const { getAllByTestId } = await renderWithIntl(<LoginScreen />);
     expect(getAllByTestId('log-in-screen-button').length).toBe(1);
   });
-  it('should have correct email value paased to it', async () => {
+  it('should have correct email value passed to it', async () => {
     const emailText = 'abc123@gmail.com';
     const { getAllByTestId } = renderWithIntl(
       <LoginScreen>
@@ -43,7 +43,7 @@ describe('<LoginScreen />', () => {
       getAllByTestId('log-in-screen-text-input')[0].props.value
     ).not.toEqual(null);
   });
-  it('should have correct password value paased to it', async () => {
+  it('should have correct password value passed to it', async () => {
     const passwordText = 'qwerty123';
     const { getAllByTestId } = renderWithIntl(
       <LoginScreen>
