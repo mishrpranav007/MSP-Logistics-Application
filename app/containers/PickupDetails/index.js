@@ -30,7 +30,6 @@ class PickupDetails extends Component {
       noData: true
     };
     ImagePicker.launchImageLibrary(options, response => {
-      console.log('Response', response);
       if (response.uri) {
         this.setState({ photo: response });
       }
@@ -56,7 +55,7 @@ class PickupDetails extends Component {
           <View style={styles.textUnderlineView}></View>
           <Text style={styles.deliveryDetailsText}>Pickup Details</Text>
           <View style={styles.borderLine}></View>
-          <View style={styles.RectangleShapeView}>
+          <View style={styles.rectangleShapeView}>
             <Text style={styles.customerText}>Sarah Jane</Text>
             <Text style={styles.customernameText}>Bag no. MSP14523</Text>
           </View>
@@ -144,7 +143,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  RectangleShapeView: {
+  rectangleShapeView: {
     width: Style.em(19.5),
     height: Style.em(4.5),
     marginTop: Style.em(1.3),

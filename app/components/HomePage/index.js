@@ -8,22 +8,22 @@ import {
   TouchableOpacity
 } from 'react-native';
 import PropTypes from 'prop-types';
-import homepage from 'app/assets/images/homepage.png';
+import homePage from 'app/assets/images/homepage.png';
 import logo from 'app/assets/images/imgMspLogo.png';
-import scanimage from 'app/assets/images/illoScanBag.png';
-import bitmapimage from 'app/assets/images/bitmapImage.png';
+import scanImage from 'app/assets/images/illoScanBag.png';
+import bitmapImage from 'app/assets/images/bitmapImage.png';
 import Style from '../../style/index';
 const HomePage = ({ navigation }) => (
   <ImageBackground
     testID="home-page"
-    source={homepage}
+    source={homePage}
     style={styles.backgroundContainer}
   >
     <View style={styles.logoView}>
       <Image source={logo} style={styles.logoContainer}></Image>
     </View>
     <View style={styles.scanImageContainer}>
-      <Image source={scanimage}></Image>
+      <Image source={scanImage}></Image>
     </View>
 
     <View>
@@ -32,7 +32,7 @@ const HomePage = ({ navigation }) => (
         onPress={() => navigation.navigate('ScanScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
-          <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
+          <Image source={bitmapImage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for delivery</Text>
         </View>
       </TouchableOpacity>
@@ -42,7 +42,7 @@ const HomePage = ({ navigation }) => (
         onPress={() => navigation.navigate('ScanScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
-          <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
+          <Image source={bitmapImage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for pickup</Text>
         </View>
       </TouchableOpacity>

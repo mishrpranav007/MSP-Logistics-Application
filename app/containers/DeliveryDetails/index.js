@@ -75,7 +75,7 @@ class DeliveryDetails extends Component {
                   <TouchableOpacity onPress={this.selectImageMethod}>
                     <Image
                       source={addimage}
-                      style={styles.addimageview}
+                      style={styles.addImageView}
                     ></Image>
                   </TouchableOpacity>
 
@@ -89,7 +89,7 @@ class DeliveryDetails extends Component {
 
           <View>
             <TouchableOpacity
-              style={styles.markdeliveredButton}
+              style={styles.markDeliveredButton}
               onPress={() => this.props.navigation.navigate('DeliveryDetails')}
             >
               <Text style={styles.text}>
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     marginRight: Style.em(1.3),
     backgroundColor: Style.POWDER_COLOR
   },
-  addimageview: {
+  addImageView: {
     marginLeft: Style.em(1.2)
   },
   maskedText: {
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     textDecorationColor: Style.PRIMARY_COLOR,
     marginTop: Style.em(5.2)
   },
-  markdeliveredButton: {
+  markDeliveredButton: {
     width: Style.em(20),
     height: Style.em(3.6),
     justifyContent: 'center',

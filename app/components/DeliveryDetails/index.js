@@ -50,7 +50,7 @@ const DeliveryDetails = ({ intl, navigation }) => (
 
       <View>
         <TouchableOpacity
-          style={styles.markdeliveredButton}
+          style={styles.markDeliveredButton}
           onPress={() => navigation.navigate('DeliveryScreen')}
         >
           <Text style={styles.text}>
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     textDecorationColor: Style.PRIMARY_COLOR,
     marginTop: Style.em(5.2)
   },
-  markdeliveredButton: {
+  markDeliveredButton: {
     width: Style.em(20),
     height: Style.em(3.6),
     justifyContent: 'center',

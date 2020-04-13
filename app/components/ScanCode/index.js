@@ -25,11 +25,8 @@ export default class ScanCode extends Component {
   };
 
   onTorchToggled = () => {
-    if (this.state.torchEnable === false) {
-      this.setState({ torchEnable: true });
-    } else {
-      this.setState({ torchEnable: false });
-    }
+    const { torchEnable } = this.state;
+    this.setState({ torchEnable: !torchEnable });
   };
 
   onCancelSelected = () => {
