@@ -24,7 +24,7 @@ import Style from '../../style/index';
 
 class LoginScreen extends Component {
   render() {
-    const handleLogin = () => {
+    const onSubmit = () => {
       this.props.navigation.navigate('HomeScreen');
     };
     return (
@@ -50,7 +50,7 @@ class LoginScreen extends Component {
 
             <Formik
               initialValues={{ email: '', password: '' }}
-              onSubmit={values => handleLogin(values)}
+              onSubmit={values => onSubmit(values)}
               validationSchema={yup.object().shape({
                 email: yup
                   .string()
