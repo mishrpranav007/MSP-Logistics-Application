@@ -63,7 +63,7 @@ describe('<LoginScreen />', () => {
       getAllByTestId('log-in-screen-text-input')[1].props.value
     ).not.toEqual(null);
   });
-  it('should check whether setFielTouched method is getting called when onBlur even is triggered with email input', async () => {
+  it('should check whether setFieldTouched method is getting called when onBlur even is triggered with email input', async () => {
     const { getAllByTestId } = renderWithIntl(
       <LoginScreen>
         <TextInput
@@ -77,7 +77,7 @@ describe('<LoginScreen />', () => {
     });
     expect(submitSpy).toHaveBeenCalled();
   });
-  it('should check whether setFielTouched method is getting called when onBlur even is triggered with password input', async () => {
+  it('should check whether setFieldTouched method is getting called when onBlur even is triggered with password input', async () => {
     const { getAllByTestId } = renderWithIntl(
       <LoginScreen>
         <TextInput

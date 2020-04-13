@@ -8,7 +8,7 @@
   "placeholder_email": "Enter your email address",
   "placeholder_password": "Enter password",
   "login": "Login",
-  "email_valid": "Email must be a valid email",
+  "email_valid": "Please enter a valid email",
   "email_required": "Email is required",
   "password_required": "Password is required",
   "password_minlength": "Password must be of at least 6 characters"
