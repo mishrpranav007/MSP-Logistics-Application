@@ -36,7 +36,7 @@ describe('<LoginScreen />', () => {
         emailText
       );
     });
-    expect(getAllByTestId('log-in-screen-text-input')[0].props.value).toMatch(
+    expect(getAllByTestId('log-in-screen-text-input')[0].props.value).toEqual(
       emailText
     );
     expect(
@@ -56,7 +56,7 @@ describe('<LoginScreen />', () => {
         passwordText
       );
     });
-    expect(getAllByTestId('log-in-screen-text-input')[1].props.value).toMatch(
+    expect(getAllByTestId('log-in-screen-text-input')[1].props.value).toEqual(
       passwordText
     );
     expect(
