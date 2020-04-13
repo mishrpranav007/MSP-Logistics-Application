@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   Text,
   Platform,
-  Keyboard
+  KeyboardAvoidingView
 } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup';
@@ -23,75 +23,26 @@ import PropTypes from 'prop-types';
 import Style from '../../style/index';
 
 class LoginScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      keyboardUp: false
-    };
-  }
-
-  componentDidMount() {
-    this.keyboardDidShowListener = Keyboard.addListener(
-      Platform.OS === 'android' ? 'keyboardDidShow' : 'keyboardWillShow',
-      this.keyboardDidShow.bind(this)
-    );
-    this.keyboardDidHideListener = Keyboard.addListener(
-      Platform.OS === 'android' ? 'keyboardDidHide' : 'keyboardWillHide',
-      this.keyboardDidHide.bind(this)
-    );
-  }
-
-  componentWillUnmount() {
-    this.keyboardDidShowListener.remove();
-    this.keyboardDidHideListener.remove();
-  }
-
-  keyboardDidShow() {
-    this.setState({
-      keyboardUp: true
-    });
-  }
-
-  keyboardDidHide() {
-    this.setState({
-      keyboardUp: false
-    });
-  }
-
   render() {
-    const { keyboardUp } = this.state;
     const onhandleLogin = () => {
       this.props.navigation.navigate('HomeScreen');
     };
     return (
       <ImageBackground source={homepage} style={styles.backgroundContainer}>
         <DismissableKeyboard>
-          <View
+          <KeyboardAvoidingView
             style={styles.container}
             behavior={Platform.Os === 'ios' ? 'padding' : 'position'}
             enabled
           >
             <View>
               <View>
-                <Image
-                  source={logo}
-                  style={[
-                    styles.logoContainer,
-                    keyboardUp
-                      ? styles.logoContainerWithKeyboard
-                      : styles.logoContainer
-                  ]}
-                ></Image>
+                <Image source={logo} style={[styles.logoContainer]}></Image>
               </View>
 
               <View>
                 <Image
-                  style={[
-                    styles.deliveryboyImageContainer,
-                    keyboardUp
-                      ? styles.stretch
-                      : styles.deliveryboyImageContainer
-                  ]}
+                  style={[styles.deliveryboyImageContainer]}
                   source={deliveryboyimage}
                 ></Image>
               </View>
@@ -138,10 +89,7 @@ class LoginScreen extends Component {
                     <TextInput
                       testID="log-in-screen-text-input"
                       value={values.email}
-                      style={[
-                        styles.input,
-                        keyboardUp ? styles.inputWithKeyboard : styles.input
-                      ]}
+                      style={[styles.input]}
                       placeholder={this.props.intl.formatMessage({
                         id: 'placeholder_email'
                       })}
@@ -179,10 +127,7 @@ class LoginScreen extends Component {
                       ref={input => {
                         this.secondTextInput = input;
                       }}
-                      style={[
-                        styles.input,
-                        keyboardUp ? styles.inputWithKeyboard : styles.input
-                      ]}
+                      style={[styles.input]}
                       placeholder={this.props.intl.formatMessage({
                         id: 'placeholder_password'
                       })}
@@ -220,7 +165,7 @@ class LoginScreen extends Component {
                 </View>
               )}
             </Formik>
-          </View>
+          </KeyboardAvoidingView>
         </DismissableKeyboard>
       </ImageBackground>
     );
