@@ -63,13 +63,11 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 75.42857142857143,
               "justifyContent": "flex-start",
               "marginBottom": 138.28571428571428,
               "marginLeft": 144.57142857142856,
               "marginRight": 138.28571428571428,
               "marginTop": 12.571428571428571,
-              "width": 301.7142857142857,
             }
           }
         />
@@ -98,7 +96,8 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
           style={
             Object {
               "backgroundColor": "rgb(36,106,116)",
-              "borderRadius": 11,
+              "borderRadius": 17.348571428571425,
+              "borderTopColor": "rgba(19,43,46,0.83)",
               "height": 81.71428571428572,
               "justifyContent": "center",
               "marginTop": 47.01714285714286,
@@ -118,16 +117,16 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
             <Image
               source={
                 Object {
-                  "testUri": "../../../app/assets/images/bitmap.png",
+                  "testUri": "../../../app/assets/images/bitmapImage.png",
                 }
               }
               style={
                 Object {
-                  "height": 27.908571428571427,
+                  "height": 28.91428571428571,
                   "marginBottom": 3.2685714285714287,
                   "marginRight": 15.588571428571427,
                   "opacity": 1,
-                  "width": 30.925714285714285,
+                  "width": 31.428571428571427,
                 }
               }
             />
@@ -172,16 +171,16 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
             <Image
               source={
                 Object {
-                  "testUri": "../../../app/assets/images/bitmap.png",
+                  "testUri": "../../../app/assets/images/bitmapImage.png",
                 }
               }
               style={
                 Object {
-                  "height": 27.908571428571427,
+                  "height": 28.91428571428571,
                   "marginBottom": 3.2685714285714287,
                   "marginRight": 15.588571428571427,
                   "opacity": 1,
-                  "width": 30.925714285714285,
+                  "width": 31.428571428571427,
                 }
               }
             />

@@ -3,12 +3,12 @@ import {
   StyleSheet,
   View,
   ImageBackground,
-  KeyboardAvoidingView,
   Image,
   TextInput,
   TouchableOpacity,
   Text,
-  Platform
+  Platform,
+  KeyboardAvoidingView
 } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup';
@@ -21,9 +21,10 @@ import password from 'app/assets/images/password.png';
 import DismissableKeyboard from 'app/components/DismissKeyboard/';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
+
 class LoginScreen extends Component {
   render() {
-    const onhandleLogin = () => {
+    const onSubmit = () => {
       this.props.navigation.navigate('HomeScreen');
     };
     return (
@@ -35,25 +36,40 @@ class LoginScreen extends Component {
             enabled
           >
             <View>
-              <Image source={logo} style={styles.logoContainer}></Image>
+              <View>
+                <Image source={logo} style={[styles.logoContainer]}></Image>
+              </View>
+
+              <View>
+                <Image
+                  style={[styles.deliveryboyImageContainer]}
+                  source={deliveryboyimage}
+                ></Image>
+              </View>
             </View>
 
-            <View style={styles.deliveryboyImageContainer}>
-              <Image source={deliveryboyimage}></Image>
-            </View>
             <Formik
               initialValues={{ email: '', password: '' }}
-              onSubmit={values => onhandleLogin(values)}
+              onSubmit={values => onSubmit(values)}
               validationSchema={yup.object().shape({
                 email: yup
                   .string()
-                  .email()
-                  .required(),
+                  .email(this.props.intl.formatMessage({ id: 'email_valid' }))
+                  .required(
+                    this.props.intl.formatMessage({ id: 'email_required' })
+                  ),
 
                 password: yup
                   .string()
-                  .min(6)
-                  .required()
+                  .min(
+                    6,
+                    this.props.intl.formatMessage({
+                      id: 'password_minlength'
+                    })
+                  )
+                  .required(
+                    this.props.intl.formatMessage({ id: 'password_required' })
+                  )
               })}
             >
               {({
@@ -73,7 +89,7 @@ class LoginScreen extends Component {
                     <TextInput
                       testID="log-in-screen-text-input"
                       value={values.email}
-                      style={styles.input}
+                      style={[styles.input]}
                       placeholder={this.props.intl.formatMessage({
                         id: 'placeholder_email'
                       })}
@@ -91,8 +107,8 @@ class LoginScreen extends Component {
                       <Text
                         style={{
                           position: 'relative',
-                          marginLeft: Style.em(4.1),
-                          marginTop: Style.em(0.4),
+                          marginLeft: Style.em(2.7),
+                          marginTop: Style.em(0.3),
                           color: 'red'
                         }}
                       >
@@ -111,11 +127,12 @@ class LoginScreen extends Component {
                       ref={input => {
                         this.secondTextInput = input;
                       }}
-                      style={styles.input}
+                      style={[styles.input]}
                       placeholder={this.props.intl.formatMessage({
                         id: 'placeholder_password'
                       })}
                       returnKeyType="go"
+                      secureTextEntry
                       placeholderTextColor={Style.WHITE_COLOR}
                       onChangeText={handleChange('password')}
                       onBlur={() => setFieldTouched('password')}
@@ -127,7 +144,7 @@ class LoginScreen extends Component {
                         style={{
                           color: 'red',
                           position: 'relative',
-                          marginLeft: Style.em(4.1),
+                          marginLeft: Style.em(2.7),
                           marginTop: Style.em(0.4)
                         }}
                       >
@@ -135,14 +152,16 @@ class LoginScreen extends Component {
                       </Text>
                     )}
                   </View>
-                  <TouchableOpacity
-                    style={styles.btnLogin}
-                    onPress={handleSubmit}
-                  >
-                    <Text style={styles.text}>
-                      {this.props.intl.formatMessage({ id: 'login' })}
-                    </Text>
-                  </TouchableOpacity>
+                  <View testID="log-in-screen-button">
+                    <TouchableOpacity
+                      style={styles.btnLogin}
+                      onPress={handleSubmit}
+                    >
+                      <Text style={styles.text}>
+                        {this.props.intl.formatMessage({ id: 'login' })}
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
                 </View>
               )}
             </Formik>
@@ -166,9 +185,15 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoContainer: {
-    width: Style.em(12.38),
-    height: Style.em(3.31),
-    marginTop: Platform.OS === 'ios' ? Style.em(3.13) : Style.em(5.1),
+    marginTop: Platform.OS === 'ios' ? Style.em(2.1) : Style.em(5.1),
+    marginLeft: Style.em(5.7),
+    marginRight: Style.em(5.5),
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginBottom: Style.em(1)
+  },
+  logoContainerWithKeyboard: {
+    marginTop: Platform.OS === 'ios' ? Style.em(-2.5) : Style.em(-3),
     marginLeft: Style.em(5.7),
     marginRight: Style.em(5.5),
     justifyContent: 'flex-start',
@@ -178,11 +203,19 @@ const styles = StyleSheet.create({
   deliveryboyImageContainer: {
     width: Style.em(15.56),
     height: Style.em(16),
-    marginLeft: Style.em(7.68),
+    marginLeft: Style.em(4.5),
     marginTop: Style.em(0.81),
     marginBottom: Platform.OS === 'ios' ? Style.em(2.38) : Style.em(1.5),
     justifyContent: 'center',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
+    resizeMode: 'contain'
+  },
+  stretch: {
+    width: Style.em(12.5),
+    height: Style.em(12.5),
+    marginLeft: Style.em(5.8),
+
+    resizeMode: 'stretch'
   },
 
   input: {
@@ -192,7 +225,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Style.WHITE_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
     position: 'relative',
-    marginLeft: Style.em(3.85),
+    marginLeft: Style.em(2.7),
     paddingLeft: Style.em(1.62),
     paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
     zIndex: 30,
@@ -200,17 +233,47 @@ const styles = StyleSheet.create({
     color: Style.WHITE_COLOR,
     fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
   },
+  inputWithKeyboard: {
+    width: Style.em(17),
+    backgroundColor: 'transparent',
+    borderBottomWidth: 1,
+    borderBottomColor: Style.WHITE_COLOR,
+    marginTop: Platform.OS === 'ios' ? Style.em(1.81) : Style.em(0.92),
+    position: 'relative',
+    marginLeft: Style.em(2.7),
+    paddingLeft: Style.em(1.62),
+    paddingBottom: Platform.OS === 'android' ? Style.em(0) : null,
+    zIndex: 30,
+    opacity: 0.94,
+    color: Style.WHITE_COLOR,
+    fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
+  },
+
+  buttonView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   btnLogin: {
-    width: Style.em(19.4),
+    width: Style.em(19.8),
     height: Style.em(3),
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
     marginTop: Platform.OS === 'ios' ? Style.em(3.06) : Style.em(2),
-    marginLeft: Style.em(2.31),
+    marginLeft: Style.em(1.3),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.25) : Style.em(5),
     borderTopColor: Style.SECONDARY_COLOR,
-    zIndex: 100
+    zIndex: 100,
+    shadowColor: Style.WHITE_COLOR,
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 0.35,
+    shadowRadius: 13.16,
+    elevation: 20
   },
   text: {
     color: Style.WHITE_COLOR,
@@ -220,9 +283,10 @@ const styles = StyleSheet.create({
   inputImageContainer: {
     position: 'absolute',
     left: 0,
+    borderColor: Style.WHITE_COLOR,
     bottom: Style.em(0.31),
     right: Style.em(0.63),
-    marginLeft: Style.em(3.9),
+    marginLeft: Style.em(2.7),
     height: Style.em(1.08),
     width: Style.em(0.91),
     justifyContent: 'center',

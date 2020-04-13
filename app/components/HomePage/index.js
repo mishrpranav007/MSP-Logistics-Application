@@ -7,12 +7,13 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
+import PropTypes from 'prop-types';
 import homepage from 'app/assets/images/homepage.png';
 import logo from 'app/assets/images/imgMspLogo.png';
 import scanimage from 'app/assets/images/illoScanBag.png';
-import bitmapimage from 'app/assets/images/bitmap.png';
+import bitmapimage from 'app/assets/images/bitmapImage.png';
 import Style from '../../style/index';
-const HomePage = () => (
+const HomePage = ({ navigation }) => (
   <ImageBackground
     testID="home-page"
     source={homepage}
@@ -26,14 +27,20 @@ const HomePage = () => (
     </View>
 
     <View>
-      <TouchableOpacity style={styles.deliveryButtonLogin}>
+      <TouchableOpacity
+        style={styles.deliveryButtonLogin}
+        onPress={() => navigation.navigate('HomeScreen')}
+      >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for delivery</Text>
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.pickupButtonLogin}>
+      <TouchableOpacity
+        style={styles.pickupButtonLogin}
+        onPress={() => navigation.navigate('HomeScreen')}
+      >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for pickup</Text>
@@ -51,8 +58,6 @@ const styles = StyleSheet.create({
   },
 
   logoContainer: {
-    width: Style.em(12),
-    height: Style.em(3),
     marginTop: Style.em(0.5),
     marginLeft: Style.em(5.75),
     marginRight: Style.em(5.5),
@@ -72,7 +77,8 @@ const styles = StyleSheet.create({
     marginTop: Style.em(1.87),
     justifyContent: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    borderRadius: 11
+    borderRadius: Style.em(0.69),
+    borderTopColor: Style.SECONDARY_COLOR
   },
   pickupButtonLogin: {
     width: Style.em(18.5),
@@ -95,11 +101,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   bitmapImageIcon: {
-    width: Style.em(1.23),
-    height: Style.em(1.11),
+    width: Style.em(1.25),
+    height: Style.em(1.15),
     marginRight: Style.em(0.62),
     marginBottom: Style.em(0.13),
     opacity: 1
   }
 });
+HomePage.propTypes = {
+  navigation: PropTypes.object
+};
 export default HomePage;

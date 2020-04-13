@@ -5,7 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ReactNativeTemplate</string>
+	<string>MSP Logistics Application</string>
+	<key>NSCameraUsageDescription</key>
+    <string>MSP application needs your permission to use your camera phone to scan QR code</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

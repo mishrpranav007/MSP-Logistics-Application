@@ -71,46 +71,50 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
             }
           >
             <View>
-              <Image
-                source={
-                  Object {
-                    "testUri": "../../../app/assets/images/imgMspLogo.png",
+              <View>
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/imgMspLogo.png",
+                    }
                   }
-                }
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "height": 83.22285714285714,
-                    "justifyContent": "flex-start",
-                    "marginBottom": 25.142857142857142,
-                    "marginLeft": 143.31428571428572,
-                    "marginRight": 138.28571428571428,
-                    "marginTop": 78.69714285714285,
-                    "width": 311.2685714285714,
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "flex-start",
+                        "marginBottom": 25.142857142857142,
+                        "marginLeft": 143.31428571428572,
+                        "marginRight": 138.28571428571428,
+                        "marginTop": 52.8,
+                      },
+                    ]
                   }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "alignItems": "flex-end",
-                  "height": 402.2857142857143,
-                  "justifyContent": "center",
-                  "marginBottom": 59.839999999999996,
-                  "marginLeft": 193.09714285714284,
-                  "marginTop": 20.365714285714287,
-                  "width": 391.22285714285715,
-                }
-              }
-            >
-              <Image
-                source={
-                  Object {
-                    "testUri": "../../../app/assets/images/illoDeliveryBoy.png",
+                />
+              </View>
+              <View>
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/illoDeliveryBoy.png",
+                    }
                   }
-                }
-              />
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "height": 402.2857142857143,
+                        "justifyContent": "center",
+                        "marginBottom": 59.839999999999996,
+                        "marginLeft": 113.14285714285714,
+                        "marginTop": 20.365714285714287,
+                        "resizeMode": "contain",
+                        "width": 391.22285714285715,
+                      },
+                    ]
+                  }
+                />
+              </View>
             </View>
             <View>
               <View>
@@ -122,11 +126,12 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   }
                   style={
                     Object {
+                      "borderColor": "rgb(255,255,255)",
                       "bottom": 7.794285714285714,
                       "height": 27.154285714285717,
                       "justifyContent": "center",
                       "left": 0,
-                      "marginLeft": 98.05714285714285,
+                      "marginLeft": 67.88571428571429,
                       "opacity": 0.94,
                       "position": "absolute",
                       "right": 15.84,
@@ -141,21 +146,23 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   rejectResponderTermination={true}
                   returnKeyType="next"
                   style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "borderBottomColor": "rgb(255,255,255)",
-                      "borderBottomWidth": 1,
-                      "color": "rgb(255,255,255)",
-                      "fontSize": 21.874285714285715,
-                      "marginLeft": 96.80000000000001,
-                      "marginTop": 45.50857142857143,
-                      "opacity": 0.94,
-                      "paddingBottom": null,
-                      "paddingLeft": 40.73142857142857,
-                      "position": "relative",
-                      "width": 427.42857142857144,
-                      "zIndex": 30,
-                    }
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderBottomColor": "rgb(255,255,255)",
+                        "borderBottomWidth": 1,
+                        "color": "rgb(255,255,255)",
+                        "fontSize": 21.874285714285715,
+                        "marginLeft": 67.88571428571429,
+                        "marginTop": 45.50857142857143,
+                        "opacity": 0.94,
+                        "paddingBottom": null,
+                        "paddingLeft": 40.73142857142857,
+                        "position": "relative",
+                        "width": 427.42857142857144,
+                        "zIndex": 30,
+                      },
+                    ]
                   }
                   testID="log-in-screen-text-input"
                   underlineColorAndroid="transparent"
@@ -174,11 +181,12 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   }
                   style={
                     Object {
+                      "borderColor": "rgb(255,255,255)",
                       "bottom": 7.794285714285714,
                       "height": 27.154285714285717,
                       "justifyContent": "center",
                       "left": 0,
-                      "marginLeft": 98.05714285714285,
+                      "marginLeft": 67.88571428571429,
                       "opacity": 0.94,
                       "position": "absolute",
                       "right": 15.84,
@@ -192,22 +200,25 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   placeholderTextColor="rgb(255,255,255)"
                   rejectResponderTermination={true}
                   returnKeyType="go"
+                  secureTextEntry={true}
                   style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "borderBottomColor": "rgb(255,255,255)",
-                      "borderBottomWidth": 1,
-                      "color": "rgb(255,255,255)",
-                      "fontSize": 21.874285714285715,
-                      "marginLeft": 96.80000000000001,
-                      "marginTop": 45.50857142857143,
-                      "opacity": 0.94,
-                      "paddingBottom": null,
-                      "paddingLeft": 40.73142857142857,
-                      "position": "relative",
-                      "width": 427.42857142857144,
-                      "zIndex": 30,
-                    }
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderBottomColor": "rgb(255,255,255)",
+                        "borderBottomWidth": 1,
+                        "color": "rgb(255,255,255)",
+                        "fontSize": 21.874285714285715,
+                        "marginLeft": 67.88571428571429,
+                        "marginTop": 45.50857142857143,
+                        "opacity": 0.94,
+                        "paddingBottom": null,
+                        "paddingLeft": 40.73142857142857,
+                        "position": "relative",
+                        "width": 427.42857142857144,
+                        "zIndex": 30,
+                      },
+                    ]
                   }
                   testID="log-in-screen-text-input"
                   underlineColorAndroid="transparent"
@@ -215,35 +226,48 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                 />
               </View>
               <View />
-              <TouchableOpacity
-                activeOpacity={0.2}
-                style={
-                  Object {
-                    "backgroundColor": "rgb(36,106,116)",
-                    "borderRadius": 17.348571428571425,
-                    "borderTopColor": "rgba(19,43,46,0.83)",
-                    "height": 75.42857142857143,
-                    "justifyContent": "center",
-                    "marginBottom": 81.71428571428572,
-                    "marginLeft": 58.08,
-                    "marginTop": 76.93714285714286,
-                    "width": 487.77142857142854,
-                    "zIndex": 100,
-                  }
-                }
+              <View
+                testID="log-in-screen-button"
               >
-                <Text
+                <TouchableOpacity
+                  activeOpacity={0.2}
                   style={
                     Object {
-                      "color": "rgb(255,255,255)",
-                      "fontSize": 28.160000000000004,
-                      "textAlign": "center",
+                      "alignItems": "center",
+                      "backgroundColor": "rgb(36,106,116)",
+                      "borderRadius": 17.348571428571425,
+                      "borderTopColor": "rgba(19,43,46,0.83)",
+                      "elevation": 20,
+                      "height": 75.42857142857143,
+                      "justifyContent": "center",
+                      "marginBottom": 81.71428571428572,
+                      "marginLeft": 32.68571428571428,
+                      "marginTop": 76.93714285714286,
+                      "shadowColor": "rgb(255,255,255)",
+                      "shadowOffset": Object {
+                        "height": 10,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.35,
+                      "shadowRadius": 13.16,
+                      "width": 497.8285714285714,
+                      "zIndex": 100,
                     }
                   }
                 >
-                  Login
-                </Text>
-              </TouchableOpacity>
+                  <Text
+                    style={
+                      Object {
+                        "color": "rgb(255,255,255)",
+                        "fontSize": 28.160000000000004,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Login
+                  </Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </View>
