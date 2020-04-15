@@ -65,6 +65,6 @@ export default {
   SHADOW_COLOR: 'rgba(19,43,46,0.83)',
   BLACK_COLOR: 'rgb(0,0,0)',
   GREEN_COLOR: 'rgb(0,128,0)',
-
-  GRID_ITEM_WIDTH: gridItemWidth
+  GRID_ITEM_WIDTH: gridItemWidth,
+  GREENISH_TEAL: 'rgb(79, 210, 152)'
 };

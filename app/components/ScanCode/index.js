@@ -12,6 +12,7 @@ import flashImage from 'app/assets/images/flash.png';
 import cancelImage from 'app/assets/images/Cancel_illo.png';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
+
 export default class ScanCode extends Component {
   constructor(props) {
     super(props);
@@ -24,12 +25,12 @@ export default class ScanCode extends Component {
     Linking.openURL(e.data);
   };
 
-  onTorchToggled = () => {
+  onTorchToggle = () => {
     const { torchEnable } = this.state;
     this.setState({ torchEnable: !torchEnable });
   };
 
-  onCancelSelected = () => {
+  onCancel = () => {
     this.props.navigation.goBack();
   };
 
@@ -38,10 +39,10 @@ export default class ScanCode extends Component {
     return (
       <View style={styles.container} testID="scan-code">
         <View style={styles.headerIcons}>
-          <TouchableOpacity onPress={this.onTorchToggled}>
+          <TouchableOpacity onPress={this.onTorchToggle}>
             <Image source={flashImage} style={styles.imageContainer}></Image>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.onCancelSelected}>
+          <TouchableOpacity onPress={this.onCancel}>
             <Image
               source={cancelImage}
               style={styles.cancelImageContainer}
@@ -84,7 +85,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.BLACK_COLOR,
-
     marginTop: Style.em(11)
   },
   cameraView: {
@@ -110,8 +110,8 @@ const styles = StyleSheet.create({
     height: Style.em(17.5),
     width: Style.em(17.5),
     borderWidth: 2,
-    borderColor: Style.GREEN_COLOR,
-    borderRadius: 12,
+    borderColor: Style.GREENISH_TEAL,
+    borderRadius: 40,
     backgroundColor: 'transparent'
   },
 
