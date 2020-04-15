@@ -9,7 +9,7 @@ import {
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { RNCamera } from 'react-native-camera';
 import flashImage from 'app/assets/images/flash.png';
-import cancelImage from 'app/assets/images/Cancel_illo.png';
+import cancelImage from 'app/assets/images/cancel.png';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
 

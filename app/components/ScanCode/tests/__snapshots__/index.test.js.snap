@@ -59,7 +59,7 @@ exports[`<ScanCode /> should render and match the snapshot 1`] = `
           <Image
             source={
               Object {
-                "testUri": "../../../app/assets/images/Cancel_illo.png",
+                "testUri": "../../../app/assets/images/cancel.png",
               }
             }
             style={

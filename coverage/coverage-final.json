@@ -1,32 +1,32 @@
 {
-  "/Users/mac/wednesday/react-native-boilerplate/app/app.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/app.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/app.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/app.js",
     "statementMap": {
       "0": {
-        "start": { "line": 9, "column": 29 },
-        "end": { "line": 9, "column": 42 }
+        "start": { "line": 10, "column": 29 },
+        "end": { "line": 10, "column": 42 }
       },
       "1": {
-        "start": { "line": 11, "column": 12 },
-        "end": { "line": 19, "column": 1 }
+        "start": { "line": 12, "column": 12 },
+        "end": { "line": 20, "column": 1 }
       },
       "2": {
-        "start": { "line": 12, "column": 2 },
-        "end": { "line": 18, "column": 13 }
+        "start": { "line": 13, "column": 2 },
+        "end": { "line": 19, "column": 13 }
       }
     },
     "fnMap": {
       "0": {
         "name": "(anonymous_0)",
         "decl": {
-          "start": { "line": 11, "column": 12 },
-          "end": { "line": 11, "column": 13 }
+          "start": { "line": 12, "column": 12 },
+          "end": { "line": 12, "column": 13 }
         },
         "loc": {
-          "start": { "line": 12, "column": 2 },
-          "end": { "line": 18, "column": 13 }
+          "start": { "line": 13, "column": 2 },
+          "end": { "line": 19, "column": 13 }
         },
-        "line": 12
+        "line": 13
       }
     },
     "branchMap": {},
@@ -34,10 +34,10 @@
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "0f1428b770f6217809fff91e06c6714e655cfda5"
+    "hash": "060f62f559ff026a33f7b7289d28b4873a75d1a3"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/i18n.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/i18n.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 22 },
@@ -175,27 +175,27 @@
       }
     },
     "s": {
-      "0": 12,
-      "1": 12,
-      "2": 12,
-      "3": 12,
-      "4": 12,
-      "5": 12,
-      "6": 12,
-      "7": 15,
-      "8": 15,
-      "9": 62,
-      "10": 62,
-      "11": 15,
-      "12": 12
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 18,
+      "8": 18,
+      "9": 273,
+      "10": 273,
+      "11": 18,
+      "12": 15
     },
-    "f": { "0": 15, "1": 62 },
-    "b": { "0": [1, 14], "1": [1, 61], "2": [62, 1] },
+    "f": { "0": 18, "1": 273 },
+    "b": { "0": [1, 17], "1": [1, 272], "2": [273, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "f52a914cfed15811ba95ba40867a4797c0935705"
+    "hash": "cffafad9a04f2e9ff1e9a77f538f5af7bba303ff"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/rootReducer.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/rootReducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 22 },
@@ -225,10 +225,10 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d2fbbe88503bb3f020b29d1f03c04625209a9161"
+    "hash": "779c7c494b95746045f58d745838bcfa895bb718"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/rootSaga.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/rootSaga.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 2 },
@@ -258,10 +258,106 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "5c01e8d9f0d51dfea679065a0673c779d440e66f"
+    "hash": "ab56fe86076e0fc66e887fd647a9bebc5fd45303"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/bitmapImage.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/bitmapImage.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d15606d3d4a2c4e51cddd9ad9201fcf77e3735ef"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/cancel.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/cancel.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "0e5acea80035b7839c600632cf396d2d7a87b763"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/flash.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/flash.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "55b8ca34e9e06e9abe48db3836a8a82f152ee880"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/homepage.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/homepage.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "233f0958c1a48fbb15d537345420a17990730ba3"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/illoDeliveryBoy.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/illoDeliveryBoy.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "09aa65bba3f770234b2f1eb6d47df17d325a04c5"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/illoScanBag.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/illoScanBag.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "0b13a02d30b6a7637afb06464292e6676812834d"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/imgMspLogo.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/imgMspLogo.png",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -274,10 +370,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "3d94afbcb363d7e2cad449c169f6a869f6ac8813"
+    "hash": "d18a8c5d52bdfb980e3fbe974226b6664ea05bf5"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/loginbg.jpg": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/loginbg.jpg",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -286,14 +382,46 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 4 },
+    "s": { "0": 3 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "dc80bfbecf8ffbb8f36cf602fdfe3c663c2e406a"
+    "hash": "42de69e33a9234a17c1d4d781298ab91ffe8d2d5"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/password.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/password.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "a793cce6d38c3d2e4c734ab69f8dbc221c58ed17"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/username.png": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/assets/images/username.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d83e941a4bb964bbd155834f2f155f460eaac747"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/Container/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/Container/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 24 },
@@ -327,14 +455,294 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 5, "1": 5, "2": 16, "3": 5 },
-    "f": { "0": 16 },
+    "s": { "0": 5, "1": 5, "2": 11, "3": 5 },
+    "f": { "0": 11 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "58e8f6ff1f1be4d8f67998753c8ae50af629d583"
+    "hash": "ddefc0c9ead8167f222ec4a2bbd0e14d2df94bbe"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/DismissKeyboard/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/DismissKeyboard/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 5, "column": 24 },
+        "end": { "line": 9, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 6, "column": 2 },
+        "end": { "line": 8, "column": 29 }
+      },
+      "2": {
+        "start": { "line": 6, "column": 43 },
+        "end": { "line": 6, "column": 61 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 5, "column": 24 },
+          "end": { "line": 5, "column": 25 }
+        },
+        "loc": {
+          "start": { "line": 6, "column": 2 },
+          "end": { "line": 8, "column": 29 }
+        },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 6, "column": 37 },
+          "end": { "line": 6, "column": 38 }
+        },
+        "loc": {
+          "start": { "line": 6, "column": 43 },
+          "end": { "line": 6, "column": 61 }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 3, "1": 12, "2": 0 },
+    "f": { "0": 12, "1": 0 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d5624ceff917ccd4b20fb482635a1c887b98aebb"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/HomePage/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/HomePage/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 16, "column": 17 },
+        "end": { "line": 51, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 17, "column": 2 },
+        "end": { "line": 50, "column": 20 }
+      },
+      "2": {
+        "start": { "line": 32, "column": 23 },
+        "end": { "line": 32, "column": 56 }
+      },
+      "3": {
+        "start": { "line": 42, "column": 23 },
+        "end": { "line": 42, "column": 56 }
+      },
+      "4": {
+        "start": { "line": 52, "column": 15 },
+        "end": { "line": 128, "column": 2 }
+      },
+      "5": {
+        "start": { "line": 129, "column": 0 },
+        "end": { "line": 131, "column": 2 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 16, "column": 17 },
+          "end": { "line": 16, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 2 },
+          "end": { "line": 50, "column": 20 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 32, "column": 17 },
+          "end": { "line": 32, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 32, "column": 23 },
+          "end": { "line": 32, "column": 56 }
+        },
+        "line": 32
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 42, "column": 17 },
+          "end": { "line": 42, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 42, "column": 23 },
+          "end": { "line": 42, "column": 56 }
+        },
+        "line": 42
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 3, "1": 3, "2": 0, "3": 0, "4": 3, "5": 3 },
+    "f": { "0": 3, "1": 0, "2": 0 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "390b6792918ebfc24090435d12f30ab82e91ea5f"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/ScanCode/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/ScanCode/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 18, "column": 17 }
+      },
+      "1": {
+        "start": { "line": 19, "column": 4 },
+        "end": { "line": 21, "column": 6 }
+      },
+      "2": {
+        "start": { "line": 24, "column": 14 },
+        "end": { "line": 26, "column": 3 }
+      },
+      "3": {
+        "start": { "line": 25, "column": 4 },
+        "end": { "line": 25, "column": 28 }
+      },
+      "4": {
+        "start": { "line": 28, "column": 18 },
+        "end": { "line": 31, "column": 3 }
+      },
+      "5": {
+        "start": { "line": 29, "column": 28 },
+        "end": { "line": 29, "column": 38 }
+      },
+      "6": {
+        "start": { "line": 30, "column": 4 },
+        "end": { "line": 30, "column": 49 }
+      },
+      "7": {
+        "start": { "line": 33, "column": 13 },
+        "end": { "line": 35, "column": 3 }
+      },
+      "8": {
+        "start": { "line": 34, "column": 4 },
+        "end": { "line": 34, "column": 35 }
+      },
+      "9": {
+        "start": { "line": 38, "column": 28 },
+        "end": { "line": 38, "column": 38 }
+      },
+      "10": {
+        "start": { "line": 39, "column": 4 },
+        "end": { "line": 73, "column": 6 }
+      },
+      "11": {
+        "start": { "line": 77, "column": 15 },
+        "end": { "line": 130, "column": 2 }
+      },
+      "12": {
+        "start": { "line": 131, "column": 0 },
+        "end": { "line": 133, "column": 2 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 17, "column": 2 },
+          "end": { "line": 17, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 21 },
+          "end": { "line": 22, "column": 3 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 24, "column": 14 },
+          "end": { "line": 24, "column": 15 }
+        },
+        "loc": {
+          "start": { "line": 24, "column": 19 },
+          "end": { "line": 26, "column": 3 }
+        },
+        "line": 24
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 28, "column": 18 },
+          "end": { "line": 28, "column": 19 }
+        },
+        "loc": {
+          "start": { "line": 28, "column": 24 },
+          "end": { "line": 31, "column": 3 }
+        },
+        "line": 28
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 33, "column": 13 },
+          "end": { "line": 33, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 33, "column": 19 },
+          "end": { "line": 35, "column": 3 }
+        },
+        "line": 33
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 37, "column": 2 },
+          "end": { "line": 37, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 37, "column": 11 },
+          "end": { "line": 74, "column": 3 }
+        },
+        "line": 37
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 60, "column": 12 },
+          "end": { "line": 62, "column": 48 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 61, "column": 16 },
+            "end": { "line": 61, "column": 50 }
+          },
+          {
+            "start": { "line": 62, "column": 16 },
+            "end": { "line": 62, "column": 48 }
+          }
+        ],
+        "line": 60
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 0,
+      "4": 3,
+      "5": 0,
+      "6": 0,
+      "7": 3,
+      "8": 0,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3
+    },
+    "f": { "0": 3, "1": 0, "2": 0, "3": 0, "4": 3 },
+    "b": { "0": [0, 3] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "4e52ee8a937c1b690370b3451fdda2e3f2e8141c"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/SplashScreen/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/SplashScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 18 },
@@ -368,14 +776,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 3, "1": 3, "2": 3, "3": 6 },
-    "f": { "0": 6 },
+    "s": { "0": 1, "1": 1, "2": 1, "3": 2 },
+    "f": { "0": 2 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "af6d7b5e682a0028f6be28112e56a5fff263459d"
+    "hash": "8914f4a65ce7ea262d291af9047c9a5d054ed5aa"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/T/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/components/T/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 13, "column": 10 },
@@ -409,14 +817,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 5, "1": 9, "2": 5, "3": 5 },
+    "s": { "0": 3, "1": 9, "2": 3, "3": 3 },
     "f": { "0": 9 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "2c88b1427d7cb34c39fdf61b2598c5698c836b0a"
+    "hash": "1cddf1b83077f7cbe34c50d41fabbb550ce9ef3f"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/config/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/config/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 22 },
@@ -425,14 +833,14 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 10 },
+    "s": { "0": 13 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d6e171b5ca08da90501dcec193bfac9d955780f5"
+    "hash": "ad366a5a83ff4e7211dc301b5fe26392269aed15"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 28, "column": 18 },
@@ -483,40 +891,44 @@
         "end": { "line": 91, "column": 30 }
       },
       "12": {
-        "start": { "line": 94, "column": 27 },
+        "start": { "line": 94, "column": 21 },
         "end": { "line": 96, "column": 3 }
       },
       "13": {
+        "start": { "line": 94, "column": 27 },
+        "end": { "line": 96, "column": 3 }
+      },
+      "14": {
         "start": { "line": 95, "column": 4 },
         "end": { "line": 95, "column": 27 }
       },
-      "14": {
+      "15": {
         "start": { "line": 99, "column": 4 },
         "end": { "line": 136, "column": 6 }
       },
-      "15": {
+      "16": {
         "start": { "line": 140, "column": 0 },
         "end": { "line": 145, "column": 2 }
       },
-      "16": {
+      "17": {
         "start": { "line": 147, "column": 24 },
         "end": { "line": 151, "column": 2 }
       },
-      "17": {
+      "18": {
         "start": { "line": 153, "column": 27 },
         "end": { "line": 155, "column": 2 }
       },
-      "18": {
+      "19": {
         "start": { "line": 153, "column": 40 },
         "end": { "line": 155, "column": 1 }
       },
-      "19": {
+      "20": {
         "start": { "line": 154, "column": 19 },
         "end": { "line": 154, "column": 68 }
       },
-      "20": {
+      "21": {
         "start": { "line": 157, "column": 20 },
-        "end": { "line": 160, "column": 1 }
+        "end": { "line": 157, "column": 64 }
       }
     },
     "fnMap": {
@@ -650,35 +1062,36 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
       "11": 4,
-      "12": 7,
-      "13": 4,
+      "12": 4,
+      "13": 7,
       "14": 4,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 0,
+      "15": 4,
+      "16": 1,
+      "17": 1,
+      "18": 1,
       "19": 0,
-      "20": 3
+      "20": 0,
+      "21": 1
     },
     "f": { "0": 4, "1": 7, "2": 4, "3": 4, "4": 0, "5": 0 },
     "b": { "0": [1, 3], "1": [0, 3], "2": [3, 3] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a62396a0e434c59419b1bc1ce5327a113c633097"
+    "hash": "78896606637d46cf701b24a9c47c5b02ef9f85fa"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/reducer.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 4 },
@@ -846,15 +1259,15 @@
       }
     },
     "s": {
-      "0": 11,
-      "1": 11,
-      "2": 11,
+      "0": 14,
+      "1": 14,
+      "2": 14,
       "3": 1,
-      "4": 11,
+      "4": 14,
       "5": 1,
-      "6": 11,
+      "6": 14,
       "7": 1,
-      "8": 11,
+      "8": 14,
       "9": 30,
       "10": 30,
       "11": 1,
@@ -865,10 +1278,10 @@
     "f": { "0": 1, "1": 1, "2": 1, "3": 30, "4": 30 },
     "b": { "0": [19], "1": [1, 1, 1, 27] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "72f7a497bbc551e95a90c36d627e03540d6adf36"
+    "hash": "e1768c26c68ca8fe53ae133bc7dccae1f3154448"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/saga.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 13, "column": 19 },
@@ -945,10 +1358,10 @@
     "f": { "0": 2, "1": 7 },
     "b": { "0": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "43ca774600136691c26eca4473cc9f1151c0c53d"
+    "hash": "07cb08a7494a51cf66892e7d9ca6ea42b96320fd"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/selectors.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/ExampleScreen/selectors.js",
     "statementMap": {
       "0": {
         "start": { "line": 5, "column": 35 },
@@ -1102,25 +1515,25 @@
       }
     },
     "s": {
-      "0": 4,
+      "0": 2,
       "1": 3,
-      "2": 4,
-      "3": 4,
+      "2": 2,
+      "3": 2,
       "4": 1,
-      "5": 4,
-      "6": 4,
+      "5": 2,
+      "6": 2,
       "7": 1,
-      "8": 4,
-      "9": 4,
+      "8": 2,
+      "9": 2,
       "10": 1
     },
-    "f": { "0": 3, "1": 4, "2": 1, "3": 4, "4": 1, "5": 4, "6": 1 },
+    "f": { "0": 3, "1": 2, "2": 1, "3": 2, "4": 1, "5": 2, "6": 1 },
     "b": { "0": [3, 0] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b5d193b30751138ea47c553328b11e0af30af7cf"
+    "hash": "0c81a594d431f4dc812947f85c2750cc93e4a285"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LanguageProvider/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LanguageProvider/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 18, "column": 2 },
@@ -1132,15 +1545,15 @@
       },
       "2": {
         "start": { "line": 35, "column": 24 },
-        "end": { "line": 40, "column": 1 }
+        "end": { "line": 37, "column": 3 }
       },
       "3": {
-        "start": { "line": 37, "column": 13 },
-        "end": { "line": 39, "column": 3 }
+        "start": { "line": 35, "column": 70 },
+        "end": { "line": 37, "column": 1 }
       },
       "4": {
-        "start": { "line": 43, "column": 2 },
-        "end": { "line": 45, "column": 4 }
+        "start": { "line": 40, "column": 2 },
+        "end": { "line": 42, "column": 4 }
       }
     },
     "fnMap": {
@@ -1159,37 +1572,37 @@
       "1": {
         "name": "(anonymous_1)",
         "decl": {
-          "start": { "line": 37, "column": 2 },
-          "end": { "line": 37, "column": 3 }
+          "start": { "line": 35, "column": 59 },
+          "end": { "line": 35, "column": 60 }
         },
         "loc": {
-          "start": { "line": 37, "column": 13 },
-          "end": { "line": 39, "column": 3 }
+          "start": { "line": 35, "column": 70 },
+          "end": { "line": 37, "column": 1 }
         },
-        "line": 37
+        "line": 35
       },
       "2": {
         "name": "mapDispatchToProps",
         "decl": {
-          "start": { "line": 42, "column": 9 },
-          "end": { "line": 42, "column": 27 }
+          "start": { "line": 39, "column": 9 },
+          "end": { "line": 39, "column": 27 }
         },
         "loc": {
-          "start": { "line": 42, "column": 38 },
-          "end": { "line": 46, "column": 1 }
+          "start": { "line": 39, "column": 38 },
+          "end": { "line": 43, "column": 1 }
         },
-        "line": 42
+        "line": 39
       }
     },
     "branchMap": {},
-    "s": { "0": 7, "1": 9, "2": 9, "3": 3, "4": 6 },
+    "s": { "0": 7, "1": 12, "2": 12, "3": 3, "4": 6 },
     "f": { "0": 7, "1": 3, "2": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "1cec730eba761b667ba796ca5f04477463c0708a"
+    "hash": "4cf65a9028e12b84c7fe0a6f9cb9543795abcc69"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LanguageProvider/reducer.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LanguageProvider/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 14, "column": 4 },
@@ -1213,11 +1626,11 @@
       },
       "5": {
         "start": { "line": 27, "column": 8 },
-        "end": { "line": 27, "column": 49 }
+        "end": { "line": 27, "column": 50 }
       },
       "6": {
         "start": { "line": 29, "column": 8 },
-        "end": { "line": 29, "column": 20 }
+        "end": { "line": 29, "column": 21 }
       }
     },
     "fnMap": {
@@ -1270,24 +1683,24 @@
         "locations": [
           {
             "start": { "line": 26, "column": 6 },
-            "end": { "line": 27, "column": 49 }
+            "end": { "line": 27, "column": 50 }
           },
           {
             "start": { "line": 28, "column": 6 },
-            "end": { "line": 29, "column": 20 }
+            "end": { "line": 29, "column": 21 }
           }
         ],
         "line": 25
       }
     },
-    "s": { "0": 11, "1": 11, "2": 11, "3": 2, "4": 2, "5": 1, "6": 1 },
+    "s": { "0": 14, "1": 14, "2": 14, "3": 2, "4": 2, "5": 1, "6": 1 },
     "f": { "0": 2, "1": 2 },
     "b": { "0": [2], "1": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "f352d0caf65d8379a412d46724827fadda18e8c9"
+    "hash": "ee402f3b1dd5f08c155f3b643a431e775072cd85"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LanguageProvider/selectors.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LanguageProvider/selectors.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 23 },
@@ -1368,40 +1781,485 @@
         "line": 7
       }
     },
-    "s": { "0": 10, "1": 8, "2": 10, "3": 9, "4": 7 },
-    "f": { "0": 8, "1": 9, "2": 7 },
+    "s": { "0": 13, "1": 8, "2": 13, "3": 12, "4": 7 },
+    "f": { "0": 8, "1": 12, "2": 7 },
     "b": { "0": [8, 7] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9c28c0edd0172d2ea531aea05cc8fd62f089d200"
+    "hash": "02146238cf46aa467d821ab748b046eae7f68410"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LoginScreen/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/LoginScreen/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 27, "column": 21 },
+        "end": { "line": 29, "column": 5 }
+      },
+      "1": {
+        "start": { "line": 28, "column": 6 },
+        "end": { "line": 28, "column": 51 }
+      },
+      "2": {
+        "start": { "line": 30, "column": 4 },
+        "end": { "line": 171, "column": 6 }
+      },
+      "3": {
+        "start": { "line": 53, "column": 34 },
+        "end": { "line": 53, "column": 50 }
+      },
+      "4": {
+        "start": { "line": 83, "column": 16 },
+        "end": { "line": 165, "column": 23 }
+      },
+      "5": {
+        "start": { "line": 96, "column": 36 },
+        "end": { "line": 96, "column": 60 }
+      },
+      "6": {
+        "start": { "line": 99, "column": 24 },
+        "end": { "line": 99, "column": 53 }
+      },
+      "7": {
+        "start": { "line": 128, "column": 24 },
+        "end": { "line": 128, "column": 53 }
+      },
+      "8": {
+        "start": { "line": 138, "column": 36 },
+        "end": { "line": 138, "column": 63 }
+      },
+      "9": {
+        "start": { "line": 174, "column": 15 },
+        "end": { "line": 295, "column": 2 }
+      },
+      "10": {
+        "start": { "line": 297, "column": 0 },
+        "end": { "line": 300, "column": 2 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 26, "column": 2 },
+          "end": { "line": 26, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 26, "column": 11 },
+          "end": { "line": 172, "column": 3 }
+        },
+        "line": 26
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 27, "column": 21 },
+          "end": { "line": 27, "column": 22 }
+        },
+        "loc": {
+          "start": { "line": 27, "column": 27 },
+          "end": { "line": 29, "column": 5 }
+        },
+        "line": 27
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 53, "column": 24 },
+          "end": { "line": 53, "column": 25 }
+        },
+        "loc": {
+          "start": { "line": 53, "column": 34 },
+          "end": { "line": 53, "column": 50 }
+        },
+        "line": 53
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 75, "column": 15 },
+          "end": { "line": 75, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 83, "column": 16 },
+          "end": { "line": 165, "column": 23 }
+        },
+        "line": 83
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 96, "column": 30 },
+          "end": { "line": 96, "column": 31 }
+        },
+        "loc": {
+          "start": { "line": 96, "column": 36 },
+          "end": { "line": 96, "column": 60 }
+        },
+        "line": 96
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 98, "column": 39 },
+          "end": { "line": 98, "column": 40 }
+        },
+        "loc": {
+          "start": { "line": 98, "column": 45 },
+          "end": { "line": 100, "column": 23 }
+        },
+        "line": 98
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 127, "column": 27 },
+          "end": { "line": 127, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 127, "column": 36 },
+          "end": { "line": 129, "column": 23 }
+        },
+        "line": 127
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": { "line": 138, "column": 30 },
+          "end": { "line": 138, "column": 31 }
+        },
+        "loc": {
+          "start": { "line": 138, "column": 36 },
+          "end": { "line": 138, "column": 63 }
+        },
+        "line": 138
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 35, "column": 22 },
+          "end": { "line": 35, "column": 68 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 35, "column": 46 },
+            "end": { "line": 35, "column": 55 }
+          },
+          {
+            "start": { "line": 35, "column": 58 },
+            "end": { "line": 35, "column": 68 }
+          }
+        ],
+        "line": 35
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 106, "column": 21 },
+          "end": { "line": 117, "column": 21 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 106, "column": 21 },
+            "end": { "line": 106, "column": 34 }
+          },
+          {
+            "start": { "line": 106, "column": 38 },
+            "end": { "line": 106, "column": 50 }
+          },
+          {
+            "start": { "line": 107, "column": 22 },
+            "end": { "line": 116, "column": 29 }
+          }
+        ],
+        "line": 106
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 142, "column": 21 },
+          "end": { "line": 153, "column": 21 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 142, "column": 21 },
+            "end": { "line": 142, "column": 37 }
+          },
+          {
+            "start": { "line": 142, "column": 41 },
+            "end": { "line": 142, "column": 56 }
+          },
+          {
+            "start": { "line": 143, "column": 22 },
+            "end": { "line": 152, "column": 29 }
+          }
+        ],
+        "line": 142
+      },
+      "3": {
+        "loc": {
+          "start": { "line": 188, "column": 15 },
+          "end": { "line": 188, "column": 68 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 188, "column": 39 },
+            "end": { "line": 188, "column": 52 }
+          },
+          {
+            "start": { "line": 188, "column": 55 },
+            "end": { "line": 188, "column": 68 }
+          }
+        ],
+        "line": 188
+      },
+      "4": {
+        "loc": {
+          "start": { "line": 196, "column": 15 },
+          "end": { "line": 196, "column": 68 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 196, "column": 39 },
+            "end": { "line": 196, "column": 53 }
+          },
+          {
+            "start": { "line": 196, "column": 56 },
+            "end": { "line": 196, "column": 68 }
+          }
+        ],
+        "line": 196
+      },
+      "5": {
+        "loc": {
+          "start": { "line": 208, "column": 18 },
+          "end": { "line": 208, "column": 72 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 208, "column": 42 },
+            "end": { "line": 208, "column": 56 }
+          },
+          {
+            "start": { "line": 208, "column": 59 },
+            "end": { "line": 208, "column": 72 }
+          }
+        ],
+        "line": 208
+      },
+      "6": {
+        "loc": {
+          "start": { "line": 226, "column": 15 },
+          "end": { "line": 226, "column": 70 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 226, "column": 39 },
+            "end": { "line": 226, "column": 53 }
+          },
+          {
+            "start": { "line": 226, "column": 56 },
+            "end": { "line": 226, "column": 70 }
+          }
+        ],
+        "line": 226
+      },
+      "7": {
+        "loc": {
+          "start": { "line": 230, "column": 19 },
+          "end": { "line": 230, "column": 65 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 230, "column": 47 },
+            "end": { "line": 230, "column": 58 }
+          },
+          {
+            "start": { "line": 230, "column": 61 },
+            "end": { "line": 230, "column": 65 }
+          }
+        ],
+        "line": 230
+      },
+      "8": {
+        "loc": {
+          "start": { "line": 234, "column": 14 },
+          "end": { "line": 234, "column": 66 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 234, "column": 38 },
+            "end": { "line": 234, "column": 52 }
+          },
+          {
+            "start": { "line": 234, "column": 55 },
+            "end": { "line": 234, "column": 66 }
+          }
+        ],
+        "line": 234
+      },
+      "9": {
+        "loc": {
+          "start": { "line": 241, "column": 15 },
+          "end": { "line": 241, "column": 70 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 241, "column": 39 },
+            "end": { "line": 241, "column": 53 }
+          },
+          {
+            "start": { "line": 241, "column": 56 },
+            "end": { "line": 241, "column": 70 }
+          }
+        ],
+        "line": 241
+      },
+      "10": {
+        "loc": {
+          "start": { "line": 245, "column": 19 },
+          "end": { "line": 245, "column": 65 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 245, "column": 47 },
+            "end": { "line": 245, "column": 58 }
+          },
+          {
+            "start": { "line": 245, "column": 61 },
+            "end": { "line": 245, "column": 65 }
+          }
+        ],
+        "line": 245
+      },
+      "11": {
+        "loc": {
+          "start": { "line": 249, "column": 14 },
+          "end": { "line": 249, "column": 66 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 249, "column": 38 },
+            "end": { "line": 249, "column": 52 }
+          },
+          {
+            "start": { "line": 249, "column": 55 },
+            "end": { "line": 249, "column": 66 }
+          }
+        ],
+        "line": 249
+      },
+      "12": {
+        "loc": {
+          "start": { "line": 263, "column": 15 },
+          "end": { "line": 263, "column": 67 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 263, "column": 39 },
+            "end": { "line": 263, "column": 53 }
+          },
+          {
+            "start": { "line": 263, "column": 56 },
+            "end": { "line": 263, "column": 67 }
+          }
+        ],
+        "line": 263
+      },
+      "13": {
+        "loc": {
+          "start": { "line": 266, "column": 18 },
+          "end": { "line": 266, "column": 70 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 266, "column": 42 },
+            "end": { "line": 266, "column": 56 }
+          },
+          {
+            "start": { "line": 266, "column": 59 },
+            "end": { "line": 266, "column": 70 }
+          }
+        ],
+        "line": 266
+      }
+    },
+    "s": {
+      "0": 12,
+      "1": 0,
+      "2": 12,
+      "3": 0,
+      "4": 20,
+      "5": 1,
+      "6": 0,
+      "7": 28,
+      "8": 1,
+      "9": 3,
+      "10": 3
+    },
+    "f": { "0": 12, "1": 0, "2": 0, "3": 20, "4": 1, "5": 0, "6": 28, "7": 1 },
+    "b": {
+      "0": [0, 12],
+      "1": [20, 2, 1],
+      "2": [20, 2, 1],
+      "3": [3, 0],
+      "4": [3, 0],
+      "5": [3, 0],
+      "6": [3, 0],
+      "7": [0, 3],
+      "8": [3, 0],
+      "9": [3, 0],
+      "10": [0, 3],
+      "11": [3, 0],
+      "12": [3, 0],
+      "13": [3, 0]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "620c8c65ac58fcdffd5c5a825cc9cf8863cc0521"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/RootScreen/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/RootScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 12, "column": 4 },
         "end": { "line": 12, "column": 25 }
       },
       "1": {
+        "start": { "line": 15, "column": 30 },
+        "end": { "line": 17, "column": 3 }
+      },
+      "2": {
         "start": { "line": 16, "column": 4 },
         "end": { "line": 16, "column": 57 }
       },
-      "2": {
+      "3": {
         "start": { "line": 20, "column": 4 },
         "end": { "line": 27, "column": 6 }
       },
-      "3": {
+      "4": {
         "start": { "line": 31, "column": 0 },
         "end": { "line": 33, "column": 2 }
       },
-      "4": {
+      "5": {
         "start": { "line": 35, "column": 27 },
         "end": { "line": 37, "column": 2 }
       },
-      "5": {
+      "6": {
         "start": { "line": 35, "column": 40 },
         "end": { "line": 37, "column": 1 }
       },
-      "6": {
+      "7": {
         "start": { "line": 36, "column": 17 },
         "end": { "line": 36, "column": 54 }
       }
@@ -1469,14 +2327,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 4, "1": 4, "2": 4, "3": 2, "4": 2, "5": 1, "6": 1 },
-    "f": { "0": 4, "1": 4, "2": 4, "3": 1, "4": 1 },
+    "s": { "0": 3, "1": 3, "2": 3, "3": 3, "4": 2, "5": 2, "6": 1, "7": 1 },
+    "f": { "0": 3, "1": 3, "2": 3, "3": 1, "4": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "812340837baa8304026c4a304babbe70757cd8eb"
+    "hash": "e76a030f572332c6a34896254b2f7c3b0388c071"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/RootScreen/reducer.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/RootScreen/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 4 },
@@ -1559,14 +2417,14 @@
         "line": 18
       }
     },
-    "s": { "0": 10, "1": 10, "2": 10, "3": 2, "4": 2, "5": 2 },
+    "s": { "0": 13, "1": 13, "2": 13, "3": 2, "4": 2, "5": 2 },
     "f": { "0": 2, "1": 2 },
     "b": { "0": [1], "1": [2] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "0e37950191b5013bfd32482dd84f1085b5e47d1a"
+    "hash": "0d7012c7230e5156a4c91c9907d7d47f19252409"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/RootScreen/saga.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/containers/RootScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 2 },
@@ -1624,14 +2482,14 @@
     "f": { "0": 3, "1": 1, "2": 7 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "fb0a961e846a2dcb87131cbf2ad82cf583ccd055"
+    "hash": "fdb906faacadd687b3f6bcceeb1ba087dd34f85e"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/navigators/AppNavigator.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/navigators/AppNavigator.js",
     "statementMap": {
       "0": {
-        "start": { "line": 10, "column": 23 },
-        "end": { "line": 25, "column": 1 }
+        "start": { "line": 7, "column": 23 },
+        "end": { "line": 17, "column": 1 }
       }
     },
     "fnMap": {},
@@ -1640,22 +2498,22 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9e93bf478a2270f91c528741de60b29e8bf0c9a2"
+    "hash": "6f156aefab532803307249e9944170d8db09d647"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/services/NavigationService.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/services/NavigationService.js",
     "statementMap": {
       "0": {
         "start": { "line": 15, "column": 2 },
         "end": { "line": 15, "column": 27 }
       },
       "1": {
-        "start": { "line": 25, "column": 2 },
-        "end": { "line": 30, "column": 4 }
+        "start": { "line": 26, "column": 2 },
+        "end": { "line": 31, "column": 4 }
       },
       "2": {
-        "start": { "line": 43, "column": 2 },
-        "end": { "line": 54, "column": 4 }
+        "start": { "line": 44, "column": 2 },
+        "end": { "line": 55, "column": 4 }
       }
     },
     "fnMap": {
@@ -1674,37 +2532,37 @@
       "1": {
         "name": "navigate",
         "decl": {
-          "start": { "line": 24, "column": 9 },
-          "end": { "line": 24, "column": 17 }
+          "start": { "line": 25, "column": 9 },
+          "end": { "line": 25, "column": 17 }
         },
         "loc": {
-          "start": { "line": 24, "column": 37 },
-          "end": { "line": 31, "column": 1 }
+          "start": { "line": 25, "column": 37 },
+          "end": { "line": 32, "column": 1 }
         },
-        "line": 24
+        "line": 25
       },
       "2": {
         "name": "navigateAndReset",
         "decl": {
-          "start": { "line": 42, "column": 9 },
-          "end": { "line": 42, "column": 25 }
+          "start": { "line": 43, "column": 9 },
+          "end": { "line": 43, "column": 25 }
         },
         "loc": {
-          "start": { "line": 42, "column": 45 },
-          "end": { "line": 55, "column": 1 }
+          "start": { "line": 43, "column": 45 },
+          "end": { "line": 56, "column": 1 }
         },
-        "line": 42
+        "line": 43
       }
     },
     "branchMap": {},
-    "s": { "0": 4, "1": 0, "2": 0 },
-    "f": { "0": 4, "1": 0, "2": 0 },
+    "s": { "0": 3, "1": 0, "2": 0 },
+    "f": { "0": 3, "1": 0, "2": 0 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b306c487dbc0436468e98e5b9812e55f02087028"
+    "hash": "1b0a522f5fc2c11d69b6ace81520f4e82a57bc90"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/services/UserService.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/services/UserService.js",
     "statementMap": {
       "0": {
         "start": { "line": 3, "column": 18 },
@@ -1734,14 +2592,243 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 10, "1": 10, "2": 1 },
+    "s": { "0": 13, "1": 13, "2": 1 },
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a897752d8b8853420618fba1786f7c229317729e"
+    "hash": "e61a0a693ecc2b1ea05af46d074ded331a78e070"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/style/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/style/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 3, "column": 10 },
+        "end": { "line": 3, "column": 41 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 10 },
+        "end": { "line": 4, "column": 40 }
+      },
+      "2": {
+        "start": { "line": 5, "column": 17 },
+        "end": { "line": 5, "column": 28 }
+      },
+      "3": {
+        "start": { "line": 8, "column": 15 },
+        "end": { "line": 8, "column": 31 }
+      },
+      "4": {
+        "start": { "line": 9, "column": 15 },
+        "end": { "line": 9, "column": 31 }
+      },
+      "5": {
+        "start": { "line": 12, "column": 17 },
+        "end": { "line": 12, "column": 19 }
+      },
+      "6": {
+        "start": { "line": 15, "column": 13 },
+        "end": { "line": 15, "column": 24 }
+      },
+      "7": {
+        "start": { "line": 18, "column": 2 },
+        "end": { "line": 18, "column": 58 }
+      },
+      "8": {
+        "start": { "line": 22, "column": 2 },
+        "end": { "line": 22, "column": 37 }
+      },
+      "9": {
+        "start": { "line": 26, "column": 23 },
+        "end": { "line": 26, "column": 38 }
+      },
+      "10": {
+        "start": { "line": 27, "column": 23 },
+        "end": { "line": 27, "column": 45 }
+      },
+      "11": {
+        "start": { "line": 28, "column": 2 },
+        "end": { "line": 28, "column": 42 }
+      },
+      "12": {
+        "start": { "line": 32, "column": 27 },
+        "end": { "line": 32, "column": 30 }
+      },
+      "13": {
+        "start": { "line": 33, "column": 28 },
+        "end": { "line": 33, "column": 31 }
+      },
+      "14": {
+        "start": { "line": 35, "column": 14 },
+        "end": { "line": 35, "column": 53 }
+      },
+      "15": {
+        "start": { "line": 35, "column": 22 },
+        "end": { "line": 35, "column": 53 }
+      },
+      "16": {
+        "start": { "line": 36, "column": 22 },
+        "end": { "line": 36, "column": 62 }
+      },
+      "17": {
+        "start": { "line": 36, "column": 30 },
+        "end": { "line": 36, "column": 62 }
+      },
+      "18": {
+        "start": { "line": 37, "column": 22 },
+        "end": { "line": 38, "column": 38 }
+      },
+      "19": {
+        "start": { "line": 38, "column": 2 },
+        "end": { "line": 38, "column": 38 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "normalize",
+        "decl": {
+          "start": { "line": 17, "column": 9 },
+          "end": { "line": 17, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 36 },
+          "end": { "line": 19, "column": 1 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "em",
+        "decl": {
+          "start": { "line": 21, "column": 9 },
+          "end": { "line": 21, "column": 11 }
+        },
+        "loc": {
+          "start": { "line": 21, "column": 19 },
+          "end": { "line": 23, "column": 1 }
+        },
+        "line": 21
+      },
+      "2": {
+        "name": "gridItemWidth",
+        "decl": {
+          "start": { "line": 25, "column": 9 },
+          "end": { "line": 25, "column": 22 }
+        },
+        "loc": {
+          "start": { "line": 25, "column": 53 },
+          "end": { "line": 29, "column": 1 }
+        },
+        "line": 25
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 35, "column": 14 },
+          "end": { "line": 35, "column": 15 }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 22 },
+          "end": { "line": 35, "column": 53 }
+        },
+        "line": 35
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 36, "column": 22 },
+          "end": { "line": 36, "column": 23 }
+        },
+        "loc": {
+          "start": { "line": 36, "column": 30 },
+          "end": { "line": 36, "column": 62 }
+        },
+        "line": 36
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 37, "column": 22 },
+          "end": { "line": 37, "column": 23 }
+        },
+        "loc": {
+          "start": { "line": 38, "column": 2 },
+          "end": { "line": 38, "column": 38 }
+        },
+        "line": 38
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 17, "column": 19 },
+          "end": { "line": 17, "column": 34 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 17, "column": 26 },
+            "end": { "line": 17, "column": 34 }
+          }
+        ],
+        "line": 17
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 25, "column": 36 },
+          "end": { "line": 25, "column": 51 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 25, "column": 46 },
+            "end": { "line": 25, "column": 51 }
+          }
+        ],
+        "line": 25
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 37, "column": 29 },
+          "end": { "line": 37, "column": 41 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 37, "column": 38 },
+            "end": { "line": 37, "column": 41 }
+          }
+        ],
+        "line": 37
+      }
+    },
+    "s": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 5,
+      "8": 237,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 5,
+      "13": 5,
+      "14": 5,
+      "15": 237,
+      "16": 5,
+      "17": 0,
+      "18": 5,
+      "19": 237
+    },
+    "f": { "0": 5, "1": 237, "2": 0, "3": 237, "4": 0, "5": 237 },
+    "b": { "0": [5], "1": [0], "2": [237] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "4e6cd8464756fce6d239c5fa392e352d7a4cc12f"
+  },
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/colors.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/colors.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1749,10 +2836,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "ca948910c49d40f0e826abeee27e7c84054300b2"
+    "hash": "b0e17fd40b728ccefb13d0587099355d10920095"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/fonts.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/fonts.js",
     "statementMap": {
       "0": {
         "start": { "line": 4, "column": 16 },
@@ -1979,48 +3066,48 @@
     },
     "branchMap": {},
     "s": {
-      "0": 5,
-      "1": 15,
-      "2": 5,
+      "0": 3,
+      "1": 7,
+      "2": 3,
       "3": 3,
-      "4": 5,
+      "4": 3,
       "5": 3,
-      "6": 5,
+      "6": 3,
       "7": 3,
-      "8": 5,
+      "8": 3,
       "9": 1,
-      "10": 5,
+      "10": 3,
       "11": 5,
-      "12": 5,
-      "13": 17,
-      "14": 5,
+      "12": 3,
+      "13": 9,
+      "14": 3,
       "15": 2,
-      "16": 5,
+      "16": 3,
       "17": 2,
-      "18": 5,
-      "19": 14,
-      "20": 5,
+      "18": 3,
+      "19": 6,
+      "20": 3,
       "21": 2
     },
     "f": {
-      "0": 15,
+      "0": 7,
       "1": 3,
       "2": 3,
       "3": 3,
       "4": 1,
       "5": 5,
-      "6": 17,
+      "6": 9,
       "7": 2,
       "8": 2,
-      "9": 14,
+      "9": 6,
       "10": 2
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e1a772b0612849443657ba95d0062f51af5699be"
+    "hash": "fbb096264040231a4ba50b9ae8d2ecf24d9f9aca"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/images.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/images.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -2028,10 +3115,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b9afc5d36af1de384261b42bc4947c747ee25dbf"
+    "hash": "9c0e0268e6ec76715377eedc81a0c8fba77dc5e0"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/index.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/themes/index.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -2039,10 +3126,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b84c05aa1b08acfeae7d5699c6b8afbb4314b4cb"
+    "hash": "4e305375b2185fed810de9789c9d73fbbcabd5b6"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/utils/apiUtils.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/utils/apiUtils.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 26 },
@@ -2330,45 +3417,45 @@
       }
     },
     "s": {
-      "0": 10,
-      "1": 10,
+      "0": 13,
+      "1": 13,
       "2": 1,
-      "3": 10,
-      "4": 10,
-      "5": 10,
-      "6": 10,
+      "3": 13,
+      "4": 13,
+      "5": 13,
+      "6": 13,
       "7": 0,
       "8": 0,
-      "9": 10,
-      "10": 10,
-      "11": 10,
+      "9": 13,
+      "10": 13,
+      "11": 13,
       "12": 1,
       "13": 1,
       "14": 1,
       "15": 4,
       "16": 1,
-      "17": 10,
+      "17": 13,
       "18": 1,
       "19": 1,
       "20": 0,
       "21": 0,
       "22": 1,
-      "23": 10
+      "23": 13
     },
-    "f": { "0": 1, "1": 10, "2": 10, "3": 1, "4": 4, "5": 1, "6": 0 },
+    "f": { "0": 1, "1": 13, "2": 13, "3": 1, "4": 4, "5": 1, "6": 0 },
     "b": {
       "0": [1],
       "1": [0],
-      "2": [10, 0],
+      "2": [13, 0],
       "3": [1, 0],
       "4": [1, 1],
       "5": [0, 1]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "96dd6f5009ae680f5cdd96c238f3251c21b84a4a"
+    "hash": "4d0ece756a572d50aafb881309def1b334bee1eb"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/utils/createStore.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/utils/createStore.js",
     "statementMap": {
       "0": {
         "start": { "line": 16, "column": 22 },
@@ -2431,7 +3518,7 @@
     },
     "branchMap": {},
     "s": {
-      "0": 9,
+      "0": 12,
       "1": 6,
       "2": 6,
       "3": 6,
@@ -2446,10 +3533,10 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a05574541198e043ca987ad5fe265c0568888ea8"
+    "hash": "bc3b97034f2e2457c678ba3d2f6a6d4d0b2ce939"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js",
+  "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/utils/testUtils.js": {
+    "path": "/Users/sharansalian/Workspaces/react-native/MSP-Logistics-Application/app/utils/testUtils.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 36 },
@@ -2556,20 +3643,20 @@
     },
     "branchMap": {},
     "s": {
-      "0": 8,
+      "0": 11,
       "1": 2,
-      "2": 8,
-      "3": 10,
-      "4": 8,
+      "2": 11,
+      "3": 24,
+      "4": 11,
       "5": 4,
       "6": 4,
-      "7": 8,
+      "7": 11,
       "8": 3,
       "9": 3
     },
-    "f": { "0": 2, "1": 10, "2": 4, "3": 3, "4": 3 },
+    "f": { "0": 2, "1": 24, "2": 4, "3": 3, "4": 3 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e3b22d7b9eb91527d7cfb71749a12581b851c582"
+    "hash": "0ff2c3f7f98878573304c0ea1babca0bf296bffe"
   }
 }
