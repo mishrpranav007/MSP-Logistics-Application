@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScanCode /> should render and match the snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgb(0,0,0)",
+          "flex": 1,
+          "opacity": 0.99,
+        }
+      }
+      testID="scan-code"
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={0.2}
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../app/assets/images/flash.png",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 25.142857142857142,
+                "marginTop": 25.142857142857142,
+              }
+            }
+          />
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.2}
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../app/assets/images/cancel.png",
+              }
+            }
+            style={
+              Object {
+                "marginRight": 25.142857142857142,
+                "marginTop": 30.17142857142857,
+              }
+            }
+          />
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(0,0,0)",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginTop": 276.57142857142856,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flex": 2,
+                "justifyContent": "center",
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 16,
+                "textAlign": "center",
+              }
+            }
+          >
+            ...
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flex": 2,
+                "justifyContent": "center",
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

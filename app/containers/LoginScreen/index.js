@@ -248,7 +248,6 @@ const styles = StyleSheet.create({
     color: Style.WHITE_COLOR,
     fontSize: Platform.OS === 'ios' ? Style.em(0.87) : Style.em(1)
   },
-
   buttonView: {
     flex: 1,
     justifyContent: 'center',
@@ -257,6 +256,7 @@ const styles = StyleSheet.create({
   btnLogin: {
     width: Style.em(19.8),
     height: Style.em(3),
+
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,

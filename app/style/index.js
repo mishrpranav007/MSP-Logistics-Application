@@ -59,6 +59,12 @@ export default {
   WHITE_COLOR: 'rgb(255,255,255)',
   PRIMARY_COLOR: 'rgb(36,106,116)',
   SECONDARY_COLOR: 'rgba(19,43,46,0.83)',
-
-  GRID_ITEM_WIDTH: gridItemWidth
+  GRAY_COLOR: 'rgb(109,109,109)',
+  SELECT_COLOR: 'rgba(0,0,0,0.65)',
+  POWDER_COLOR: 'rgb(200,247,254)',
+  SHADOW_COLOR: 'rgba(19,43,46,0.83)',
+  BLACK_COLOR: 'rgb(0,0,0)',
+  GREEN_COLOR: 'rgb(0,128,0)',
+  GRID_ITEM_WIDTH: gridItemWidth,
+  GREENISH_TEAL: 'rgb(79, 210, 152)'
 };

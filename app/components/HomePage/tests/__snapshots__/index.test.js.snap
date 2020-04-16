@@ -98,9 +98,17 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
               "backgroundColor": "rgb(36,106,116)",
               "borderRadius": 17.348571428571425,
               "borderTopColor": "rgba(19,43,46,0.83)",
+              "elevation": 20,
               "height": 81.71428571428572,
               "justifyContent": "center",
               "marginTop": 47.01714285714286,
+              "shadowColor": "rgb(255,255,255)",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.35,
+              "shadowRadius": 13.16,
               "width": 465.1428571428571,
             }
           }
@@ -150,10 +158,18 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
               "backgroundColor": "rgb(36,106,116)",
               "borderRadius": 17.348571428571425,
               "borderTopColor": "rgba(19,43,46,0.83)",
+              "elevation": 20,
               "height": 81.71428571428572,
               "justifyContent": "center",
               "marginBottom": 18.857142857142858,
               "marginTop": 31.428571428571427,
+              "shadowColor": "rgb(255,255,255)",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.35,
+              "shadowRadius": 13.16,
               "width": 465.1428571428571,
               "zIndex": 100,
             }

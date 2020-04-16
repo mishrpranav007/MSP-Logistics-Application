@@ -8,41 +8,41 @@ import {
   TouchableOpacity
 } from 'react-native';
 import PropTypes from 'prop-types';
-import homepage from 'app/assets/images/homepage.png';
+import homePage from 'app/assets/images/homepage.png';
 import logo from 'app/assets/images/imgMspLogo.png';
-import scanimage from 'app/assets/images/illoScanBag.png';
-import bitmapimage from 'app/assets/images/bitmapImage.png';
+import scanImage from 'app/assets/images/illoScanBag.png';
+import bitmapImage from 'app/assets/images/bitmapImage.png';
 import Style from '../../style/index';
 const HomePage = ({ navigation }) => (
   <ImageBackground
     testID="home-page"
-    source={homepage}
+    source={homePage}
     style={styles.backgroundContainer}
   >
     <View style={styles.logoView}>
       <Image source={logo} style={styles.logoContainer}></Image>
     </View>
     <View style={styles.scanImageContainer}>
-      <Image source={scanimage}></Image>
+      <Image source={scanImage}></Image>
     </View>
 
     <View>
       <TouchableOpacity
         style={styles.deliveryButtonLogin}
-        onPress={() => navigation.navigate('HomeScreen')}
+        onPress={() => navigation.navigate('ScanScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
-          <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
+          <Image source={bitmapImage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for delivery</Text>
         </View>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.pickupButtonLogin}
-        onPress={() => navigation.navigate('HomeScreen')}
+        onPress={() => navigation.navigate('ScanScreen')}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
-          <Image source={bitmapimage} style={styles.bitmapImageIcon}></Image>
+          <Image source={bitmapImage} style={styles.bitmapImageIcon}></Image>
           <Text style={styles.text}>Scan for pickup</Text>
         </View>
       </TouchableOpacity>
@@ -78,7 +78,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
     borderRadius: Style.em(0.69),
-    borderTopColor: Style.SECONDARY_COLOR
+    borderTopColor: Style.SECONDARY_COLOR,
+    shadowColor: Style.WHITE_COLOR,
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 0.35,
+    shadowRadius: 13.16,
+
+    elevation: 20
   },
   pickupButtonLogin: {
     width: Style.em(18.5),
@@ -89,7 +98,16 @@ const styles = StyleSheet.create({
     borderRadius: Style.em(0.69),
     marginBottom: Style.em(0.75),
     borderTopColor: Style.SECONDARY_COLOR,
-    zIndex: 100
+    zIndex: 100,
+    shadowColor: Style.WHITE_COLOR,
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 0.35,
+    shadowRadius: 13.16,
+
+    elevation: 20
   },
   text: {
     color: Style.WHITE_COLOR,

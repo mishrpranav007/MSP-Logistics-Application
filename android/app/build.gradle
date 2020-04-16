@@ -127,6 +127,7 @@ android {
     }
 
     defaultConfig {
+        missingDimensionStrategy 'react-native-camera', 'general'
         applicationId "com.reactnativetemplate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
@@ -188,7 +189,9 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-permissions')
     implementation project(':react-native-camera')
+    implementation project(':react-native-image-picker')
  
     implementation project(':react-native-vector-icons')
     implementation project(':@react-native-community_async-storage')
