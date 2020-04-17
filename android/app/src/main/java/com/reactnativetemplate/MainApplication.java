@@ -2,17 +2,18 @@ package com.reactnativetemplate;
 
 import android.app.Application;
 
-import android.util.Log;
 import com.facebook.react.PackageList;
-import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
-import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
+<<<<<<< HEAD
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+=======
 
 import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
 import org.reactnative.camera.RNCameraPackage;
 import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
 import org.reactnative.camera.RNCameraPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+>>>>>>> 61d90f05f51499520d30594b9af8597ac206ff5d
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
