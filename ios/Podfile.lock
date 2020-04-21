@@ -66,6 +66,8 @@ PODS:
     - React
   - react-native-camera/RN (3.23.1):
     - React
+  - react-native-image-picker (0.28.0):
+    - React
   - react-native-safe-area-context (0.7.3):
     - React
   - React-RCTActionSheet (0.60.6):
@@ -217,6 +219,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 2279e559b921d02dfc6253ebef3dcb3a9dc6c07e
   React-jsinspector: a58b86545a0185f69768e78ac96ca9fe43fa3694
   react-native-camera: 1b52abea404d04e040edb3e74b7c5523c01a3089
+  react-native-image-picker: e6e06d4315e3c85bad17e4b2002cd29f11d202c8
   react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
   React-RCTActionSheet: 49f6a67a7efa6688f637296383d453b97ef13645
   React-RCTAnimation: e8047438b2927ebbe630bbf600c7309374075df3
@@ -236,6 +239,6 @@ SPEC CHECKSUMS:
   RNScreens: ac02d0e4529f08ced69f5580d416f968a6ec3a1d
   yoga: 5079887aa3e4c62142d6bcee493022643ee4d730
 
-PODFILE CHECKSUM: 4513d6cf262f5381f0c366e50788035f316e02f5
+PODFILE CHECKSUM: 1422cc4cafb45a2104a65df83679763a4a38edbb
 
 COCOAPODS: 1.9.0.beta.2
