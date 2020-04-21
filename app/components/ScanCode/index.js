@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   View,
-  Linking,
+  // Linking,
   Image,
   TouchableOpacity
 } from 'react-native';
@@ -18,11 +18,12 @@ export default class ScanCode extends Component {
     super(props);
     this.state = {
       torchEnable: false
+      // result: null
     };
   }
 
-  onSuccess = e => {
-    Linking.openURL(e.data);
+  onSuccess = () => {
+    this.props.navigation.navigate('DeliveryScreen');
   };
 
   onTorchToggle = () => {
