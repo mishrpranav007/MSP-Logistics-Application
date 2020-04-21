@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   textView: {
     color: Style.WHITE_COLOR,
     height: Style.em(1),
-    marginTop: Style.em(0.9),
+    marginTop: Style.em(1.3),
     marginRight: Style.em(1.5)
   },
   textUnderlineView: {
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Style.PRIMARY_COLOR,
-    marginTop: Platform.OS === 'ios' ? Style.em(2) : Style.em(2),
+    marginTop: Platform.OS === 'ios' ? Style.em(2) : Style.em(1.5),
     marginRight: Style.em(0.8),
     borderRadius: Style.em(0.69),
     marginBottom: Platform.OS === 'ios' ? Style.em(3.2) : Style.em(5),
