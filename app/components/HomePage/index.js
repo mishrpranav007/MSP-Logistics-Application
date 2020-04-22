@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {
   StyleSheet,
@@ -13,6 +14,8 @@ import logo from 'app/assets/images/imgMspLogo.png';
 import scanImage from 'app/assets/images/illoScanBag.png';
 import bitmapImage from 'app/assets/images/bitmapImage.png';
 import Style from '../../style/index';
+import GLOBALS from '../../constants/Globals';
+
 const HomePage = ({ navigation }) => (
   <ImageBackground
     testID="home-page"
@@ -29,7 +32,7 @@ const HomePage = ({ navigation }) => (
     <View>
       <TouchableOpacity
         style={styles.deliveryButtonLogin}
-        onPress={() => navigation.navigate('ScanScreen', { otherParam: '101' })}
+        onPress={() => navigation.navigate(GLOBALS.SCAN_SCREEN, { otherParam: '101' })}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapImage} style={styles.bitmapImageIcon}></Image>
@@ -39,7 +42,8 @@ const HomePage = ({ navigation }) => (
 
       <TouchableOpacity
         style={styles.pickupButtonLogin}
-        onPress={() => navigation.navigate('ScanScreen', { otherParam: '102' })}
+        onPress={() =>
+          navigation.navigate(GLOBALS.SCAN_SCREEN, { otherParam: '102' })}
       >
         <View testID="home-page-view" style={styles.bitImageContainer}>
           <Image source={bitmapImage} style={styles.bitmapImageIcon}></Image>

@@ -39,10 +39,10 @@ class PickupDetails extends Component {
   render() {
     const { photo } = this.state;
     const data = [
-      { value: 'Bag damaged' },
-      { value: 'Bag dirty' },
-      { value: 'Icepack missing' },
-      { value: 'Icepack missed' }
+      { value: this.props.intl.formatMessage({ id: 'bag_damaged' }) },
+      { value: this.props.intl.formatMessage({ id: 'bag_dirty' }) },
+      { value: this.props.intl.formatMessage({ id: 'icepack_missing' }) },
+      { value: this.props.intl.formatMessage({ id: 'icepack_missed' }) }
     ];
     return (
       <ImageBackground

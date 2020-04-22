@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View,
-  // Linking,
-  Image,
-  TouchableOpacity
-} from 'react-native';
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { RNCamera } from 'react-native-camera';
 import flashImage from 'app/assets/images/flash.png';
 import cancelImage from 'app/assets/images/cancel.png';
 import PropTypes from 'prop-types';
 import Style from '../../style/index';
+import GLOBALS from '../../constants/Globals';
 
 export default class ScanCode extends Component {
   constructor(props) {
@@ -33,12 +28,12 @@ export default class ScanCode extends Component {
   render() {
     const { torchEnable } = this.state;
     const { navigation } = this.props;
-    const checkParam = navigation.getParam('otherParam');
+    const checkParameterRoute = navigation.getParam('otherParam');
     const onSuccess = () => {
-      if (checkParam === '101') {
-        this.props.navigation.navigate('DeliveryScreen');
+      if (checkParameterRoute === '101') {
+        this.props.navigation.navigate(GLOBALS.DELIVERY_SCREEN);
       } else {
-        this.props.navigation.navigate('PickupScreen');
+        this.props.navigation.navigate(GLOBALS.PICKUP_SCREEN);
       }
     };
 
