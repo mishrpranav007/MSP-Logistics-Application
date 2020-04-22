@@ -120,6 +120,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-camera (from `../node_modules/react-native-camera`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -168,6 +169,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-camera:
     :path: "../node_modules/react-native-camera"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-RCTActionSheet:
@@ -239,6 +242,6 @@ SPEC CHECKSUMS:
   RNScreens: ac02d0e4529f08ced69f5580d416f968a6ec3a1d
   yoga: 5079887aa3e4c62142d6bcee493022643ee4d730
 
-PODFILE CHECKSUM: 1422cc4cafb45a2104a65df83679763a4a38edbb
+PODFILE CHECKSUM: 4513d6cf262f5381f0c366e50788035f316e02f5
 
 COCOAPODS: 1.9.0.beta.2

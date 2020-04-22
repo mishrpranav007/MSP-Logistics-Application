@@ -18,13 +18,8 @@ export default class ScanCode extends Component {
     super(props);
     this.state = {
       torchEnable: false
-      // result: null
     };
   }
-
-  onSuccess = () => {
-    this.props.navigation.navigate('DeliveryScreen');
-  };
 
   onTorchToggle = () => {
     const { torchEnable } = this.state;
@@ -37,6 +32,16 @@ export default class ScanCode extends Component {
 
   render() {
     const { torchEnable } = this.state;
+    const { navigation } = this.props;
+    const checkParam = navigation.getParam('otherParam');
+    const onSuccess = () => {
+      if (checkParam === '101') {
+        this.props.navigation.navigate('DeliveryScreen');
+      } else {
+        this.props.navigation.navigate('PickupScreen');
+      }
+    };
+
     return (
       <View style={styles.container} testID="scan-code">
         <View style={styles.headerIcons}>
@@ -53,7 +58,7 @@ export default class ScanCode extends Component {
         <QRCodeScanner
           testID="scan-code-qrcode-scanner"
           containerStyle={styles.cameraContainer}
-          onRead={this.onSuccess}
+          onRead={onSuccess}
           showMarker
           reactivate
           checkAndroid6Permissions
