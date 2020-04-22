@@ -16,7 +16,14 @@
   "mark_picked": "Mark as picked",
   "john_smith": "Jhon Smith",
   "delivery_details": "Delivery Details",
+  "pickup_details": "Pickup Details",
   "customer_name": "Customer Name",
   "sarah_jane": "Sarah Jane",
-  "add_bag": "Add Bag photo"
+  "bag_number": "Bag no. MSP14523",
+  "add_bag": "Add Bag photo",
+  "select_status": "Select state of bag",
+  "bag_damaged": "Bag damaged",
+  "bag_dirty": "Bag dirty",
+  "icepack_missing": "Icepack missing",
+  "icepack_missed": "Icepack missed"
 }

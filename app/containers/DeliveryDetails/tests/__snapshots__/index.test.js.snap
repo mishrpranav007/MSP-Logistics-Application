@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PickupDetails /> should render and match the snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityIgnoresInvertColors={true}
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/Deliverydetails.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "display": "flex",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginTop": 75.42857142857143,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "rgb(255,255,255)",
+              "height": 25.142857142857142,
+              "marginRight": 37.714285714285715,
+              "marginTop": 32.68571428571428,
+            }
+          }
+        >
+          Jhon Smith
+        </Text>
+        <View
+          style={
+            Object {
+              "borderTopColor": "rgb(255,255,255)",
+              "borderTopWidth": 1,
+              "height": 0,
+              "marginRight": 37.714285714285715,
+              "marginTop": 10.057142857142857,
+              "width": 103.08571428571427,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "rgb(255,255,255)",
+              "fontSize": 31.428571428571427,
+              "marginLeft": 25.142857142857142,
+              "marginRight": 301.7142857142857,
+              "marginTop": 20.114285714285714,
+            }
+          }
+        >
+          Delivery Details
+        </Text>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "rgb(255,255,255)",
+              "borderBottomWidth": 1,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "backgroundColor": "rgb(255,255,255)",
+              "borderRadius": 8,
+              "height": 125.71428571428571,
+              "marginRight": 22.628571428571426,
+              "marginTop": 30.17142857142857,
+              "width": 490.2857142857143,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 25.142857142857142,
+                "marginLeft": 25.142857142857142,
+                "marginTop": 20.114285714285714,
+                "textDecorationColor": "rgb(109,109,109)",
+              }
+            }
+          >
+            Customer Name
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontSize": 45.25714285714285,
+                "marginLeft": 25.142857142857142,
+                "marginTop": 2.5142857142857142,
+                "textDecorationColor": "rgb(109,109,109)",
+              }
+            }
+          >
+            Sarah Jane
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(200,247,254)",
+              "borderRadius": 20.114285714285714,
+              "height": 502.85714285714283,
+              "justifyContent": "flex-end",
+              "marginRight": 32.68571428571428,
+              "marginTop": 40.22857142857143,
+              "width": 477.7142857142857,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "borderRadius": 0,
+                  "overflow": "hidden",
+                },
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                },
+                Object {
+                  "borderRadius": 8,
+                },
+              ]
+            }
+          >
+            <View>
+              <TouchableOpacity
+                activeOpacity={0.2}
+              >
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../app/assets/images/addimage.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "marginLeft": 30.17142857142857,
+                    }
+                  }
+                />
+              </TouchableOpacity>
+              <Text
+                style={
+                  Object {
+                    "fontSize": 30.17142857142857,
+                    "marginBottom": 30.17142857142857,
+                    "marginTop": 130.74285714285713,
+                    "textDecorationColor": "rgb(36,106,116)",
+                  }
+                }
+              >
+                Add Bag photo
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View>
+          <TouchableOpacity
+            activeOpacity={0.2}
+            disabled={true}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgb(36,106,116)",
+                "borderRadius": 17.348571428571425,
+                "borderTopColor": "rgba(19,43,46,0.83)",
+                "elevation": 20,
+                "height": 90.5142857142857,
+                "justifyContent": "center",
+                "marginBottom": 80.45714285714286,
+                "marginRight": 20.114285714285714,
+                "marginTop": 50.285714285714285,
+                "shadowColor": "rgb(255,255,255)",
+                "shadowOffset": Object {
+                  "height": 10,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.35,
+                "shadowRadius": 13.16,
+                "width": 502.85714285714283,
+                "zIndex": 100,
+              }
+            }
+            testID="delivery-details-button"
+          >
+            <Text
+              style={
+                Object {
+                  "color": "rgb(255,255,255)",
+                  "fontSize": 28.160000000000004,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Mark as delivered
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
