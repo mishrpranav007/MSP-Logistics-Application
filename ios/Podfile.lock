@@ -11,7 +11,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - Permission-Camera (2.1.2):
+  - Permission-Camera (2.1.3):
     - RNPermissions
   - React (0.60.6):
     - React-Core (= 0.60.6)
@@ -95,15 +95,15 @@ PODS:
     - React-Core (= 0.60.6)
   - RNCAsyncStorage (1.9.0):
     - React
-  - RNCMaskedView (0.1.9):
+  - RNCMaskedView (0.1.10):
     - React
   - RNGestureHandler (1.6.1):
     - React
-  - RNPermissions (2.1.2):
+  - RNPermissions (2.1.3):
     - React
   - RNReanimated (1.8.0):
     - React
-  - RNScreens (2.5.0):
+  - RNScreens (2.6.0):
     - React
   - yoga (0.60.6.React)
 
@@ -213,7 +213,7 @@ SPEC CHECKSUMS:
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  Permission-Camera: ebdba00e6926aface672cc547b19fa317c3d956e
+  Permission-Camera: cbbed5d193641837e9a32592dd71292eabd11827
   React: 68e7f8dfc27729eade18423072a143120f2f32ab
   React-Core: fc9dace551f6c8c1007dd2d3cb1bc10c90a01d3e
   React-cxxreact: abe59014fce932d41a08bf1aa5dcad9ca8f0a2c5
@@ -235,13 +235,13 @@ SPEC CHECKSUMS:
   React-RCTVibration: 7655d72dfb919dd6d8e135ca108a5a2bd9fcd7b4
   React-RCTWebSocket: 7cd2c8d0f8ddd680dc76404defba7ab1f56b83af
   RNCAsyncStorage: 453cd7c335ec9ba3b877e27d02238956b76f3268
-  RNCMaskedView: 71fc32d971f03b7f03d6ab6b86b730c4ee64f5b6
+  RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
-  RNPermissions: a96580116f7894146552e92b000ac30bf1661947
+  RNPermissions: 6772df08e03565f718f7e140d9fccae441b8ca8b
   RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
-  RNScreens: ac02d0e4529f08ced69f5580d416f968a6ec3a1d
+  RNScreens: 19fee34a46de81b66e26960f5ac14ea616a5d089
   yoga: 5079887aa3e4c62142d6bcee493022643ee4d730
 
-PODFILE CHECKSUM: 4513d6cf262f5381f0c366e50788035f316e02f5
+PODFILE CHECKSUM: 92f62d95efc9e0f386482fd8119ae84edefc368e
 
 COCOAPODS: 1.9.0.beta.2
