@@ -56,7 +56,7 @@ class PickupDetails extends Component {
           </Text>
           <View style={styles.textUnderlineView}></View>
           <Text style={styles.deliveryDetailsText}>
-            {this.props.intl.formatMessage({ id: 'delivery_details' })}
+            {this.props.intl.formatMessage({ id: 'pickup_details' })}
           </Text>
           <View style={styles.borderLine}></View>
           <View style={styles.rectangleShapeView}>

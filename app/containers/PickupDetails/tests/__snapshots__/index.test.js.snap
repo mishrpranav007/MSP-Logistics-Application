@@ -100,7 +100,7 @@ exports[`<PickupDetails /> should render and match the snapshot 1`] = `
             }
           }
         >
-          Delivery Details
+          Pickup Details
         </Text>
         <View
           style={
