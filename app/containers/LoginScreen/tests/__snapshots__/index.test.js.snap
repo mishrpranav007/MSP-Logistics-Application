@@ -88,6 +88,14 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                         "marginRight": 138.28571428571428,
                         "marginTop": 52.8,
                       },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "flex-start",
+                        "marginBottom": 25.142857142857142,
+                        "marginLeft": 143.31428571428572,
+                        "marginRight": 138.28571428571428,
+                        "marginTop": 52.8,
+                      },
                     ]
                   }
                 />
@@ -106,7 +114,17 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                         "height": 402.2857142857143,
                         "justifyContent": "center",
                         "marginBottom": 59.839999999999996,
-                        "marginLeft": 113.14285714285714,
+                        "marginLeft": 75.42857142857143,
+                        "marginTop": 20.365714285714287,
+                        "resizeMode": "contain",
+                        "width": 391.22285714285715,
+                      },
+                      Object {
+                        "alignItems": "flex-end",
+                        "height": 402.2857142857143,
+                        "justifyContent": "center",
+                        "marginBottom": 59.839999999999996,
+                        "marginLeft": 75.42857142857143,
                         "marginTop": 20.365714285714287,
                         "resizeMode": "contain",
                         "width": 391.22285714285715,
@@ -147,6 +165,21 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   returnKeyType="next"
                   style={
                     Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderBottomColor": "rgb(255,255,255)",
+                        "borderBottomWidth": 1,
+                        "color": "rgb(255,255,255)",
+                        "fontSize": 21.874285714285715,
+                        "marginLeft": 67.88571428571429,
+                        "marginTop": 45.50857142857143,
+                        "opacity": 0.94,
+                        "paddingBottom": null,
+                        "paddingLeft": 40.73142857142857,
+                        "position": "relative",
+                        "width": 427.42857142857144,
+                        "zIndex": 30,
+                      },
                       Object {
                         "backgroundColor": "transparent",
                         "borderBottomColor": "rgb(255,255,255)",
@@ -203,6 +236,21 @@ exports[`<LoginScreen /> should render and match the snapshot 1`] = `
                   secureTextEntry={true}
                   style={
                     Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderBottomColor": "rgb(255,255,255)",
+                        "borderBottomWidth": 1,
+                        "color": "rgb(255,255,255)",
+                        "fontSize": 21.874285714285715,
+                        "marginLeft": 67.88571428571429,
+                        "marginTop": 45.50857142857143,
+                        "opacity": 0.94,
+                        "paddingBottom": null,
+                        "paddingLeft": 40.73142857142857,
+                        "position": "relative",
+                        "width": 427.42857142857144,
+                        "zIndex": 30,
+                      },
                       Object {
                         "backgroundColor": "transparent",
                         "borderBottomColor": "rgb(255,255,255)",
