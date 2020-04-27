@@ -27,7 +27,13 @@ class LoginScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      keyboardUp: false
+      keyboardUp: false,
+      placeholderemail: this.props.intl.formatMessage({
+        id: 'placeholder_email'
+      }),
+      placeholderpassword: this.props.intl.formatMessage({
+        id: 'placeholder_password'
+      })
     };
   }
 
@@ -146,14 +152,13 @@ class LoginScreen extends Component {
                         styles.input,
                         keyboardUp ? styles.inputWithKeyboard : styles.input
                       ]}
-                      placeholder={this.props.intl.formatMessage({
-                        id: 'placeholder_email'
-                      })}
+                      placeholder={this.state.placeholderemail}
                       onBlur={() => setFieldTouched('email')}
                       returnKeyType="next"
                       onSubmitEditing={() => {
                         this.secondTextInput.focus();
                       }}
+                      onFocus={() => this.setState({ placeholderemail: '' })}
                       placeholderTextColor={Style.WHITE_COLOR}
                       onChangeText={handleChange('email')}
                     />
@@ -187,13 +192,12 @@ class LoginScreen extends Component {
                         styles.input,
                         keyboardUp ? styles.inputWithKeyboard : styles.input
                       ]}
-                      placeholder={this.props.intl.formatMessage({
-                        id: 'placeholder_password'
-                      })}
+                      placeholder={this.state.placeholderpassword}
                       returnKeyType="go"
                       secureTextEntry
                       placeholderTextColor={Style.WHITE_COLOR}
                       onChangeText={handleChange('password')}
+                      onFocus={() => this.setState({ placeholderpassword: '' })}
                       onBlur={() => setFieldTouched('password')}
                     />
                   </View>
