@@ -48,7 +48,7 @@
     "formik": "^2.1.4",
     "global": "^4.4.0",
     "i18next": "^19.3.3",
-    "immer": "^4.0.0",
+    "immer": "^8.0.1",
     "immutable": "^4.0.0-rc.12",
     "indicative": "^7.4.4",
     "intl": "1.2.5",
